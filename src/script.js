@@ -36,6 +36,8 @@
     if (!cases || !index) return;
     if (count) count.textContent = pad(apps.length);
 
+    if (cases.querySelectorAll('.case').length) return;
+
     index.innerHTML = apps
       .map(
         (app, i) =>
