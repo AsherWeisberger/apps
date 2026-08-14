@@ -2,3 +2,5 @@
 *.log
 node_modules/
 __pycache__/
+proof-desktop.png
+proof-phone.png
