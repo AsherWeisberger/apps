@@ -49,6 +49,7 @@ def cases_html(apps: list[dict]) -> str:
     for i, app in enumerate(apps):
         n = pad(i + 1)
         flip = " flip" if i % 2 else ""
+        shown = " in" if i == 0 else ""
         lazy = "eager" if i == 0 else "lazy"
         fetch = ' fetchpriority="high"' if i == 0 else ""
         slug = html.escape(app["slug"])
@@ -61,7 +62,7 @@ def cases_html(apps: list[dict]) -> str:
         palt = html.escape(app.get("phoneAlt") or (app["name"] + " on a phone"))
         when = shipped(app.get("shipped"))
         meta = ('\n          <p class="meta">' + html.escape(when) + "</p>") if when else ""
-        block = '''<section class="case%s" id="%s" data-n="%s">
+        block = '''<section class="case%s%s" id="%s" data-n="%s">
         <header class="case-head">
           <p class="idx">%s</p>
           <div class="titles">
@@ -84,7 +85,7 @@ def cases_html(apps: list[dict]) -> str:
           </figure>
         </div>
       </section>''' % (
-            flip, slug, n,
+            flip, shown, slug, n,
             n, kinetic(app["name"]), job, meta,
             pages, arrow, repo,
             desk, dalt, lazy, fetch,

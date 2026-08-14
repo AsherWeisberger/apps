@@ -36,7 +36,7 @@
     if (!cases || !index) return;
     if (count) count.textContent = pad(apps.length);
 
-    if (cases.querySelectorAll('.case').length) return;
+    if (cases.querySelectorAll(".case").length) return;
 
     index.innerHTML = apps
       .map(
@@ -49,11 +49,12 @@
       .map((app, i) => {
         const n = pad(i + 1);
         const flip = i % 2 === 1 ? " flip" : "";
+        const shown = i === 0 ? " in" : "";
         const lazy = i === 0 ? "eager" : "lazy";
         const fetch = i === 0 ? "high" : "low";
         const when = shipped(app.shipped);
         return `
-<section class="case${flip}" id="${esc(app.slug)}" data-n="${n}">
+<section class="case${flip}${shown}" id="${esc(app.slug)}" data-n="${n}">
   <header class="case-head">
     <p class="idx">${n}</p>
     <div class="titles">
@@ -91,14 +92,18 @@
     };
 
     const reveal = (el) => el.classList.add("in");
-    nodes.forEach((el, i) => {
-      const r = el.getBoundingClientRect();
-      const near = r.top < window.innerHeight + 320 && r.bottom > -320;
-      if (i === 0 || near) reveal(el);
-    });
-    if (nodes[0]) setOn(nodes[0].id);
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (!("IntersectionObserver" in window)) {
+    if (nodes[0]) {
+      reveal(nodes[0]);
+      setOn(nodes[0].id);
+    }
+    nodes.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) reveal(el);
+    });
+
+    if (reduce || !("IntersectionObserver" in window)) {
       nodes.forEach(reveal);
       return;
     }
@@ -112,7 +117,7 @@
           }
         });
       },
-      { threshold: 0, rootMargin: "40% 0px 40% 0px" }
+      { threshold: 0 }
     );
     nodes.forEach((el) => io.observe(el));
 
@@ -138,16 +143,8 @@
   }
 
   render();
-  if (document.documentElement.classList.contains("proof")) {
-    document.querySelectorAll(".case").forEach((el) => el.classList.add("in"));
-  }
   if (location.hash) {
     const el = document.getElementById(location.hash.slice(1));
-    if (el) el.scrollIntoView();
-  }
-  const shot = new URLSearchParams(location.search).get("shot");
-  if (shot) {
-    const el = document.getElementById(shot);
     if (el) el.scrollIntoView();
   }
   observe();
