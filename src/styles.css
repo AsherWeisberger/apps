@@ -181,31 +181,25 @@ a { color: inherit; text-decoration: none; }
   font-optical-sizing: auto;
   font-variation-settings: "SOFT" 20, "WONK" 0;
   font-size: clamp(2.8rem, 12vw, 7.6rem);
-  line-height: 1.08;
+  line-height: 1.15;
   letter-spacing: -0.048em;
   max-width: 12ch;
-  overflow: visible;
 }
 .hero-title .line { display: block; }
-/* Kinetic mask: 1.9em is enough for Fraunces italic g/y/p/q (measured).
-   Negative margin keeps the visual stack tight. Side padding covers italic overhang.
-   After each word settles, overflow releases so ink can never stay clipped. */
 .clip {
   display: inline-block;
   overflow: hidden;
-  height: 1.9em;
-  padding: 0 0.36em 0 0.24em;
-  margin: 0 0.02em -0.74em -0.16em;
   vertical-align: bottom;
-  animation: mask-release 0s linear calc(var(--d, 0s) + 1.28s) forwards;
+  margin-right: 0.12em;
+  animation: mask-release 0s linear calc(var(--d, 0s) + 1.22s) forwards;
 }
-.clip:last-child { margin-right: 0.02em; }
+.clip:last-child { margin-right: 0; }
 .word {
   display: block;
-  height: 1.9em;
-  line-height: 1.9;
-  transform: translate3d(0, 120%, 0);
-  animation: rise 1.22s var(--ease) var(--d, 0s) both;
+  line-height: 1.15;
+  padding-bottom: 0.85em;
+  transform: translate3d(0, 110%, 0);
+  animation: rise 1.15s var(--ease) var(--d, 0s) forwards;
 }
 .italic {
   font-style: italic;
@@ -285,7 +279,7 @@ a { color: inherit; text-decoration: none; }
 .scroll-cue:hover { color: var(--sand); }
 
 @keyframes rise {
-  from { transform: translate3d(0, 120%, 0); }
+  from { transform: translate3d(0, 110%, 0); }
   to { transform: translate3d(0, 0, 0); }
 }
 @keyframes mask-release {
@@ -387,17 +381,15 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.045em;
 }
 .case h2 .clip {
-  overflow: visible;
-  animation: none;
+  overflow: hidden;
   height: auto;
-  padding: 0.08em 0.14em 0.36em 0.06em;
-  margin: 0 0.04em 0 0;
+  animation: none;
 }
 .case h2 .word {
   animation: none;
   transform: none;
-  height: auto;
-  line-height: 1.18;
+  line-height: 1.15;
+  padding-bottom: 0.55em;
 }
 .job {
   margin: 0;
