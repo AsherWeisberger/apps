@@ -132,25 +132,6 @@ a { color: inherit; text-decoration: none; }
   justify-content: flex-end;
   padding: 56px var(--gutter) 40px;
   position: relative;
-  overflow: hidden;
-}
-.watermark {
-  position: absolute;
-  right: -4vw;
-  bottom: -8%;
-  margin: 0;
-  font-family: var(--display);
-  font-style: italic;
-  font-weight: 360;
-  font-optical-sizing: auto;
-  font-variation-settings: "SOFT" 80, "WONK" 1;
-  font-size: clamp(8rem, 28vw, 22rem);
-  line-height: 0.75;
-  letter-spacing: -0.06em;
-  color: var(--paper);
-  opacity: 0.035;
-  pointer-events: none;
-  user-select: none;
 }
 
 .eyebrow {
@@ -181,25 +162,30 @@ a { color: inherit; text-decoration: none; }
   font-optical-sizing: auto;
   font-variation-settings: "SOFT" 20, "WONK" 0;
   font-size: clamp(2.8rem, 12vw, 7.6rem);
-  line-height: 1.15;
+  line-height: 1.05;
   letter-spacing: -0.048em;
   max-width: 12ch;
+  overflow: visible;
 }
-.hero-title .line { display: block; }
+.hero-title .line {
+  display: block;
+  overflow: visible;
+}
+/* Kinetic mask. Overflow stays hidden. Descender well is padding on .word
+   so the clip content box is taller than italic Fraunces g/y. */
 .clip {
-  display: inline-block;
+  display: inline-flex;
   overflow: hidden;
-  vertical-align: bottom;
-  margin-right: 0.12em;
-  animation: mask-release 0s linear calc(var(--d, 0s) + 1.22s) forwards;
+  vertical-align: top;
+  margin: 0 0.08em -0.62em 0;
 }
 .clip:last-child { margin-right: 0; }
 .word {
   display: block;
-  line-height: 1.15;
-  padding-bottom: 0.85em;
-  transform: translate3d(0, 110%, 0);
-  animation: rise 1.15s var(--ease) var(--d, 0s) forwards;
+  line-height: 1.12;
+  padding: 0.1em 0.22em 0.78em 0.1em;
+  transform: translate3d(0, 120%, 0);
+  animation: rise 1.2s var(--ease) var(--d, 0s) forwards;
 }
 .italic {
   font-style: italic;
@@ -279,11 +265,8 @@ a { color: inherit; text-decoration: none; }
 .scroll-cue:hover { color: var(--sand); }
 
 @keyframes rise {
-  from { transform: translate3d(0, 110%, 0); }
+  from { transform: translate3d(0, 120%, 0); }
   to { transform: translate3d(0, 0, 0); }
-}
-@keyframes mask-release {
-  to { overflow: visible; }
 }
 @keyframes fade {
   from { opacity: 0; transform: translateY(12px); }
@@ -632,7 +615,7 @@ a { color: inherit; text-decoration: none; }
   }
 }
 
-html.proof .clip { overflow: visible !important; animation: none !important; }
+html.proof .clip { animation: none !important; }
 html.proof .word,
 html.proof .ey-line,
 html.proof .lede,

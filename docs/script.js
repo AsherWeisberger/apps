@@ -147,6 +147,11 @@
     const el = document.getElementById(location.hash.slice(1));
     if (el) el.scrollIntoView();
   }
+  const shot = new URLSearchParams(location.search).get("shot");
+  if (shot) {
+    const el = document.getElementById(shot);
+    if (el) el.scrollIntoView({ block: "center" });
+  }
   observe();
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
