@@ -162,7 +162,7 @@ a { color: inherit; text-decoration: none; }
   font-optical-sizing: auto;
   font-variation-settings: "SOFT" 20, "WONK" 0;
   font-size: clamp(2.8rem, 12vw, 7.6rem);
-  line-height: 1.05;
+  line-height: 1.18;
   letter-spacing: -0.048em;
   max-width: 12ch;
   overflow: visible;
@@ -170,7 +170,7 @@ a { color: inherit; text-decoration: none; }
 .hero-title .line {
   display: block;
   overflow: hidden;
-  padding: 0.12em 0.14em 0.48em 0.06em;
+  padding: 0.16em 0.16em 0.72em 0.08em;
 }
 /* Line is the kinetic mask so sibling words cannot cover descenders.
    Padding-bottom is the Fraunces italic g/y well. */
@@ -183,8 +183,8 @@ a { color: inherit; text-decoration: none; }
 .clip:last-child { margin-right: 0; }
 .word {
   display: inline-block;
-  line-height: 1.05;
-  transform: translate3d(0, 130%, 0);
+  line-height: 1.42;
+  transform: translate3d(0, 120%, 0);
   animation: rise 1.2s var(--ease) var(--d, 0s) forwards;
 }
 .italic {
@@ -265,7 +265,7 @@ a { color: inherit; text-decoration: none; }
 .scroll-cue:hover { color: var(--sand); }
 
 @keyframes rise {
-  from { transform: translate3d(0, 130%, 0); }
+  from { transform: translate3d(0, 120%, 0); }
   to { transform: translate3d(0, 0, 0); }
 }
 @keyframes fade {
