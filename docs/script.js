@@ -90,9 +90,16 @@
       links.forEach((a) => a.classList.toggle("is-on", a.dataset.slug === slug));
     };
 
+    const reveal = (el) => el.classList.add("in");
+    nodes.forEach((el, i) => {
+      const r = el.getBoundingClientRect();
+      const near = r.top < window.innerHeight + 320 && r.bottom > -320;
+      if (i === 0 || near) reveal(el);
+    });
+    if (nodes[0]) setOn(nodes[0].id);
+
     if (!("IntersectionObserver" in window)) {
-      nodes.forEach((el) => el.classList.add("in"));
-      if (nodes[0]) setOn(nodes[0].id);
+      nodes.forEach(reveal);
       return;
     }
 
@@ -100,12 +107,12 @@
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.classList.add("in");
+            reveal(e.target);
             io.unobserve(e.target);
           }
         });
       },
-      { threshold: 0.14, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0, rootMargin: "40% 0px 40% 0px" }
     );
     nodes.forEach((el) => io.observe(el));
 
