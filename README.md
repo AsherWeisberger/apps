@@ -54,6 +54,6 @@ Then open http://127.0.0.1:8080/
 
 ## Stack
 
-Static HTML, CSS, JS. Cream catalog. Sora 400/600 + Fraunces italic. No framework, no bundler, no account.
+Static HTML, CSS, JS. Cream catalog on #F0EFEC. One accent #D9CCAC. Sora 400/600 + Fraunces italic. No framework, no bundler, no account.
 
 MIT. Copyright 2026 Asher Weisberger ([@AsherWeisberger](https://x.com/AsherWeisberger)). Original work — not affiliated with the paid apps these replace.

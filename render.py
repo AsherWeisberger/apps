@@ -25,6 +25,26 @@ def index_html(apps: list[dict]) -> str:
     return "\n          ".join(bits)
 
 
+def still_html(app: dict, lazy: str, fetch: str = "", phone_alt: str | None = None) -> str:
+    desk = html.escape(app["desktop"])
+    phone = html.escape(app["phone"])
+    dalt = html.escape(app.get("desktopAlt") or (app["name"] + " on desktop"))
+    if phone_alt is None:
+        palt = html.escape(app.get("phoneAlt") or (app["name"] + " on a phone"))
+    else:
+        palt = html.escape(phone_alt)
+    return f'''<div class="still-well">
+              <figure class="still still-desk">
+                <img class="desk" src="{desk}" alt="{dalt}" width="1600" height="1000" loading="{lazy}"{fetch} decoding="async">
+                <figcaption>Desktop</figcaption>
+              </figure>
+              <figure class="still still-phone">
+                <img class="phone" src="{phone}" alt="{palt}" width="390" height="844" loading="{lazy}" decoding="async">
+                <figcaption>Phone</figcaption>
+              </figure>
+            </div>'''
+
+
 def card_html(app: dict, i: int) -> str:
     n = pad(i + 1)
     lazy = "eager" if i < 2 else "lazy"
@@ -34,18 +54,11 @@ def card_html(app: dict, i: int) -> str:
     job = html.escape(app["job"])
     pages = html.escape(app["pages"])
     repo = html.escape(app["repo"])
-    desk = html.escape(app["desktop"])
-    phone = html.escape(app["phone"])
-    dalt = html.escape(app.get("desktopAlt") or (app["name"] + " on desktop"))
-    palt = html.escape(app.get("phoneAlt") or (app["name"] + " on a phone"))
     paid = html.escape("Replaces " + app["originalPaid"]) if app.get("originalPaid") else ""
     arrow = chr(8594)
     return f'''<article class="card" id="{slug}">
           <a class="still-link" href="{pages}">
-            <div class="still-well">
-              <img class="desk" src="{desk}" alt="{dalt}" width="1600" height="1000" loading="{lazy}"{fetch} decoding="async">
-              <img class="phone" src="{phone}" alt="{palt}" width="390" height="844" loading="{lazy}" decoding="async">
-            </div>
+            {still_html(app, lazy, fetch)}
           </a>
           <div class="card-body">
             <div class="card-top">
@@ -68,22 +81,26 @@ def cases_html(apps: list[dict]) -> str:
 
 def featured_html(app: dict) -> str:
     pages = html.escape(app["pages"])
-    desk = html.escape(app["desktop"])
-    phone = html.escape(app["phone"])
-    dalt = html.escape(app.get("desktopAlt") or (app["name"] + " on desktop"))
     name = html.escape(app["name"])
     arrow = chr(8594)
     return f'''<a class="frame-shot still-link" href="{pages}">
-          <div class="still-well">
-            <img class="desk" src="{desk}" alt="{dalt}" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
-            <img class="phone" src="{phone}" alt="" width="390" height="844" loading="eager" decoding="async">
-          </div>
+          {still_html(app, "eager", ' fetchpriority="high"', "")}
         </a>
         <p class="frame-cap">
           <span class="kicker">Latest</span>
           <span class="frame-name">{name}</span>
           <span class="frame-go">Open {arrow}</span>
         </p>'''
+
+
+def foot_apps_html(apps: list[dict]) -> str:
+    bits = []
+    for app in apps:
+        bits.append(
+            '<a href="%s">%s</a>'
+            % (html.escape(app["pages"]), html.escape(app["name"]))
+        )
+    return "\n        ".join(bits)
 
 
 def main() -> None:
@@ -107,6 +124,12 @@ def main() -> None:
     src = src.replace(
         '<div class="grid" id="cases"></div>',
         '<div class="grid" id="cases">\n        ' + cases_html(data) + "\n      </div>",
+    )
+    src = src.replace(
+        '<nav class="foot-apps" id="foot-apps" aria-label="Open an app"></nav>',
+        '<nav class="foot-apps" id="foot-apps" aria-label="Open an app">\n        '
+        + foot_apps_html(data)
+        + "\n      </nav>",
     )
     n = pad(len(data))
     src = src.replace(

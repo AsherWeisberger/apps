@@ -4,6 +4,7 @@
   const cases = document.getElementById("cases");
   const index = document.getElementById("index");
   const featured = document.getElementById("featured");
+  const footApps = document.getElementById("foot-apps");
   const nav = document.getElementById("nav");
   const count = document.getElementById("shipped-count");
 
@@ -18,18 +19,29 @@
     return String(n).padStart(2, "0");
   }
 
+  function stillHTML(app, lazy, fetchAttr, phoneAlt) {
+    const dalt = esc(app.desktopAlt || app.name + " on desktop");
+    const palt = phoneAlt === "" ? "" : esc(app.phoneAlt || app.name + " on a phone");
+    return `<div class="still-well">
+      <figure class="still still-desk">
+        <img class="desk" src="${esc(app.desktop)}" alt="${dalt}" width="1600" height="1000" loading="${lazy}"${fetchAttr} decoding="async">
+        <figcaption>Desktop</figcaption>
+      </figure>
+      <figure class="still still-phone">
+        <img class="phone" src="${esc(app.phone)}" alt="${palt}" width="390" height="844" loading="${lazy}" decoding="async">
+        <figcaption>Phone</figcaption>
+      </figure>
+    </div>`;
+  }
+
   function cardHTML(app, i) {
     const n = pad(i + 1);
     const lazy = i < 2 ? "eager" : "lazy";
-    const fetch = i === 0 ? "high" : "low";
     const fetchAttr = i === 0 ? ' fetchpriority="high"' : "";
     const paid = app.originalPaid ? "Replaces " + app.originalPaid : "";
     return `<article class="card" id="${esc(app.slug)}">
   <a class="still-link" href="${esc(app.pages)}">
-    <div class="still-well">
-      <img class="desk" src="${esc(app.desktop)}" alt="${esc(app.desktopAlt || app.name + " on desktop")}" width="1600" height="1000" loading="${lazy}" fetchpriority="${fetch}" decoding="async">
-      <img class="phone" src="${esc(app.phone)}" alt="${esc(app.phoneAlt || app.name + " on a phone")}" width="390" height="844" loading="${lazy}" decoding="async">
-    </div>
+    ${stillHTML(app, lazy, fetchAttr)}
   </a>
   <div class="card-body">
     <div class="card-top">
@@ -49,10 +61,7 @@
   function featuredHTML(app) {
     if (!app) return "";
     return `<a class="frame-shot still-link" href="${esc(app.pages)}">
-    <div class="still-well">
-      <img class="desk" src="${esc(app.desktop)}" alt="${esc(app.desktopAlt || app.name + " on desktop")}" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
-      <img class="phone" src="${esc(app.phone)}" alt="" width="390" height="844" loading="eager" decoding="async">
-    </div>
+    ${stillHTML(app, "eager", ' fetchpriority="high"', "")}
   </a>
   <p class="frame-cap">
     <span class="kicker">Latest</span>
@@ -79,6 +88,12 @@
 
     if (cases && !cases.querySelector(".card")) {
       cases.innerHTML = apps.map(cardHTML).join("");
+    }
+
+    if (footApps && !footApps.querySelector("a")) {
+      footApps.innerHTML = apps
+        .map((app) => `<a href="${esc(app.pages)}">${esc(app.name)}</a>`)
+        .join("");
     }
   }
 
