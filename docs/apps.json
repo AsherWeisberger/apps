@@ -25,5 +25,14 @@
     "repo": "https://github.com/AsherWeisberger/bestcut",
     "originalPaid": "CapCut",
     "shipped": "2026-08-14"
+  },
+  {
+    "slug": "mattekit",
+    "name": "Mattekit",
+    "job": "Cut the subject out in the tab. Hair-ok. No credits.",
+    "pages": "https://asherweisberger.github.io/mattekit/",
+    "repo": "https://github.com/AsherWeisberger/mattekit",
+    "originalPaid": "Photoroom / remove.bg",
+    "shipped": "2026-08-14"
   }
 ]
