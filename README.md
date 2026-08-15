@@ -4,6 +4,8 @@ A studio index of free, original in-tab apps. No account. No watermark. Files ne
 
 Live: [asherweisberger.github.io/apps](https://asherweisberger.github.io/apps/)
 
+Made by [Asher Weisberger](https://x.com/AsherWeisberger) ([@AsherWeisberger](https://x.com/AsherWeisberger))
+
 This is a catalog, not a dashboard. Each shipped app is a case study with a one-line job, a desktop still, a 390 still, Open, and Source.
 
 ## Add the next daily app
@@ -54,4 +56,4 @@ Then open http://127.0.0.1:8080/
 
 Static HTML, CSS, JS. Fraunces + Sora. Motion palette. No framework, no bundler, no account.
 
-MIT. Copyright 2026 Asher Weisberger. Original work — not affiliated with the paid apps these replace.
+MIT. Copyright 2026 Asher Weisberger ([@AsherWeisberger](https://x.com/AsherWeisberger)). Original work — not affiliated with the paid apps these replace.
