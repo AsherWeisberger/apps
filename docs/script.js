@@ -36,7 +36,7 @@
 
   function cardHTML(app, i) {
     const n = pad(i + 1);
-    const lazy = i < 2 ? "eager" : "lazy";
+    const lazy = "eager";
     const fetchAttr = i === 0 ? ' fetchpriority="high"' : "";
     const paid = app.originalPaid ? "Replaces " + app.originalPaid : "";
     return `<article class="card" id="${esc(app.slug)}">

@@ -47,7 +47,7 @@ def still_html(app: dict, lazy: str, fetch: str = "", phone_alt: str | None = No
 
 def card_html(app: dict, i: int) -> str:
     n = pad(i + 1)
-    lazy = "eager" if i < 2 else "lazy"
+    lazy = "eager"
     fetch = ' fetchpriority="high"' if i == 0 else ""
     slug = html.escape(app["slug"])
     name = html.escape(app["name"])
