@@ -3,6 +3,7 @@
   const apps = Array.isArray(window.APPS) ? window.APPS : [];
   const cases = document.getElementById("cases");
   const index = document.getElementById("index");
+  const featured = document.getElementById("featured");
   const nav = document.getElementById("nav");
   const count = document.getElementById("shipped-count");
 
@@ -17,73 +18,72 @@
     return String(n).padStart(2, "0");
   }
 
-  function kinetic(name) {
-    return esc(name)
-      .split(/\s+/)
-      .map((w) => `<span class="clip"><span class="word">${w}</span></span>`)
-      .join(" ");
+  function cardHTML(app, i) {
+    const n = pad(i + 1);
+    const lazy = i < 2 ? "eager" : "lazy";
+    const fetch = i === 0 ? "high" : "low";
+    const fetchAttr = i === 0 ? ' fetchpriority="high"' : "";
+    const paid = app.originalPaid ? "Replaces " + app.originalPaid : "";
+    return `<article class="card" id="${esc(app.slug)}">
+  <a class="still-link" href="${esc(app.pages)}">
+    <div class="still-well">
+      <img class="desk" src="${esc(app.desktop)}" alt="${esc(app.desktopAlt || app.name + " on desktop")}" width="1600" height="1000" loading="${lazy}" fetchpriority="${fetch}" decoding="async">
+      <img class="phone" src="${esc(app.phone)}" alt="${esc(app.phoneAlt || app.name + " on a phone")}" width="390" height="844" loading="${lazy}" decoding="async">
+    </div>
+  </a>
+  <div class="card-body">
+    <div class="card-top">
+      <p class="kicker">${esc(paid)}</p>
+      <span class="n">${n}</span>
+    </div>
+    <h2>${esc(app.name)}</h2>
+    <p class="job">${esc(app.job)}</p>
+    <div class="actions">
+      <a class="btn open" href="${esc(app.pages)}">Open <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn src" href="${esc(app.repo)}" rel="noopener noreferrer">Source</a>
+    </div>
+  </div>
+</article>`;
   }
 
-  function shipped(iso) {
-    if (!iso) return "";
-    const d = new Date(iso + "T00:00:00");
-    if (Number.isNaN(d.getTime())) return "";
-    const mon = d.toLocaleString("en-US", { month: "short" });
-    return `Shipped ${d.getDate()} ${mon} ${d.getFullYear()}`;
+  function featuredHTML(app) {
+    if (!app) return "";
+    return `<a class="frame-shot still-link" href="${esc(app.pages)}">
+    <div class="still-well">
+      <img class="desk" src="${esc(app.desktop)}" alt="${esc(app.desktopAlt || app.name + " on desktop")}" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+      <img class="phone" src="${esc(app.phone)}" alt="" width="390" height="844" loading="eager" decoding="async">
+    </div>
+  </a>
+  <p class="frame-cap">
+    <span class="kicker">Latest</span>
+    <span class="frame-name">${esc(app.name)}</span>
+    <span class="frame-go">Open →</span>
+  </p>`;
   }
 
   function render() {
-    if (!cases || !index) return;
     if (count) count.textContent = pad(apps.length);
 
-    if (cases.querySelectorAll(".case").length) return;
+    if (index && !index.querySelector("a")) {
+      index.innerHTML = apps
+        .map(
+          (app, i) =>
+            `<a href="#${esc(app.slug)}" data-slug="${esc(app.slug)}"><span class="n">${pad(i + 1)}</span> ${esc(app.name)}</a>`
+        )
+        .join("");
+    }
 
-    index.innerHTML = apps
-      .map(
-        (app, i) =>
-          `<a href="#${esc(app.slug)}" data-slug="${esc(app.slug)}"><span class="n">${pad(i + 1)}</span>${esc(app.name)}</a>`
-      )
-      .join("");
+    if (featured && !featured.querySelector(".frame-shot") && apps.length) {
+      featured.innerHTML = featuredHTML(apps[apps.length - 1]);
+    }
 
-    cases.innerHTML = apps
-      .map((app, i) => {
-        const n = pad(i + 1);
-        const flip = i % 2 === 1 ? " flip" : "";
-        const shown = i === 0 ? " in" : "";
-        const lazy = i === 0 ? "eager" : "lazy";
-        const fetch = i === 0 ? "high" : "low";
-        const when = shipped(app.shipped);
-        return `
-<section class="case${flip}${shown}" id="${esc(app.slug)}" data-n="${n}">
-  <header class="case-head">
-    <p class="idx">${n}</p>
-    <div class="titles">
-      <h2>${kinetic(app.name)}</h2>
-      <p class="job">${esc(app.job)}</p>
-      ${when ? `<p class="meta">${esc(when)}</p>` : ""}
-    </div>
-    <div class="actions">
-      <a class="btn open" href="${esc(app.pages)}">Open live <span class="arr" aria-hidden="true">→</span></a>
-      <a class="btn src" href="${esc(app.repo)}" rel="noopener noreferrer">Source</a>
-    </div>
-  </header>
-  <div class="stills">
-    <figure class="desk">
-      <img src="${esc(app.desktop)}" alt="${esc(app.desktopAlt || app.name + " on desktop")}" width="1600" height="1000" loading="${lazy}" fetchpriority="${fetch}" decoding="async">
-      <figcaption class="cap">Desktop</figcaption>
-    </figure>
-    <figure class="phone">
-      <img src="${esc(app.phone)}" alt="${esc(app.phoneAlt || app.name + " on a phone")}" width="390" height="844" loading="${lazy}" decoding="async">
-      <figcaption class="cap">390</figcaption>
-    </figure>
-  </div>
-</section>`;
-      })
-      .join("");
+    if (cases && !cases.querySelector(".card")) {
+      cases.innerHTML = apps.map(cardHTML).join("");
+    }
   }
 
   function observe() {
-    const nodes = document.querySelectorAll(".case");
+    const nodes = document.querySelectorAll(".card");
     const links = [...document.querySelectorAll("#index a")];
     if (!nodes.length) return;
 
@@ -91,35 +91,9 @@
       links.forEach((a) => a.classList.toggle("is-on", a.dataset.slug === slug));
     };
 
-    const reveal = (el) => el.classList.add("in");
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (nodes[0]) setOn(nodes[0].id);
 
-    if (nodes[0]) {
-      reveal(nodes[0]);
-      setOn(nodes[0].id);
-    }
-    nodes.forEach((el) => {
-      const r = el.getBoundingClientRect();
-      if (r.top < window.innerHeight && r.bottom > 0) reveal(el);
-    });
-
-    if (reduce || !("IntersectionObserver" in window)) {
-      nodes.forEach(reveal);
-      return;
-    }
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            reveal(e.target);
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0 }
-    );
-    nodes.forEach((el) => io.observe(el));
+    if (!("IntersectionObserver" in window)) return;
 
     const spy = new IntersectionObserver(
       (entries) => {

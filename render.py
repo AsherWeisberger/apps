@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-'''Turn apps.json into apps.js and the case-study markup in docs/index.html.'''
+"""Turn apps.json into apps.js and the catalog markup in docs/index.html."""
 from __future__ import annotations
 import html
 import json
 import shutil
-from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -14,85 +13,77 @@ def pad(n: int) -> str:
     return f"{n:02d}"
 
 
-def kinetic(name: str) -> str:
-    parts = []
-    for w in html.escape(name).split():
-        parts.append('<span class="clip"><span class="word">' + w + '</span></span>')
-    return " ".join(parts)
-
-
-def shipped(iso) -> str:
-    if not iso:
-        return ""
-    try:
-        d = datetime.strptime(iso, "%Y-%m-%d")
-    except ValueError:
-        return ""
-    return "Shipped %s %s %s" % (d.day, d.strftime("%b"), d.year)
-
-
 def index_html(apps: list[dict]) -> str:
     bits = []
     for i, app in enumerate(apps, 1):
         slug = html.escape(app["slug"])
         name = html.escape(app["name"])
         bits.append(
-            '<a href="#%s" data-slug="%s"><span class="n">%s</span>%s</a>'
+            '<a href="#%s" data-slug="%s"><span class="n">%s</span> %s</a>'
             % (slug, slug, pad(i), name)
         )
-    return "\n      ".join(bits)
+    return "\n          ".join(bits)
+
+
+def card_html(app: dict, i: int) -> str:
+    n = pad(i + 1)
+    lazy = "eager" if i < 2 else "lazy"
+    fetch = ' fetchpriority="high"' if i == 0 else ""
+    slug = html.escape(app["slug"])
+    name = html.escape(app["name"])
+    job = html.escape(app["job"])
+    pages = html.escape(app["pages"])
+    repo = html.escape(app["repo"])
+    desk = html.escape(app["desktop"])
+    phone = html.escape(app["phone"])
+    dalt = html.escape(app.get("desktopAlt") or (app["name"] + " on desktop"))
+    palt = html.escape(app.get("phoneAlt") or (app["name"] + " on a phone"))
+    paid = html.escape("Replaces " + app["originalPaid"]) if app.get("originalPaid") else ""
+    arrow = chr(8594)
+    return f'''<article class="card" id="{slug}">
+          <a class="still-link" href="{pages}">
+            <div class="still-well">
+              <img class="desk" src="{desk}" alt="{dalt}" width="1600" height="1000" loading="{lazy}"{fetch} decoding="async">
+              <img class="phone" src="{phone}" alt="{palt}" width="390" height="844" loading="{lazy}" decoding="async">
+            </div>
+          </a>
+          <div class="card-body">
+            <div class="card-top">
+              <p class="kicker">{paid}</p>
+              <span class="n">{n}</span>
+            </div>
+            <h2>{name}</h2>
+            <p class="job">{job}</p>
+            <div class="actions">
+              <a class="btn open" href="{pages}">Open <span class="arr" aria-hidden="true">{arrow}</span></a>
+              <a class="btn src" href="{repo}" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>'''
 
 
 def cases_html(apps: list[dict]) -> str:
-    out = []
+    return "\n\n        ".join(card_html(app, i) for i, app in enumerate(apps))
+
+
+def featured_html(app: dict) -> str:
+    pages = html.escape(app["pages"])
+    desk = html.escape(app["desktop"])
+    phone = html.escape(app["phone"])
+    dalt = html.escape(app.get("desktopAlt") or (app["name"] + " on desktop"))
+    name = html.escape(app["name"])
     arrow = chr(8594)
-    for i, app in enumerate(apps):
-        n = pad(i + 1)
-        flip = " flip" if i % 2 else ""
-        shown = " in" if i == 0 else ""
-        lazy = "eager" if i == 0 else "lazy"
-        fetch = ' fetchpriority="high"' if i == 0 else ""
-        slug = html.escape(app["slug"])
-        job = html.escape(app["job"])
-        pages = html.escape(app["pages"])
-        repo = html.escape(app["repo"])
-        desk = html.escape(app["desktop"])
-        phone = html.escape(app["phone"])
-        dalt = html.escape(app.get("desktopAlt") or (app["name"] + " on desktop"))
-        palt = html.escape(app.get("phoneAlt") or (app["name"] + " on a phone"))
-        when = shipped(app.get("shipped"))
-        meta = ('\n          <p class="meta">' + html.escape(when) + "</p>") if when else ""
-        block = '''<section class="case%s%s" id="%s" data-n="%s">
-        <header class="case-head">
-          <p class="idx">%s</p>
-          <div class="titles">
-            <h2>%s</h2>
-            <p class="job">%s</p>%s
+    return f'''<a class="frame-shot still-link" href="{pages}">
+          <div class="still-well">
+            <img class="desk" src="{desk}" alt="{dalt}" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+            <img class="phone" src="{phone}" alt="" width="390" height="844" loading="eager" decoding="async">
           </div>
-          <div class="actions">
-            <a class="btn open" href="%s">Open live <span class="arr" aria-hidden="true">%s</span></a>
-            <a class="btn src" href="%s" rel="noopener noreferrer">Source</a>
-          </div>
-        </header>
-        <div class="stills">
-          <figure class="desk">
-            <img src="%s" alt="%s" width="1600" height="1000" loading="%s"%s decoding="async">
-            <figcaption class="cap">Desktop</figcaption>
-          </figure>
-          <figure class="phone">
-            <img src="%s" alt="%s" width="390" height="844" loading="%s" decoding="async">
-            <figcaption class="cap">390</figcaption>
-          </figure>
-        </div>
-      </section>''' % (
-            flip, shown, slug, n,
-            n, kinetic(app["name"]), job, meta,
-            pages, arrow, repo,
-            desk, dalt, lazy, fetch,
-            phone, palt, lazy,
-        )
-        out.append(block)
-    return "\n\n      ".join(out)
+        </a>
+        <p class="frame-cap">
+          <span class="kicker">Latest</span>
+          <span class="frame-name">{name}</span>
+          <span class="frame-go">Open {arrow}</span>
+        </p>'''
 
 
 def main() -> None:
@@ -103,18 +94,24 @@ def main() -> None:
     src = (ROOT / "src" / "index.html").read_text()
     src = src.replace(
         '<nav class="index" id="index" aria-label="Shipped apps"></nav>',
-        '<nav class="index" id="index" aria-label="Shipped apps">\n      '
+        '<nav class="index" id="index" aria-label="Shipped apps">\n          '
         + index_html(data)
-        + "\n    </nav>",
+        + "\n        </nav>",
     )
     src = src.replace(
-        '<div id="cases"></div>',
-        '<div id="cases">\n      ' + cases_html(data) + "\n    </div>",
+        '<aside class="hero-frame" id="featured"></aside>',
+        '<aside class="hero-frame" id="featured">\n        '
+        + featured_html(data[-1])
+        + "\n      </aside>",
+    )
+    src = src.replace(
+        '<div class="grid" id="cases"></div>',
+        '<div class="grid" id="cases">\n        ' + cases_html(data) + "\n      </div>",
     )
     n = pad(len(data))
     src = src.replace(
-        '<span class="cue-n" id="shipped-count">03</span>',
-        '<span class="cue-n" id="shipped-count">' + n + "</span>",
+        '<span id="shipped-count">04</span>',
+        '<span id="shipped-count">' + n + "</span>",
     )
 
     docs = ROOT / "docs"
