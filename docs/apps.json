@@ -34,5 +34,14 @@
     "repo": "https://github.com/AsherWeisberger/mattekit",
     "originalPaid": "Photoroom / remove.bg",
     "shipped": "2026-08-14"
+  },
+  {
+    "slug": "cinekit",
+    "name": "Cinekit",
+    "job": "Record a take. The kit leans in on the click, mats the frame, exports in the tab.",
+    "pages": "https://asherweisberger.github.io/cinekit/",
+    "repo": "https://github.com/AsherWeisberger/cinekit",
+    "originalPaid": "Screen Studio",
+    "shipped": "2026-08-15"
   }
 ]

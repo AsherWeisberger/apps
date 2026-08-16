@@ -50,5 +50,18 @@
     "phone": "./shots/mattekit/phone.png",
     "desktopAlt": "Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export.",
     "phoneAlt": "Mattekit on a phone: before/after, backdrop swatches, matte sliders, and PNG in the dock."
+  },
+  {
+    "slug": "cinekit",
+    "name": "Cinekit",
+    "job": "Record a take. The kit leans in on the click, mats the frame, exports in the tab.",
+    "pages": "https://asherweisberger.github.io/cinekit/",
+    "repo": "https://github.com/AsherWeisberger/cinekit",
+    "originalPaid": "Screen Studio",
+    "shipped": "2026-08-15",
+    "desktop": "./shots/cinekit/desktop.png",
+    "phone": "./shots/cinekit/phone.png",
+    "desktopAlt": "Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record.",
+    "phoneAlt": "Cinekit on a phone: the studio booth, a trim strip, and Record in the dock."
   }
 ]
