@@ -2,11 +2,9 @@
   document.documentElement.classList.add("js");
   const apps = Array.isArray(window.APPS) ? window.APPS : [];
   const cases = document.getElementById("cases");
-  const index = document.getElementById("index");
   const featured = document.getElementById("featured");
   const footApps = document.getElementById("foot-apps");
   const nav = document.getElementById("nav");
-  const count = document.getElementById("shipped-count");
 
   const esc = (s) =>
     String(s)
@@ -15,44 +13,30 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
-  function pad(n) {
-    return String(n).padStart(2, "0");
+  function stillSrc(app) {
+    return app.still || app.desktop;
   }
 
-  function stillHTML(app, lazy, fetchAttr, phoneAlt) {
-    const dalt = esc(app.desktopAlt || app.name + " on desktop");
-    const palt = phoneAlt === "" ? "" : esc(app.phoneAlt || app.name + " on a phone");
-    return `<div class="still-well">
-      <figure class="still still-desk">
-        <img class="desk" src="${esc(app.desktop)}" alt="${dalt}" width="1600" height="1000" loading="${lazy}"${fetchAttr} decoding="async">
-        <figcaption>Desktop</figcaption>
-      </figure>
-      <figure class="still still-phone">
-        <img class="phone" src="${esc(app.phone)}" alt="${palt}" width="390" height="844" loading="${lazy}" decoding="async">
-        <figcaption>Phone</figcaption>
-      </figure>
-    </div>`;
-  }
-
-  function cardHTML(app, i) {
-    const n = pad(i + 1);
-    const lazy = "eager";
+  function rowHTML(app, i) {
+    const lazy = i < 2 ? "eager" : "lazy";
     const fetchAttr = i === 0 ? ' fetchpriority="high"' : "";
+    const flip = i % 2 === 1 ? " is-flip" : "";
     const paid = app.originalPaid ? "Replaces " + app.originalPaid : "";
-    return `<article class="card" id="${esc(app.slug)}">
-  <a class="still-link" href="${esc(app.pages)}">
-    ${stillHTML(app, lazy, fetchAttr)}
+    const src = esc(stillSrc(app));
+    const alt = esc(app.desktopAlt || app.name + " editor");
+    return `<article class="row${flip}" id="${esc(app.slug)}" style="--i:${i}">
+  <a class="row-still" href="${esc(app.pages)}">
+    <figure>
+      <img src="${src}" alt="${alt}" width="1600" height="1000" loading="${lazy}"${fetchAttr} decoding="async">
+    </figure>
   </a>
-  <div class="card-body">
-    <div class="card-top">
-      <p class="kicker">${esc(paid)}</p>
-      <span class="n">${n}</span>
-    </div>
+  <div class="row-copy">
+    ${paid ? `<p class="kicker">${esc(paid)}</p>` : ""}
     <h2>${esc(app.name)}</h2>
     <p class="job">${esc(app.job)}</p>
     <div class="actions">
       <a class="btn open" href="${esc(app.pages)}">Open <span class="arr" aria-hidden="true">→</span></a>
-      <a class="btn src" href="${esc(app.repo)}" rel="noopener noreferrer">Source</a>
+      <a class="src" href="${esc(app.repo)}" rel="noopener noreferrer">Source</a>
     </div>
   </div>
 </article>`;
@@ -60,36 +44,26 @@
 
   function featuredHTML(app) {
     if (!app) return "";
-    return `<a class="frame-shot still-link" href="${esc(app.pages)}">
-    ${stillHTML(app, "eager", ' fetchpriority="high"', "")}
-  </a>
-  <p class="frame-cap">
-    <span class="kicker">Latest</span>
-    <span class="frame-name">${esc(app.name)}</span>
-    <span class="frame-go">Open →</span>
-  </p>`;
+    const src = esc(stillSrc(app));
+    const alt = esc(app.desktopAlt || app.name + " editor");
+    return `<a class="hero-frame" href="${esc(app.pages)}">
+    <figure>
+      <img src="${src}" alt="${alt}" width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+    </figure>
+    <p class="hero-cap">
+      <span class="kicker">Latest</span>
+      <span class="hero-name">${esc(app.name)}</span>
+    </p>
+  </a>`;
   }
 
   function render() {
-    if (count) count.textContent = pad(apps.length);
-
-    if (index && !index.querySelector("a")) {
-      index.innerHTML = apps
-        .map(
-          (app, i) =>
-            `<a href="#${esc(app.slug)}" data-slug="${esc(app.slug)}"><span class="n">${pad(i + 1)}</span> ${esc(app.name)}</a>`
-        )
-        .join("");
-    }
-
-    if (featured && !featured.querySelector(".frame-shot") && apps.length) {
+    if (featured && !featured.querySelector(".hero-frame") && apps.length) {
       featured.innerHTML = featuredHTML(apps[apps.length - 1]);
     }
-
-    if (cases && !cases.querySelector(".card")) {
-      cases.innerHTML = apps.map(cardHTML).join("");
+    if (cases && !cases.querySelector(".row")) {
+      cases.innerHTML = apps.map(rowHTML).join("");
     }
-
     if (footApps && !footApps.querySelector("a")) {
       footApps.innerHTML = apps
         .map((app) => `<a href="${esc(app.pages)}">${esc(app.name)}</a>`)
@@ -97,29 +71,30 @@
     }
   }
 
-  function observe() {
-    const nodes = document.querySelectorAll(".card");
-    const links = [...document.querySelectorAll("#index a")];
-    if (!nodes.length) return;
+  function settle() {
+    const rows = document.querySelectorAll(".row");
+    if (!rows.length) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce || !("IntersectionObserver" in window)) return;
 
-    const setOn = (slug) => {
-      links.forEach((a) => a.classList.toggle("is-on", a.dataset.slug === slug));
-    };
+    rows.forEach((el) => el.classList.add("will-settle"));
 
-    if (nodes[0]) setOn(nodes[0].id);
-
-    if (!("IntersectionObserver" in window)) return;
-
-    const spy = new IntersectionObserver(
+    const io = new IntersectionObserver(
       (entries) => {
-        const vis = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (vis) setOn(vis.target.id);
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        });
       },
-      { threshold: [0.25, 0.45, 0.7], rootMargin: "-20% 0px -40% 0px" }
+      { threshold: 0.16, rootMargin: "0px 0px -6% 0px" }
     );
-    nodes.forEach((el) => spy.observe(el));
+    rows.forEach((el) => io.observe(el));
+
+    window.setTimeout(() => {
+      rows.forEach((el) => el.classList.add("is-in"));
+    }, 1400);
   }
 
   function onScroll() {
@@ -141,7 +116,7 @@
     const el = document.getElementById(shot);
     if (el) el.scrollIntoView({ block: "center" });
   }
-  observe();
+  settle();
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 })();

@@ -36,216 +36,124 @@
   </header>
 
   <main id="top">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">
-          <span class="ey-line"></span>
-          Studio · <span id="shipped-count">05</span> shipped
-        </p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
         <h1 id="hero-title" class="hero-title">
-          <span class="line">
-            <span class="word" style="--d:.02s">Free apps that</span>
-          </span>
-          <span class="line">
-            <span class="word italic" style="--d:.12s">stay in the tab.</span>
-          </span>
+          Free apps that <em class="italic">stay in the tab.</em>
         </h1>
-        <p class="lede">
-          Original open-source replacements.
-          No account. No watermark. Bytes never leave the browser.
-        </p>
-        <div class="hero-cta">
-          <a class="btn open" href="#work">See the work <span class="arr" aria-hidden="true">→</span></a>
-          <a class="btn src" href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a>
-        </div>
-        <nav class="index" id="index" aria-label="Shipped apps">
-          <a href="#framekit" data-slug="framekit"><span class="n">01</span> Framekit</a>
-          <a href="#stackpdf" data-slug="stackpdf"><span class="n">02</span> StackPDF</a>
-          <a href="#bestcut" data-slug="bestcut"><span class="n">03</span> BestCut</a>
-          <a href="#mattekit" data-slug="mattekit"><span class="n">04</span> Mattekit</a>
-          <a href="#cinekit" data-slug="cinekit"><span class="n">05</span> Cinekit</a>
-        </nav>
       </div>
-      <aside class="hero-frame" id="featured">
-        <a class="frame-shot still-link" href="https://asherweisberger.github.io/cinekit/">
-          <div class="still-well">
-              <figure class="still still-desk">
-                <img class="desk" src="./shots/cinekit/desktop.png" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
-                <figcaption>Desktop</figcaption>
-              </figure>
-              <figure class="still still-phone">
-                <img class="phone" src="./shots/cinekit/phone.png" alt="" width="390" height="844" loading="eager" decoding="async">
-                <figcaption>Phone</figcaption>
-              </figure>
-            </div>
+      <div class="wrap">
+        <aside class="hero-still" id="featured">
+        <a class="hero-frame" href="https://asherweisberger.github.io/cinekit/">
+          <figure>
+            <img src="./shots/cinekit/desktop.png" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+          </figure>
+          <p class="hero-cap">
+            <span class="kicker">Latest</span>
+            <span class="hero-name">Cinekit</span>
+          </p>
         </a>
-        <p class="frame-cap">
-          <span class="kicker">Latest</span>
-          <span class="frame-name">Cinekit</span>
-          <span class="frame-go">Open →</span>
-        </p>
       </aside>
+      </div>
     </section>
 
     <section class="work" id="work" aria-label="Shipped apps">
-      <div class="wrap">
-        <header class="work-head">
-          <p class="kicker">The work</p>
-          <p class="work-lede">In-tab tools. Open one.</p>
-        </header>
-        <div class="grid" id="cases">
-        <article class="card" id="framekit">
-          <a class="still-link" href="https://asherweisberger.github.io/framekit/">
-            <div class="still-well">
-              <figure class="still still-desk">
-                <img class="desk" src="./shots/framekit/desktop.png" alt="Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download." width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
-                <figcaption>Desktop</figcaption>
-              </figure>
-              <figure class="still still-phone">
-                <img class="phone" src="./shots/framekit/phone.png" alt="Framekit on a phone: paste a screenshot, pick a background, set padding, download." width="390" height="844" loading="eager" decoding="async">
-                <figcaption>Phone</figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="card-body">
-            <div class="card-top">
-              <p class="kicker">Replaces Xnapper</p>
-              <span class="n">01</span>
-            </div>
-            <h2>Framekit</h2>
-            <p class="job">Stage a screenshot. Padding, shadow, a studio background — then download.</p>
-            <div class="actions">
-              <a class="btn open" href="https://asherweisberger.github.io/framekit/">Open <span class="arr" aria-hidden="true">→</span></a>
-              <a class="btn src" href="https://github.com/AsherWeisberger/framekit" rel="noopener noreferrer">Source</a>
-            </div>
+      <div class="rows" id="cases">
+      <article class="row" id="framekit" style="--i:0">
+        <a class="row-still" href="https://asherweisberger.github.io/framekit/">
+          <figure>
+            <img src="./shots/framekit/desktop.png" alt="Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download." width="1600" height="1000" loading="eager" fetchpriority="high" decoding="async">
+          </figure>
+        </a>
+        <div class="row-copy">
+          <p class="kicker">Replaces Xnapper</p>
+          <h2>Framekit</h2>
+          <p class="job">Stage a screenshot. Padding, shadow, a studio background — then download.</p>
+          <div class="actions">
+            <a class="btn open" href="https://asherweisberger.github.io/framekit/">Open <span class="arr" aria-hidden="true">→</span></a>
+            <a class="src" href="https://github.com/AsherWeisberger/framekit" rel="noopener noreferrer">Source</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card" id="stackpdf">
-          <a class="still-link" href="https://asherweisberger.github.io/stackpdf/">
-            <div class="still-well">
-              <figure class="still still-desk">
-                <img class="desk" src="./shots/stackpdf/desktop.png" alt="StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab." width="1600" height="1000" loading="eager" decoding="async">
-                <figcaption>Desktop</figcaption>
-              </figure>
-              <figure class="still still-phone">
-                <img class="phone" src="./shots/stackpdf/phone.png" alt="StackPDF on a phone: three files in a stack, pages selected, merge and extract in the dock." width="390" height="844" loading="eager" decoding="async">
-                <figcaption>Phone</figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="card-body">
-            <div class="card-top">
-              <p class="kicker">Replaces Smallpdf</p>
-              <span class="n">02</span>
-            </div>
-            <h2>StackPDF</h2>
-            <p class="job">Merge, split, and save as Word. The files never leave this tab.</p>
-            <div class="actions">
-              <a class="btn open" href="https://asherweisberger.github.io/stackpdf/">Open <span class="arr" aria-hidden="true">→</span></a>
-              <a class="btn src" href="https://github.com/AsherWeisberger/stackpdf" rel="noopener noreferrer">Source</a>
-            </div>
+      <article class="row is-flip" id="stackpdf" style="--i:1">
+        <a class="row-still" href="https://asherweisberger.github.io/stackpdf/">
+          <figure>
+            <img src="./shots/stackpdf/desktop.png" alt="StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab." width="1600" height="1000" loading="eager" decoding="async">
+          </figure>
+        </a>
+        <div class="row-copy">
+          <p class="kicker">Replaces Smallpdf</p>
+          <h2>StackPDF</h2>
+          <p class="job">Merge, split, and save as Word. The files never leave this tab.</p>
+          <div class="actions">
+            <a class="btn open" href="https://asherweisberger.github.io/stackpdf/">Open <span class="arr" aria-hidden="true">→</span></a>
+            <a class="src" href="https://github.com/AsherWeisberger/stackpdf" rel="noopener noreferrer">Source</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card" id="bestcut">
-          <a class="still-link" href="https://asherweisberger.github.io/bestcut/">
-            <div class="still-well">
-              <figure class="still still-desk">
-                <img class="desk" src="./shots/bestcut/desktop.png" alt="BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock." width="1600" height="1000" loading="eager" decoding="async">
-                <figcaption>Desktop</figcaption>
-              </figure>
-              <figure class="still still-phone">
-                <img class="phone" src="./shots/bestcut/phone.png" alt="BestCut on a phone: 9:16 preview, four-track timeline, and the edit dock." width="390" height="844" loading="eager" decoding="async">
-                <figcaption>Phone</figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="card-body">
-            <div class="card-top">
-              <p class="kicker">Replaces CapCut</p>
-              <span class="n">03</span>
-            </div>
-            <h2>BestCut</h2>
-            <p class="job">A local 9:16 editor. Split, title, caption, export. On a phone.</p>
-            <div class="actions">
-              <a class="btn open" href="https://asherweisberger.github.io/bestcut/">Open <span class="arr" aria-hidden="true">→</span></a>
-              <a class="btn src" href="https://github.com/AsherWeisberger/bestcut" rel="noopener noreferrer">Source</a>
-            </div>
+      <article class="row" id="bestcut" style="--i:2">
+        <a class="row-still" href="https://asherweisberger.github.io/bestcut/">
+          <figure>
+            <img src="./shots/bestcut/desktop.png" alt="BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock." width="1600" height="1000" loading="lazy" decoding="async">
+          </figure>
+        </a>
+        <div class="row-copy">
+          <p class="kicker">Replaces CapCut</p>
+          <h2>BestCut</h2>
+          <p class="job">A local 9:16 editor. Split, title, caption, export. On a phone.</p>
+          <div class="actions">
+            <a class="btn open" href="https://asherweisberger.github.io/bestcut/">Open <span class="arr" aria-hidden="true">→</span></a>
+            <a class="src" href="https://github.com/AsherWeisberger/bestcut" rel="noopener noreferrer">Source</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card" id="mattekit">
-          <a class="still-link" href="https://asherweisberger.github.io/mattekit/">
-            <div class="still-well">
-              <figure class="still still-desk">
-                <img class="desk" src="./shots/mattekit/desktop.png" alt="Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export." width="1600" height="1000" loading="eager" decoding="async">
-                <figcaption>Desktop</figcaption>
-              </figure>
-              <figure class="still still-phone">
-                <img class="phone" src="./shots/mattekit/phone.png" alt="Mattekit on a phone: before/after, backdrop swatches, matte sliders, and PNG in the dock." width="390" height="844" loading="eager" decoding="async">
-                <figcaption>Phone</figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="card-body">
-            <div class="card-top">
-              <p class="kicker">Replaces Photoroom / remove.bg</p>
-              <span class="n">04</span>
-            </div>
-            <h2>Mattekit</h2>
-            <p class="job">Cut the subject out in the tab. Hair-ok. No credits.</p>
-            <div class="actions">
-              <a class="btn open" href="https://asherweisberger.github.io/mattekit/">Open <span class="arr" aria-hidden="true">→</span></a>
-              <a class="btn src" href="https://github.com/AsherWeisberger/mattekit" rel="noopener noreferrer">Source</a>
-            </div>
+      <article class="row is-flip" id="mattekit" style="--i:3">
+        <a class="row-still" href="https://asherweisberger.github.io/mattekit/">
+          <figure>
+            <img src="./shots/mattekit/desktop.png" alt="Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export." width="1600" height="1000" loading="lazy" decoding="async">
+          </figure>
+        </a>
+        <div class="row-copy">
+          <p class="kicker">Replaces Photoroom / remove.bg</p>
+          <h2>Mattekit</h2>
+          <p class="job">Cut the subject out in the tab. Hair-ok. No credits.</p>
+          <div class="actions">
+            <a class="btn open" href="https://asherweisberger.github.io/mattekit/">Open <span class="arr" aria-hidden="true">→</span></a>
+            <a class="src" href="https://github.com/AsherWeisberger/mattekit" rel="noopener noreferrer">Source</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card" id="cinekit">
-          <a class="still-link" href="https://asherweisberger.github.io/cinekit/">
-            <div class="still-well">
-              <figure class="still still-desk">
-                <img class="desk" src="./shots/cinekit/desktop.png" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1600" height="1000" loading="eager" decoding="async">
-                <figcaption>Desktop</figcaption>
-              </figure>
-              <figure class="still still-phone">
-                <img class="phone" src="./shots/cinekit/phone.png" alt="Cinekit on a phone: the studio booth, a trim strip, and Record in the dock." width="390" height="844" loading="eager" decoding="async">
-                <figcaption>Phone</figcaption>
-              </figure>
-            </div>
-          </a>
-          <div class="card-body">
-            <div class="card-top">
-              <p class="kicker">Replaces Screen Studio</p>
-              <span class="n">05</span>
-            </div>
-            <h2>Cinekit</h2>
-            <p class="job">Record a take. The kit leans in on the click, mats the frame, exports in the tab.</p>
-            <div class="actions">
-              <a class="btn open" href="https://asherweisberger.github.io/cinekit/">Open <span class="arr" aria-hidden="true">→</span></a>
-              <a class="btn src" href="https://github.com/AsherWeisberger/cinekit" rel="noopener noreferrer">Source</a>
-            </div>
+      <article class="row" id="cinekit" style="--i:4">
+        <a class="row-still" href="https://asherweisberger.github.io/cinekit/">
+          <figure>
+            <img src="./shots/cinekit/desktop.png" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1600" height="1000" loading="lazy" decoding="async">
+          </figure>
+        </a>
+        <div class="row-copy">
+          <p class="kicker">Replaces Screen Studio</p>
+          <h2>Cinekit</h2>
+          <p class="job">Record a take. The kit leans in on the click, mats the frame, exports in the tab.</p>
+          <div class="actions">
+            <a class="btn open" href="https://asherweisberger.github.io/cinekit/">Open <span class="arr" aria-hidden="true">→</span></a>
+            <a class="src" href="https://github.com/AsherWeisberger/cinekit" rel="noopener noreferrer">Source</a>
           </div>
-        </article>
-      </div>
-      </div>
+        </div>
+      </article>
+    </div>
     </section>
   </main>
 
   <footer class="foot">
     <div class="wrap">
-      <div class="foot-inner">
-        <p class="foot-mark">
-          <span class="wm-a">Asher</span>
-          <span class="wm-b">apps</span>
-        </p>
-        <p class="foot-credit">
-          <span>Made by Asher Weisberger</span>
-          <span class="dot" aria-hidden="true"></span>
-          <a href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a>
-        </p>
-      </div>
+      <p class="foot-credit">
+        <span>Made by Asher Weisberger</span>
+        <span class="dot" aria-hidden="true"></span>
+        <a href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a>
+      </p>
       <nav class="foot-apps" id="foot-apps" aria-label="Open an app">
         <a href="https://asherweisberger.github.io/framekit/">Framekit</a>
         <a href="https://asherweisberger.github.io/stackpdf/">StackPDF</a>

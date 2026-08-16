@@ -1,12 +1,12 @@
 # Asher · apps
 
-A studio index of free, original in-tab apps. No account. No watermark. Files never leave the browser.
+A one-scroll studio catalog of free, original in-tab apps. No account. No watermark. Files never leave the browser.
 
 Live: [asherweisberger.github.io/apps](https://asherweisberger.github.io/apps/)
 
 Made by [Asher Weisberger](https://x.com/AsherWeisberger) ([@AsherWeisberger](https://x.com/AsherWeisberger))
 
-This is a catalog, not a dashboard. Each shipped app is a card: desktop still, 390 still, one-line job, Open, and Source.
+This is a case-row catalog, not a dashboard. The hero is one line plus the latest product still. Each shipped app is then a full-bleed row: one directed desktop still, the name, one sentence, Open, and a quiet Source link. Rows alternate still-left / still-right. Order in `apps.json` is the order on the page. The last entry is the hero still.
 
 ## Add the next daily app
 
@@ -31,6 +31,8 @@ Nightly builds should **append**, not rewrite the page by hand.
 }
 ```
 
+An optional `"still"` field overrides `"desktop"` if the row should use a different directed frame.
+
 3. Run `./build.sh`. It writes `apps.js`, copies the site into `docs/`, and writes a slim machine list at `docs/apps.json`:
 
 ```
@@ -39,9 +41,7 @@ Nightly builds should **append**, not rewrite the page by hand.
 
 4. Commit `apps.json`, `apps.js`, `shots/<slug>/`, and everything under `docs/`. Push `main`. Pages serves `/docs`.
 
-The page reads `apps.js` (`window.APPS`) and renders the case studies. Order in the JSON is the order on the page.
-
-Do not add GitHub Actions workflows. This repo uses legacy Pages from `main` `/docs`.
+`render.py` walks the JSON. A fifth app becomes a fifth row and the new hero still. Do not add GitHub Actions workflows. This repo uses legacy Pages from `main` `/docs`.
 
 ## Local
 
