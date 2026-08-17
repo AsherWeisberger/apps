@@ -43,5 +43,14 @@
     "repo": "https://github.com/AsherWeisberger/cinekit",
     "originalPaid": "Screen Studio",
     "shipped": "2026-08-15"
+  },
+  {
+    "slug": "speakkit",
+    "name": "Speakkit",
+    "job": "Hold to talk. The page writes in this tab. Copy when the line is right.",
+    "pages": "https://asherweisberger.github.io/speakkit/",
+    "repo": "https://github.com/AsherWeisberger/speakkit",
+    "originalPaid": "Wispr Flow",
+    "shipped": "2026-08-16"
   }
 ]

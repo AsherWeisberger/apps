@@ -63,5 +63,18 @@ window.APPS = [
     "phone": "./shots/cinekit/phone.png",
     "desktopAlt": "Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record.",
     "phoneAlt": "Cinekit on a phone: the studio booth, a trim strip, and Record in the dock."
+  },
+  {
+    "slug": "speakkit",
+    "name": "Speakkit",
+    "job": "Hold to talk. The page writes in this tab. Copy when the line is right.",
+    "pages": "https://asherweisberger.github.io/speakkit/",
+    "repo": "https://github.com/AsherWeisberger/speakkit",
+    "originalPaid": "Wispr Flow",
+    "shipped": "2026-08-16",
+    "desktop": "./shots/speakkit/desktop.png",
+    "phone": "./shots/speakkit/phone.png",
+    "desktopAlt": "Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes.",
+    "phoneAlt": "Speakkit on a phone: the page, punctuation chips, and a giant hold-to-talk dock."
   }
 ];
