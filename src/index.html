@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#F0EFEC">
+  <meta name="theme-color" content="#F7F5F2">
   <meta name="description" content="Free apps by Asher Weisberger. Original open-source replacements. No account, no watermark. Files stay in the tab.">
   <meta name="author" content="Asher Weisberger">
   <meta name="twitter:creator" content="@AsherWeisberger">
@@ -14,55 +14,25 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Asher · apps</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400&family=Sora:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a class="skip" href="#work">Skip to the apps</a>
-
-  <header class="nav" id="nav">
-    <div class="wrap nav-inner">
-      <a class="wordmark" href="#top">
-        <span class="wm-a">Asher</span>
-        <span class="wm-b">apps</span>
-      </a>
-      <nav class="nav-links" aria-label="Studio">
-        <a href="#work">Work</a>
-        <a class="nav-at" href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a>
-      </nav>
-    </div>
-  </header>
-
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+    <header class="hero">
       <div class="wrap">
-        <h1 id="hero-title" class="hero-title">
-          Free apps that <em class="italic">stay in the tab.</em>
-        </h1>
+        <h1>Free apps that stay in the tab.</h1>
+        <p class="byline">Asher Weisberger · <a href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a></p>
       </div>
-      <div class="wrap">
-        <aside class="hero-still" id="featured"></aside>
-      </div>
-    </section>
+    </header>
 
-    <section class="work" id="work" aria-label="Shipped apps">
-      <div class="rows" id="cases"></div>
+    <section class="shop" aria-label="Apps">
+      <div class="wrap">
+        <div class="grid" id="grid"></div>
+      </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap">
-      <p class="foot-credit">
-        <span>Made by Asher Weisberger</span>
-        <span class="dot" aria-hidden="true"></span>
-        <a href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a>
-      </p>
-      <nav class="foot-apps" id="foot-apps" aria-label="Open an app"></nav>
-      <p class="foot-meta">MIT · original work</p>
-    </div>
-  </footer>
+  <a class="island" id="island" href="#"></a>
 
   <script src="./apps.js"></script>
   <script src="./script.js"></script>

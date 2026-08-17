@@ -1,12 +1,12 @@
 # Asher · apps
 
-A one-scroll studio catalog of free, original in-tab apps. No account. No watermark. Files never leave the browser.
+A simple, clean storefront of free, original in-tab apps. No account. No watermark. Files never leave the browser.
 
 Live: [asherweisberger.github.io/apps](https://asherweisberger.github.io/apps/)
 
 Made by [Asher Weisberger](https://x.com/AsherWeisberger) ([@AsherWeisberger](https://x.com/AsherWeisberger))
 
-This is a case-row catalog, not a dashboard. The hero is one line plus the latest product still. Each shipped app is then a full-bleed row: one directed desktop still, the name, one sentence, Open, and a quiet Source link. Rows alternate still-left / still-right. Order in `apps.json` is the order on the page. The last entry is the hero still.
+The page is one warm sheet of paper: a centered headline, a credit line, and a product grid. Each app is a square still of the live UI, the name, what it replaces, a full-width Open pill, and a quiet Source link. JSON order is oldest → newest; the grid shows newest first.
 
 ## Add the next daily app
 
@@ -23,7 +23,7 @@ Nightly builds should **append**, not rewrite the page by hand.
   "pages": "https://asherweisberger.github.io/newapp/",
   "repo": "https://github.com/AsherWeisberger/newapp",
   "originalPaid": "The paid job it replaces",
-  "shipped": "2026-08-15",
+  "shipped": "2026-08-17",
   "desktop": "./shots/newapp/desktop.png",
   "phone": "./shots/newapp/phone.png",
   "desktopAlt": "NewApp on desktop.",
@@ -31,7 +31,7 @@ Nightly builds should **append**, not rewrite the page by hand.
 }
 ```
 
-An optional `"still"` field overrides `"desktop"` if the row should use a different directed frame.
+`./build.sh` crops `desktop.png` into a square packshot at `shots/<slug>/pack.png`. Set `"still"` to skip that and use your own frame. `"packAlign": "right"` (or `"left"`) shifts the square crop.
 
 3. Run `./build.sh`. It writes `apps.js`, copies the site into `docs/`, and writes a slim machine list at `docs/apps.json`:
 
@@ -41,7 +41,7 @@ An optional `"still"` field overrides `"desktop"` if the row should use a differ
 
 4. Commit `apps.json`, `apps.js`, `shots/<slug>/`, and everything under `docs/`. Push `main`. Pages serves `/docs`.
 
-`render.py` walks the JSON. A fifth app becomes a fifth row and the new hero still. Do not add GitHub Actions workflows. This repo uses legacy Pages from `main` `/docs`.
+Do not add GitHub Actions workflows. This repo uses legacy Pages from `main` `/docs`.
 
 ## Local
 
@@ -54,6 +54,8 @@ Then open http://127.0.0.1:8080/
 
 ## Stack
 
-Static HTML, CSS, JS. Cream catalog on #F0EFEC. One accent #D9CCAC. Sora 400/600 + Fraunces italic. No framework, no bundler, no account.
+Static HTML, CSS, JS. Warm paper `#F7F5F2`, near-black type, self-hosted Geist Sans (SIL OFL). No framework, no bundler, no account.
 
 MIT. Copyright 2026 Asher Weisberger ([@AsherWeisberger](https://x.com/AsherWeisberger)). Original work — not affiliated with the paid apps these replace.
+
+Geist Sans © 2023 Vercel, SIL Open Font License 1.1. See `src/fonts/LICENSE`.

@@ -10,7 +10,8 @@ window.APPS = [
     "desktop": "./shots/framekit/desktop.png",
     "phone": "./shots/framekit/phone.png",
     "desktopAlt": "Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download.",
-    "phoneAlt": "Framekit on a phone: paste a screenshot, pick a background, set padding, download."
+    "phoneAlt": "Framekit on a phone: paste a screenshot, pick a background, set padding, download.",
+    "packAlign": "right"
   },
   {
     "slug": "stackpdf",
@@ -44,7 +45,7 @@ window.APPS = [
     "job": "Cut the subject out in the tab. Hair-ok. No credits.",
     "pages": "https://asherweisberger.github.io/mattekit/",
     "repo": "https://github.com/AsherWeisberger/mattekit",
-    "originalPaid": "Photoroom / remove.bg",
+    "originalPaid": "Photoroom",
     "shipped": "2026-08-14",
     "desktop": "./shots/mattekit/desktop.png",
     "phone": "./shots/mattekit/phone.png",
