@@ -56,30 +56,32 @@ def still_img(app: dict, lazy: str, fetch: str = "") -> str:
     src = html.escape(still_src(app))
     alt = html.escape(app.get("desktopAlt") or app["name"])
     return (
-        '<img src="%s" alt="%s" width="1200" height="1200" loading="%s"%s decoding="async">'
+        '<img src="%s" alt="%s" width="1200" height="750" loading="%s"%s decoding="async">'
         % (src, alt, lazy, fetch)
     )
 
 
 def card_html(app: dict, i: int) -> str:
-    lazy = "eager"
+    lazy = "eager" if i < 2 else "lazy"
     fetch = ' fetchpriority="high"' if i == 0 else ""
     slug = html.escape(app["slug"])
     name = html.escape(app["name"])
     pages = html.escape(app["pages"])
     repo = html.escape(app["repo"])
-    paid = html.escape("Replaces " + app["originalPaid"]) if app.get("originalPaid") else html.escape(app.get("job") or "")
+    job = html.escape(app.get("job") or "")
+    kind = html.escape("Original alternative" if app.get("originalPaid") else "Browser utility")
+    img = still_img(app, lazy, fetch)
     return (
-        '<article class="card" id="%s">\n'
-        '          <a class="still" href="%s">\n'
+        '<article class="card reveal" id="%s">\n'
+        '          <div class="card-top"><span class="number">0%d</span><span>%s</span></div>\n'
+        '          <a class="still" href="%s" aria-label="Open %s">\n'
         "            %s\n"
         "          </a>\n"
-        "          <h2>%s</h2>\n"
-        '          <p class="meta">%s</p>\n'
-        '          <a class="open" href="%s">Open</a>\n'
-        '          <a class="src" href="%s" rel="noopener noreferrer">Source</a>\n'
+        '          <div class="card-info"><div><h2>%s</h2><p class="card-copy">%s</p></div>'
+        '<div class="links"><a class="button primary" href="%s">Open app ↗</a>'
+        '<a class="button" href="%s" rel="noopener noreferrer">Source</a></div></div>\n'
         "        </article>"
-        % (slug, pages, still_img(app, lazy, fetch), name, paid, pages, repo)
+        % (slug, i + 1, kind, pages, name, img, name, job, pages, repo)
     )
 
 

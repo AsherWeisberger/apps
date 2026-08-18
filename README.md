@@ -1,12 +1,12 @@
 # Asher · apps
 
-A simple, clean storefront of free, original in-tab apps. No account. No watermark. Files never leave the browser.
+A dark editorial collection of free, original in-tab apps. No account. No watermark. Files never leave the browser.
 
 Live: [asherweisberger.github.io/apps](https://asherweisberger.github.io/apps/)
 
 Made by [Asher Weisberger](https://x.com/AsherWeisberger) ([@AsherWeisberger](https://x.com/AsherWeisberger))
 
-The page is one warm sheet of paper: a centered headline, a credit line, and a product grid. Each app is a square still of the live UI, the name, what it replaces, a full-width Open pill, and a quiet Source link. JSON order is oldest → newest; the grid shows newest first.
+The page is a tight dark editorial: Motion palette (`#0D0F14` ink, `#D9CCAC` sand), a short hero, then the apps. Each project is a still of the live UI, the job, Open, and Source. JSON order is oldest → newest; the grid shows newest first.
 
 ## Add the next daily app
 
@@ -54,7 +54,7 @@ Then open http://127.0.0.1:8080/
 
 ## Stack
 
-Static HTML, CSS, JS. Warm paper `#F7F5F2`, near-black type, self-hosted Geist Sans (SIL OFL). No framework, no bundler, no account.
+Static HTML, CSS, JS. Motion palette on a dark field, self-hosted Geist Sans (SIL OFL). No framework, no bundler, no account.
 
 MIT. Copyright 2026 Asher Weisberger ([@AsherWeisberger](https://x.com/AsherWeisberger)). Original work — not affiliated with the paid apps these replace.
 
