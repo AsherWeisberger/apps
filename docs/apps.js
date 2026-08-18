@@ -77,5 +77,18 @@ window.APPS = [
     "phone": "./shots/speakkit/phone.png",
     "desktopAlt": "Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes.",
     "phoneAlt": "Speakkit on a phone: the page, punctuation chips, and a giant hold-to-talk dock."
+  },
+  {
+    "slug": "swatchkit",
+    "name": "Swatchkit",
+    "job": "A color book in the tab. Shuffle, lock, pull from a photo, export CSS. Colors stay here.",
+    "pages": "https://asherweisberger.github.io/swatchkit/",
+    "repo": "https://github.com/AsherWeisberger/swatchkit",
+    "originalPaid": "Coolors Pro",
+    "shipped": "2026-08-17",
+    "desktop": "./shots/swatchkit/desktop.png",
+    "phone": "./shots/swatchkit/phone.png",
+    "desktopAlt": "Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle.",
+    "phoneAlt": "Swatchkit on a phone: one chip fills the sheet, hex on a cream label, Shuffle in the dock."
   }
 ];
