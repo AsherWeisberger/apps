@@ -90,5 +90,18 @@ window.APPS = [
     "phone": "./shots/swatchkit/phone.png",
     "desktopAlt": "Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle.",
     "phoneAlt": "Swatchkit on a phone: one chip fills the sheet, hex on a cream label, Shuffle in the dock."
+  },
+  {
+    "slug": "gleamkit",
+    "name": "Gleamkit",
+    "job": "Animated code shots in the tab. Steps, typewriter, PNG and video. The snippet never leaves.",
+    "pages": "https://asherweisberger.github.io/gleamkit/",
+    "repo": "https://github.com/AsherWeisberger/gleamkit",
+    "originalPaid": "Snappify",
+    "shipped": "2026-08-18",
+    "desktop": "./shots/gleamkit/desktop.png",
+    "phone": "./shots/gleamkit/phone.png",
+    "desktopAlt": "Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom.",
+    "phoneAlt": "Gleamkit on a phone: the code shot fills the sheet, Play in the dock."
   }
 ];
