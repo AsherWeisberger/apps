@@ -103,5 +103,18 @@
     "phone": "./shots/gleamkit/phone.png",
     "desktopAlt": "Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom.",
     "phoneAlt": "Gleamkit on a phone: the code shot fills the sheet, Play in the dock."
+  },
+  {
+    "slug": "crushkit",
+    "name": "Crushkit",
+    "job": "Drop a photo. Get a smaller file. Nothing uploaded. The picture never leaves the tab.",
+    "pages": "https://asherweisberger.github.io/crushkit/",
+    "repo": "https://github.com/AsherWeisberger/crushkit",
+    "originalPaid": "TinyPNG",
+    "shipped": "2026-08-19",
+    "desktop": "./shots/crushkit/desktop.png",
+    "phone": "./shots/crushkit/phone.png",
+    "desktopAlt": "Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download.",
+    "phoneAlt": "Crushkit on a phone: the crushed photo fills the sheet, 1.8 MB to 297 KB, Crush in the dock."
   }
 ]

@@ -70,5 +70,14 @@
     "repo": "https://github.com/AsherWeisberger/gleamkit",
     "originalPaid": "Snappify",
     "shipped": "2026-08-18"
+  },
+  {
+    "slug": "crushkit",
+    "name": "Crushkit",
+    "job": "Drop a photo. Get a smaller file. Nothing uploaded. The picture never leaves the tab.",
+    "pages": "https://asherweisberger.github.io/crushkit/",
+    "repo": "https://github.com/AsherWeisberger/crushkit",
+    "originalPaid": "TinyPNG",
+    "shipped": "2026-08-19"
   }
 ]
