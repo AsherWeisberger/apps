@@ -79,5 +79,14 @@
     "repo": "https://github.com/AsherWeisberger/crushkit",
     "originalPaid": "TinyPNG",
     "shipped": "2026-08-19"
+  },
+  {
+    "slug": "signkit",
+    "name": "Signkit",
+    "job": "Open a PDF. Sign it. Download it. Nothing uploaded. The file never leaves the tab.",
+    "pages": "https://asherweisberger.github.io/signkit/",
+    "repo": "https://github.com/AsherWeisberger/signkit",
+    "originalPaid": "DocuSign",
+    "shipped": "2026-08-20"
   }
 ]

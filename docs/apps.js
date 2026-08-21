@@ -116,5 +116,19 @@ window.APPS = [
     "phone": "./shots/crushkit/phone.png",
     "desktopAlt": "Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download.",
     "phoneAlt": "Crushkit on a phone: the crushed photo fills the sheet, 1.8 MB to 297 KB, Crush in the dock."
+  },
+  {
+    "slug": "signkit",
+    "name": "Signkit",
+    "job": "Open a PDF. Sign it. Download it. Nothing uploaded. The file never leaves the tab.",
+    "pages": "https://asherweisberger.github.io/signkit/",
+    "repo": "https://github.com/AsherWeisberger/signkit",
+    "originalPaid": "DocuSign",
+    "shipped": "2026-08-20",
+    "desktop": "./shots/signkit/desktop.png",
+    "phone": "./shots/signkit/phone.png",
+    "desktopAlt": "Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download.",
+    "phoneAlt": "Signkit on a phone: the signed page fills the sheet, Sign Type Date Save in the dock.",
+    "packAlign": "center"
   }
 ];
