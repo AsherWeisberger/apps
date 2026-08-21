@@ -2,8 +2,9 @@
 """Turn apps.json into apps.js and the storefront markup in docs/.
 
 Append one object to apps.json and re-run ./build.sh.
-JSON order is oldest → newest. The page shows newest first.
+JSON order is oldest -> newest. The page shows newest first.
 Packshots are square crops of each desktop still (shots/<slug>/pack.png).
+card.webp / phone.webp are the gallery stills (fast, real UI).
 An optional "still" field skips pack generation and uses that path instead.
 Optional "packAlign": "right" | "left" | "center" (default center).
 """
@@ -18,6 +19,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 PACK_SIZE = 1200
+CARD_WIDTH = 1440
+PHONE_WIDTH = 780
 
 
 def pack_path(app: dict) -> Path:
@@ -27,7 +30,11 @@ def pack_path(app: dict) -> Path:
 def still_src(app: dict) -> str:
     if app.get("still"):
         return app["still"]
-    return "./shots/%s/pack.png" % app["slug"]
+    return "./shots/%s/card.webp" % app["slug"]
+
+
+def phone_src(app: dict) -> str:
+    return "./shots/%s/phone.webp" % app["slug"]
 
 
 def make_pack(app: dict) -> None:
@@ -52,13 +59,29 @@ def make_pack(app: dict) -> None:
     crop.save(dest, "PNG", optimize=True)
 
 
-def still_img(app: dict, lazy: str, fetch: str = "") -> str:
-    src = html.escape(still_src(app))
-    alt = html.escape(app.get("desktopAlt") or app["name"])
-    return (
-        '<img src="%s" alt="%s" width="1200" height="750" loading="%s"%s decoding="async">'
-        % (src, alt, lazy, fetch)
-    )
+def make_webp(src: Path, dest: Path, max_w: int, quality: int = 78) -> None:
+    im = Image.open(src).convert("RGB")
+    w, h = im.size
+    if w > max_w:
+        nh = max(1, int(round(h * max_w / w)))
+        im = im.resize((max_w, nh), Image.Resampling.LANCZOS)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dest, "WEBP", quality=quality, method=6)
+
+
+def make_stills(app: dict) -> None:
+    slug = app["slug"]
+    desktop = ROOT / app["desktop"].lstrip("./")
+    phone = ROOT / app["phone"].lstrip("./")
+    folder = ROOT / "shots" / slug
+    if desktop.exists() and not app.get("still"):
+        make_webp(desktop, folder / "card.webp", CARD_WIDTH, 78)
+    if phone.exists():
+        make_webp(phone, folder / "phone.webp", PHONE_WIDTH, 78)
+
+
+def num(i: int) -> str:
+    return "%02d" % (i + 1)
 
 
 def card_html(app: dict, i: int) -> str:
@@ -69,26 +92,44 @@ def card_html(app: dict, i: int) -> str:
     pages = html.escape(app["pages"])
     repo = html.escape(app["repo"])
     job = html.escape(app.get("job") or "")
-    kind = html.escape("Original alternative" if app.get("originalPaid") else "Browser utility")
-    img = still_img(app, lazy, fetch)
+    kicker = html.escape(app.get("kicker") or ("Original alternative" if app.get("originalPaid") else "Browser utility"))
+    alt = html.escape(app.get("desktopAlt") or app["name"])
+    desk = html.escape(still_src(app))
+    phone = html.escape(phone_src(app))
+    featured = " featured" if i == 0 else ""
+    device = (
+        '<img class="device" src="%s" alt="" width="390" height="844" decoding="async">' % phone
+        if i == 0
+        else ""
+    )
     return (
-        '<article class="card reveal" id="%s">\n'
-        '          <div class="card-top"><span class="number">0%d</span><span>%s</span></div>\n'
+        '<article class="card%s reveal" id="%s">\n'
         '          <a class="still" href="%s" aria-label="Open %s">\n'
+        "            <picture>\n"
+        '              <source media="(max-width:700px)" srcset="%s">\n'
+        '              <img src="%s" alt="%s" width="1440" height="900" loading="%s"%s decoding="async">\n'
+        "            </picture>\n"
         "            %s\n"
+        '            <span class="open-chip">Open</span>\n'
         "          </a>\n"
-        '          <div class="card-info"><div><h2>%s</h2><p class="card-copy">%s</p></div>'
-        '<div class="links"><a class="button primary" href="%s">Open app ↗</a>'
-        '<a class="button" href="%s" rel="noopener noreferrer">Source</a></div></div>\n'
+        '          <div class="meta">\n'
+        '            <div class="card-top"><span class="number">%s</span><span>%s</span></div>\n'
+        '            <h2 data-name="%s">%s</h2>\n'
+        '            <p class="card-copy">%s</p>\n'
+        '            <div class="links">\n'
+        '              <a class="btn primary" href="%s">Open<span class="fill" aria-hidden="true"></span></a>\n'
+        '              <a class="btn" href="%s" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>\n'
+        "            </div>\n"
+        "          </div>\n"
         "        </article>"
-        % (slug, i + 1, kind, pages, name, img, name, job, pages, repo)
+        % (featured, slug, pages, name, phone, desk, alt, lazy, fetch, device, num(i), kicker, name, name, job, pages, repo)
     )
 
 
-def island_html(app: dict) -> str:
+def chip_html(app: dict, i: int) -> str:
     return (
-        '<a class="island" id="island" href="%s">Open %s</a>'
-        % (html.escape(app["pages"]), html.escape(app["name"]))
+        '<a href="#%s"><em>%s</em>%s</a>'
+        % (html.escape(app["slug"]), num(i), html.escape(app["name"]))
     )
 
 
@@ -96,21 +137,23 @@ def main() -> None:
     data = json.loads((ROOT / "apps.json").read_text())
     for app in data:
         make_pack(app)
+        make_stills(app)
 
     js = "window.APPS = " + json.dumps(data, indent=2, ensure_ascii=False) + ";\n"
     (ROOT / "apps.js").write_text(js)
 
     newest_first = list(reversed(data))
     cards = "\n\n        ".join(card_html(app, i) for i, app in enumerate(newest_first))
+    chips = "".join(chip_html(app, i) for i, app in enumerate(newest_first))
 
     src = (ROOT / "src" / "index.html").read_text()
     src = src.replace(
-        '<div class="grid" id="grid"></div>',
-        '<div class="grid" id="grid">\n        ' + cards + "\n      </div>",
+        '<div class="shop" id="shop"></div>',
+        '<div class="shop" id="shop">\n        ' + cards + "\n      </div>",
     )
     src = src.replace(
-        '<a class="island" id="island" href="#"></a>',
-        island_html(data[-1]),
+        '<div class="chips" id="chips"></div>',
+        '<div class="chips" id="chips">' + chips + "</div>",
     )
 
     docs = ROOT / "docs"
@@ -120,7 +163,7 @@ def main() -> None:
     (docs / "script.js").write_text((ROOT / "src" / "script.js").read_text())
     (docs / "favicon.svg").write_text((ROOT / "src" / "favicon.svg").read_text())
     (docs / "apps.js").write_text(js)
-    slim_keys = ("slug", "name", "job", "pages", "repo", "originalPaid", "shipped")
+    slim_keys = ("slug", "name", "job", "kicker", "pages", "repo", "originalPaid", "shipped")
     slim = [{k: a[k] for k in slim_keys if k in a} for a in data]
     (docs / "apps.json").write_text(json.dumps(slim, indent=2, ensure_ascii=False) + "\n")
 
@@ -131,6 +174,14 @@ def main() -> None:
         for f in fonts_src.iterdir():
             if f.is_file():
                 shutil.copy2(f, fonts_dst / f.name)
+
+    js_src = ROOT / "src" / "js"
+    js_dst = docs / "js"
+    if js_src.exists():
+        js_dst.mkdir(exist_ok=True)
+        for f in js_src.iterdir():
+            if f.is_file():
+                shutil.copy2(f, js_dst / f.name)
 
     shots = docs / "shots"
     shots.mkdir(exist_ok=True)

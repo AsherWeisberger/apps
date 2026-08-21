@@ -1,12 +1,14 @@
 # Asher · apps
 
-A dark editorial collection of free, original in-tab apps. No account. No watermark. Files never leave the browser.
+A dark editorial shop of free, original in-tab apps. No account. No watermark. Files never leave the browser.
 
 Live: [asherweisberger.github.io/apps](https://asherweisberger.github.io/apps/)
 
 Made by [Asher Weisberger](https://x.com/AsherWeisberger) ([@AsherWeisberger](https://x.com/AsherWeisberger))
 
-The page is a tight dark editorial: Motion palette (`#0D0F14` ink, `#D9CCAC` sand), a short hero, then the apps. Each project is a still of the live UI, the job, Open, and Source. JSON order is oldest → newest; the grid shows newest first.
+The page is a tight dark storefront: Motion palette (`#0D0F14` ink, `#D9CCAC` sand), a short kinetic line, then the apps as photo-dominant cards. Newest first. Each card is a still of the live UI, one plain sentence, Open, and Source. JSON order is oldest → newest; the shop shows newest first.
+
+Pitches are one sentence a 10-year-old gets.
 
 ## Add the next daily app
 
@@ -19,11 +21,12 @@ Nightly builds should **append**, not rewrite the page by hand.
 {
   "slug": "newapp",
   "name": "NewApp",
-  "job": "One line. What it does. Files stay in the tab.",
+  "job": "One line. What it does.",
+  "kicker": "Short verb",
   "pages": "https://asherweisberger.github.io/newapp/",
   "repo": "https://github.com/AsherWeisberger/newapp",
   "originalPaid": "The paid job it replaces",
-  "shipped": "2026-08-17",
+  "shipped": "2026-08-21",
   "desktop": "./shots/newapp/desktop.png",
   "phone": "./shots/newapp/phone.png",
   "desktopAlt": "NewApp on desktop.",
@@ -31,13 +34,9 @@ Nightly builds should **append**, not rewrite the page by hand.
 }
 ```
 
-`./build.sh` crops `desktop.png` into a square packshot at `shots/<slug>/pack.png`. Set `"still"` to skip that and use your own frame. `"packAlign": "right"` (or `"left"`) shifts the square crop.
+`./build.sh` writes `card.webp` / `phone.webp` gallery stills and a square packshot at `shots/<slug>/pack.png`. Set `"still"` to skip pack generation and use your own frame. `"packAlign": "right"` (or `"left"`) shifts the square crop.
 
-3. Run `./build.sh`. It writes `apps.js`, copies the site into `docs/`, and writes a slim machine list at `docs/apps.json`:
-
-```
-[{slug, name, job, pages, repo, originalPaid, shipped}]
-```
+3. Run `./build.sh`. It writes `apps.js`, copies the site into `docs/`, and writes a slim machine list at `docs/apps.json`.
 
 4. Commit `apps.json`, `apps.js`, `shots/<slug>/`, and everything under `docs/`. Push `main`. Pages serves `/docs`.
 

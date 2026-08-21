@@ -2,7 +2,8 @@
   {
     "slug": "framekit",
     "name": "Framekit",
-    "job": "Stage a screenshot. Padding, shadow, a studio background — then download.",
+    "job": "Put a pretty frame around a screenshot.",
+    "kicker": "Frame a shot",
     "pages": "https://asherweisberger.github.io/framekit/",
     "repo": "https://github.com/AsherWeisberger/framekit",
     "originalPaid": "Xnapper",
@@ -16,7 +17,8 @@
   {
     "slug": "stackpdf",
     "name": "StackPDF",
-    "job": "Merge, split, and save as Word. The files never leave this tab.",
+    "job": "Stick PDFs together. Or pull pages out.",
+    "kicker": "Stack PDFs",
     "pages": "https://asherweisberger.github.io/stackpdf/",
     "repo": "https://github.com/AsherWeisberger/stackpdf",
     "originalPaid": "Smallpdf",
@@ -29,7 +31,8 @@
   {
     "slug": "bestcut",
     "name": "BestCut",
-    "job": "A local 9:16 editor. Split, title, caption, export. On a phone.",
+    "job": "Cut a video on your phone.",
+    "kicker": "Cut a video",
     "pages": "https://asherweisberger.github.io/bestcut/",
     "repo": "https://github.com/AsherWeisberger/bestcut",
     "originalPaid": "CapCut",
@@ -42,7 +45,8 @@
   {
     "slug": "mattekit",
     "name": "Mattekit",
-    "job": "Cut the subject out in the tab. Hair-ok. No credits.",
+    "job": "Cut a person out of a photo.",
+    "kicker": "Cut a photo",
     "pages": "https://asherweisberger.github.io/mattekit/",
     "repo": "https://github.com/AsherWeisberger/mattekit",
     "originalPaid": "Photoroom",
@@ -55,7 +59,8 @@
   {
     "slug": "cinekit",
     "name": "Cinekit",
-    "job": "Record a take. The kit leans in on the click, mats the frame, exports in the tab.",
+    "job": "Record your screen. Get a movie of it.",
+    "kicker": "Record a screen",
     "pages": "https://asherweisberger.github.io/cinekit/",
     "repo": "https://github.com/AsherWeisberger/cinekit",
     "originalPaid": "Screen Studio",
@@ -68,7 +73,8 @@
   {
     "slug": "speakkit",
     "name": "Speakkit",
-    "job": "Hold to talk. The page writes in this tab. Copy when the line is right.",
+    "job": "Talk. The page writes it down.",
+    "kicker": "Talk to type",
     "pages": "https://asherweisberger.github.io/speakkit/",
     "repo": "https://github.com/AsherWeisberger/speakkit",
     "originalPaid": "Wispr Flow",
@@ -81,7 +87,8 @@
   {
     "slug": "swatchkit",
     "name": "Swatchkit",
-    "job": "A color book in the tab. Shuffle, lock, pull from a photo, export CSS. Colors stay here.",
+    "job": "Make a color palette. Copy the codes.",
+    "kicker": "Pick colors",
     "pages": "https://asherweisberger.github.io/swatchkit/",
     "repo": "https://github.com/AsherWeisberger/swatchkit",
     "originalPaid": "Coolors Pro",
@@ -94,7 +101,8 @@
   {
     "slug": "gleamkit",
     "name": "Gleamkit",
-    "job": "Animated code shots in the tab. Steps, typewriter, PNG and video. The snippet never leaves.",
+    "job": "Paste code. Get a picture or video of it.",
+    "kicker": "Picture of code",
     "pages": "https://asherweisberger.github.io/gleamkit/",
     "repo": "https://github.com/AsherWeisberger/gleamkit",
     "originalPaid": "Snappify",
@@ -107,7 +115,8 @@
   {
     "slug": "crushkit",
     "name": "Crushkit",
-    "job": "Drop a photo. Get a smaller file. Nothing uploaded. The picture never leaves the tab.",
+    "job": "Drop a photo. Get a smaller file.",
+    "kicker": "Shrink a photo",
     "pages": "https://asherweisberger.github.io/crushkit/",
     "repo": "https://github.com/AsherWeisberger/crushkit",
     "originalPaid": "TinyPNG",
@@ -120,7 +129,8 @@
   {
     "slug": "signkit",
     "name": "Signkit",
-    "job": "Open a PDF. Sign it. Download it. Nothing uploaded. The file never leaves the tab.",
+    "job": "Open a PDF. Sign it. Download it.",
+    "kicker": "Sign a PDF",
     "pages": "https://asherweisberger.github.io/signkit/",
     "repo": "https://github.com/AsherWeisberger/signkit",
     "originalPaid": "DocuSign",

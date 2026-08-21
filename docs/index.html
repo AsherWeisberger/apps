@@ -4,117 +4,255 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0D0F14">
-  <meta name="description" content="Ten original, open-source tools by Asher Weisberger. Fast, private, and built for the browser.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Ten free browser tools by Asher Weisberger. Open a PDF. Shrink a photo. Turn code into a picture. Files stay in this tab.">
   <meta name="author" content="Asher Weisberger">
   <meta name="twitter:creator" content="@AsherWeisberger">
   <meta property="og:title" content="Custom Apps — Asher Weisberger">
-  <meta property="og:description" content="A small collection of unusually capable browser tools.">
+  <meta property="og:description" content="Ten free tools. Open one. Files stay in this tab.">
   <meta property="og:url" content="https://asherweisberger.github.io/apps/">
   <meta property="og:type" content="website">
   <title>Custom Apps — Asher Weisberger</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- X PIXEL -->
+  <!-- X conversion tracking base code -->
+  <script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  twq('config','relo7');
+  </script>
+  <!-- End X conversion tracking base code -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+  <div class="island" id="island" role="status" aria-live="polite">
+    <span class="orb-dot" id="island-orb"></span>
+    <span class="island-label">Opening the shop</span>
+  </div>
   <header class="nav shell">
     <a class="wordmark" href="#top" aria-label="Custom Apps, home"><span class="mark">A</span><span>CUSTOM APPS</span></a>
-    <div class="nav-meta"><span>Browser tools</span><span>2026 — 08</span></div>
+    <p class="nav-meta">10 free · in the tab</p>
     <a class="credit" href="https://x.com/AsherWeisberger" rel="noopener noreferrer"><span class="credit-name">Asher Weisberger · </span><span class="at">@AsherWeisberger</span></a>
   </header>
   <main id="top">
-    <section class="hero shell">
-      <div class="eyebrow"><span class="dot"></span> Independent software collection</div>
-      <h1>Useful things,<br><em>beautifully</em> made.</h1>
-      <div class="hero-foot">
-        <p>Ten focused tools for signing, shrinking photos, code, speaking, editing, cutting, merging, framing, and color. No accounts. No uploads. Just open and make.</p>
-        <a class="jump" href="#work">Explore all <span>↓</span></a>
-      </div>
+    <section class="mast shell">
+      <div class="dust" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="eyebrow"><span class="dot"></span> Independent software · August 2026</p>
+      <h1 class="kinetic" aria-label="Ten free tools.">
+        <span class="k-word" style="--d:.02s"><span>Ten</span></span>
+        <em class="k-word" style="--d:.12s"><span>free</span></em>
+        <span class="k-word" style="--d:.22s"><span>tools.</span></span>
+      </h1>
+      <p class="lede">Open one. Your files stay in this tab.</p>
+      <div class="chips" id="chips"><a href="#signkit"><em>01</em>Signkit</a><a href="#crushkit"><em>02</em>Crushkit</a><a href="#gleamkit"><em>03</em>Gleamkit</a><a href="#swatchkit"><em>04</em>Swatchkit</a><a href="#speakkit"><em>05</em>Speakkit</a><a href="#cinekit"><em>06</em>Cinekit</a><a href="#mattekit"><em>07</em>Mattekit</a><a href="#bestcut"><em>08</em>BestCut</a><a href="#stackpdf"><em>09</em>StackPDF</a><a href="#framekit"><em>10</em>Framekit</a></div>
     </section>
-    <section class="marquee" aria-label="Collection features">
-      <div class="marquee-track"><span>LOCAL FIRST</span><i>✦</i><span>OPEN SOURCE</span><i>✦</i><span>NO WATERMARKS</span><i>✦</i><span>PHONE READY</span><i>✦</i><span>LOCAL FIRST</span><i>✦</i><span>OPEN SOURCE</span><i>✦</i><span>NO WATERMARKS</span><i>✦</i><span>PHONE READY</span></div>
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track"><span>LOCAL FIRST</span><i></i><span>ALWAYS FREE</span><i></i><span>NO ACCOUNT</span><i></i><span>NO WATERMARK</span><i></i><span>PHONE READY</span><i></i><span>LOCAL FIRST</span><i></i><span>ALWAYS FREE</span><i></i><span>NO ACCOUNT</span><i></i><span>NO WATERMARK</span><i></i><span>PHONE READY</span></div>
     </section>
     <section class="work shell" id="work">
-      <div class="section-head"><p>Selected applications</p><p>10 projects / always free</p></div>
-      <div class="grid" id="grid">
-        <article class="card reveal" id="signkit">
-          <div class="card-top"><span class="number">01</span><span>Original alternative</span></div>
+      <div class="section-head"><p>The shop</p><p>10 apps · newest first</p></div>
+      <div class="shop" id="shop">
+        <article class="card featured reveal" id="signkit">
           <a class="still" href="https://asherweisberger.github.io/signkit/" aria-label="Open Signkit">
-            <img src="./shots/signkit/pack.png" alt="Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download." width="1200" height="750" loading="eager" fetchpriority="high" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/signkit/phone.webp">
+              <img src="./shots/signkit/card.webp" alt="Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download." width="1440" height="900" loading="eager" fetchpriority="high" decoding="async">
+            </picture>
+            <img class="device" src="./shots/signkit/phone.webp" alt="" width="390" height="844" decoding="async">
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Signkit</h2><p class="card-copy">Open a PDF. Sign it. Download it. Nothing uploaded. The file never leaves the tab.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/signkit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/signkit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">01</span><span>Sign a PDF</span></div>
+            <h2 data-name="Signkit">Signkit</h2>
+            <p class="card-copy">Open a PDF. Sign it. Download it.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/signkit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/signkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="crushkit">
-          <div class="card-top"><span class="number">02</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/crushkit/" aria-label="Open Crushkit">
-            <img src="./shots/crushkit/pack.png" alt="Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download." width="1200" height="750" loading="eager" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/crushkit/phone.webp">
+              <img src="./shots/crushkit/card.webp" alt="Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download." width="1440" height="900" loading="eager" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Crushkit</h2><p class="card-copy">Drop a photo. Get a smaller file. Nothing uploaded. The picture never leaves the tab.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/crushkit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/crushkit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">02</span><span>Shrink a photo</span></div>
+            <h2 data-name="Crushkit">Crushkit</h2>
+            <p class="card-copy">Drop a photo. Get a smaller file.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/crushkit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/crushkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="gleamkit">
-          <div class="card-top"><span class="number">03</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/gleamkit/" aria-label="Open Gleamkit">
-            <img src="./shots/gleamkit/pack.png" alt="Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/gleamkit/phone.webp">
+              <img src="./shots/gleamkit/card.webp" alt="Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Gleamkit</h2><p class="card-copy">Animated code shots in the tab. Steps, typewriter, PNG and video. The snippet never leaves.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/gleamkit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/gleamkit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">03</span><span>Picture of code</span></div>
+            <h2 data-name="Gleamkit">Gleamkit</h2>
+            <p class="card-copy">Paste code. Get a picture or video of it.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/gleamkit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/gleamkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="swatchkit">
-          <div class="card-top"><span class="number">04</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/swatchkit/" aria-label="Open Swatchkit">
-            <img src="./shots/swatchkit/pack.png" alt="Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/swatchkit/phone.webp">
+              <img src="./shots/swatchkit/card.webp" alt="Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Swatchkit</h2><p class="card-copy">A color book in the tab. Shuffle, lock, pull from a photo, export CSS. Colors stay here.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/swatchkit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/swatchkit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">04</span><span>Pick colors</span></div>
+            <h2 data-name="Swatchkit">Swatchkit</h2>
+            <p class="card-copy">Make a color palette. Copy the codes.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/swatchkit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/swatchkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="speakkit">
-          <div class="card-top"><span class="number">05</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/speakkit/" aria-label="Open Speakkit">
-            <img src="./shots/speakkit/pack.png" alt="Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/speakkit/phone.webp">
+              <img src="./shots/speakkit/card.webp" alt="Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Speakkit</h2><p class="card-copy">Hold to talk. The page writes in this tab. Copy when the line is right.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/speakkit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/speakkit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">05</span><span>Talk to type</span></div>
+            <h2 data-name="Speakkit">Speakkit</h2>
+            <p class="card-copy">Talk. The page writes it down.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/speakkit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/speakkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="cinekit">
-          <div class="card-top"><span class="number">06</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/cinekit/" aria-label="Open Cinekit">
-            <img src="./shots/cinekit/pack.png" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/cinekit/phone.webp">
+              <img src="./shots/cinekit/card.webp" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Cinekit</h2><p class="card-copy">Record a take. The kit leans in on the click, mats the frame, exports in the tab.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/cinekit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/cinekit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">06</span><span>Record a screen</span></div>
+            <h2 data-name="Cinekit">Cinekit</h2>
+            <p class="card-copy">Record your screen. Get a movie of it.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/cinekit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/cinekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="mattekit">
-          <div class="card-top"><span class="number">07</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/mattekit/" aria-label="Open Mattekit">
-            <img src="./shots/mattekit/pack.png" alt="Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/mattekit/phone.webp">
+              <img src="./shots/mattekit/card.webp" alt="Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Mattekit</h2><p class="card-copy">Cut the subject out in the tab. Hair-ok. No credits.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/mattekit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/mattekit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">07</span><span>Cut a photo</span></div>
+            <h2 data-name="Mattekit">Mattekit</h2>
+            <p class="card-copy">Cut a person out of a photo.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/mattekit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/mattekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="bestcut">
-          <div class="card-top"><span class="number">08</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/bestcut/" aria-label="Open BestCut">
-            <img src="./shots/bestcut/pack.png" alt="BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/bestcut/phone.webp">
+              <img src="./shots/bestcut/card.webp" alt="BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>BestCut</h2><p class="card-copy">A local 9:16 editor. Split, title, caption, export. On a phone.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/bestcut/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/bestcut" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">08</span><span>Cut a video</span></div>
+            <h2 data-name="BestCut">BestCut</h2>
+            <p class="card-copy">Cut a video on your phone.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/bestcut/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/bestcut" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="stackpdf">
-          <div class="card-top"><span class="number">09</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/stackpdf/" aria-label="Open StackPDF">
-            <img src="./shots/stackpdf/pack.png" alt="StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/stackpdf/phone.webp">
+              <img src="./shots/stackpdf/card.webp" alt="StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>StackPDF</h2><p class="card-copy">Merge, split, and save as Word. The files never leave this tab.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/stackpdf/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/stackpdf" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">09</span><span>Stack PDFs</span></div>
+            <h2 data-name="StackPDF">StackPDF</h2>
+            <p class="card-copy">Stick PDFs together. Or pull pages out.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/stackpdf/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/stackpdf" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
 
         <article class="card reveal" id="framekit">
-          <div class="card-top"><span class="number">010</span><span>Original alternative</span></div>
           <a class="still" href="https://asherweisberger.github.io/framekit/" aria-label="Open Framekit">
-            <img src="./shots/framekit/pack.png" alt="Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download." width="1200" height="750" loading="lazy" decoding="async">
+            <picture>
+              <source media="(max-width:700px)" srcset="./shots/framekit/phone.webp">
+              <img src="./shots/framekit/card.webp" alt="Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download." width="1440" height="900" loading="lazy" decoding="async">
+            </picture>
+            
+            <span class="open-chip">Open</span>
           </a>
-          <div class="card-info"><div><h2>Framekit</h2><p class="card-copy">Stage a screenshot. Padding, shadow, a studio background — then download.</p></div><div class="links"><a class="button primary" href="https://asherweisberger.github.io/framekit/">Open app ↗</a><a class="button" href="https://github.com/AsherWeisberger/framekit" rel="noopener noreferrer">Source</a></div></div>
+          <div class="meta">
+            <div class="card-top"><span class="number">10</span><span>Frame a shot</span></div>
+            <h2 data-name="Framekit">Framekit</h2>
+            <p class="card-copy">Put a pretty frame around a screenshot.</p>
+            <div class="links">
+              <a class="btn primary" href="https://asherweisberger.github.io/framekit/">Open<span class="fill" aria-hidden="true"></span></a>
+              <a class="btn" href="https://github.com/AsherWeisberger/framekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
@@ -124,7 +262,9 @@
     <p class="footer-credit">Asher Weisberger · <a href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a></p>
     <a href="#top" class="back">Back to top ↑</a>
   </footer>
+  <script src="./js/orb.js"></script>
   <script src="./apps.js"></script>
   <script src="./script.js"></script>
+  <script src="./js/pixel.js"></script>
 </body>
 </html>
