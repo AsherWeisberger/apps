@@ -98,5 +98,15 @@
     "repo": "https://github.com/AsherWeisberger/signkit",
     "originalPaid": "DocuSign",
     "shipped": "2026-08-20"
+  },
+  {
+    "slug": "wavekit",
+    "name": "Wavekit",
+    "job": "Drop a sound. Get a waveform video.",
+    "kicker": "Make a waveform",
+    "pages": "https://asherweisberger.github.io/wavekit/",
+    "repo": "https://github.com/AsherWeisberger/wavekit",
+    "originalPaid": "Headliner",
+    "shipped": "2026-08-21"
   }
 ]

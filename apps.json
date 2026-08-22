@@ -140,5 +140,20 @@
     "desktopAlt": "Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download.",
     "phoneAlt": "Signkit on a phone: the signed page fills the sheet, Sign Type Date Save in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "wavekit",
+    "name": "Wavekit",
+    "job": "Drop a sound. Get a waveform video.",
+    "kicker": "Make a waveform",
+    "pages": "https://asherweisberger.github.io/wavekit/",
+    "repo": "https://github.com/AsherWeisberger/wavekit",
+    "originalPaid": "Headliner",
+    "shipped": "2026-08-21",
+    "desktop": "./shots/wavekit/desktop.png",
+    "phone": "./shots/wavekit/phone.png",
+    "desktopAlt": "Wavekit on desktop: a square mirrored waveform, Friday night, Export.",
+    "phoneAlt": "Wavekit on a phone: the waveform fills the sheet, Open Record Export in the dock.",
+    "packAlign": "center"
   }
 ]
