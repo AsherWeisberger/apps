@@ -155,5 +155,20 @@
     "desktopAlt": "Wavekit on desktop: a square mirrored waveform, Friday night, Export.",
     "phoneAlt": "Wavekit on a phone: the waveform fills the sheet, Open Record Export in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "fitkit",
+    "name": "Fitkit",
+    "job": "Drop a photo. Crop it for X, Instagram, or TikTok.",
+    "kicker": "Crop a photo",
+    "pages": "https://asherweisberger.github.io/fitkit/",
+    "repo": "https://github.com/AsherWeisberger/fitkit",
+    "originalPaid": "Canva",
+    "shipped": "2026-08-22",
+    "desktop": "./shots/fitkit/desktop.png",
+    "phone": "./shots/fitkit/phone.png",
+    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600\u00d7900, pan and Export.",
+    "phoneAlt": "Fitkit on a phone: the crop fills the sheet, Open and Export in the dock.",
+    "packAlign": "center"
   }
 ]

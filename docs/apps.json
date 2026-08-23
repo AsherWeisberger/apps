@@ -108,5 +108,15 @@
     "repo": "https://github.com/AsherWeisberger/wavekit",
     "originalPaid": "Headliner",
     "shipped": "2026-08-21"
+  },
+  {
+    "slug": "fitkit",
+    "name": "Fitkit",
+    "job": "Drop a photo. Crop it for X, Instagram, or TikTok.",
+    "kicker": "Crop a photo",
+    "pages": "https://asherweisberger.github.io/fitkit/",
+    "repo": "https://github.com/AsherWeisberger/fitkit",
+    "originalPaid": "Canva",
+    "shipped": "2026-08-22"
   }
 ]
