@@ -118,5 +118,15 @@
     "repo": "https://github.com/AsherWeisberger/fitkit",
     "originalPaid": "Canva",
     "shipped": "2026-08-22"
+  },
+  {
+    "slug": "markkit",
+    "name": "Markkit",
+    "job": "Drop a screenshot. Arrow it. Blur the secrets.",
+    "kicker": "Mark a screenshot",
+    "pages": "https://asherweisberger.github.io/markkit/",
+    "repo": "https://github.com/AsherWeisberger/markkit",
+    "originalPaid": "CleanShot X",
+    "shipped": "2026-08-23"
   }
 ]

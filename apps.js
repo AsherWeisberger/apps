@@ -170,5 +170,20 @@ window.APPS = [
     "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600×900, pan and Export.",
     "phoneAlt": "Fitkit on a phone: the crop fills the sheet, Open and Export in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "markkit",
+    "name": "Markkit",
+    "job": "Drop a screenshot. Arrow it. Blur the secrets.",
+    "kicker": "Mark a screenshot",
+    "pages": "https://asherweisberger.github.io/markkit/",
+    "repo": "https://github.com/AsherWeisberger/markkit",
+    "originalPaid": "CleanShot X",
+    "shipped": "2026-08-23",
+    "desktop": "./shots/markkit/desktop.png",
+    "phone": "./shots/markkit/phone.png",
+    "desktopAlt": "Markkit on desktop: a screenshot on a night desk, an arrow, numbered steps, blur and pixel, Export.",
+    "phoneAlt": "Markkit on a phone: the marked shot fills the sheet, Open and Export in the dock.",
+    "packAlign": "center"
   }
 ];
