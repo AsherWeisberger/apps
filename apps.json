@@ -185,5 +185,20 @@
     "desktopAlt": "Markkit on desktop: a screenshot on a night desk, an arrow, numbered steps, blur and pixel, Export.",
     "phoneAlt": "Markkit on a phone: the marked shot fills the sheet, Open and Export in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "gifkit",
+    "name": "Gifkit",
+    "job": "Drop a video. Get a GIF.",
+    "kicker": "Make a GIF",
+    "pages": "https://asherweisberger.github.io/gifkit/",
+    "repo": "https://github.com/AsherWeisberger/gifkit",
+    "originalPaid": "Kapwing",
+    "shipped": "2026-08-24",
+    "desktop": "./shots/gifkit/desktop.png",
+    "phone": "./shots/gifkit/phone.png",
+    "desktopAlt": "Gifkit on desktop: a film gate looping a clip, in and out on the strip, width fps speed, Make GIF.",
+    "phoneAlt": "Gifkit on a phone: the loop fills the gate, the filmstrip, Open and Make GIF in the dock.",
+    "packAlign": "center"
   }
 ]

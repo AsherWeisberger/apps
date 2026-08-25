@@ -128,5 +128,15 @@
     "repo": "https://github.com/AsherWeisberger/markkit",
     "originalPaid": "CleanShot X",
     "shipped": "2026-08-23"
+  },
+  {
+    "slug": "gifkit",
+    "name": "Gifkit",
+    "job": "Drop a video. Get a GIF.",
+    "kicker": "Make a GIF",
+    "pages": "https://asherweisberger.github.io/gifkit/",
+    "repo": "https://github.com/AsherWeisberger/gifkit",
+    "originalPaid": "Kapwing",
+    "shipped": "2026-08-24"
   }
 ]
