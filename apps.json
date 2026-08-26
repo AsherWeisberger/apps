@@ -167,7 +167,7 @@
     "shipped": "2026-08-22",
     "desktop": "./shots/fitkit/desktop.png",
     "phone": "./shots/fitkit/phone.png",
-    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600×900, pan and Export.",
+    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600\u00d7900, pan and Export.",
     "phoneAlt": "Fitkit on a phone: the crop fills the sheet, Open and Export in the dock.",
     "packAlign": "center"
   },
@@ -199,6 +199,21 @@
     "phone": "./shots/gifkit/phone.png",
     "desktopAlt": "Gifkit on desktop: a film gate looping a clip, in and out on the strip, width fps speed, Make GIF.",
     "phoneAlt": "Gifkit on a phone: the loop fills the gate, the filmstrip, Open and Make GIF in the dock.",
+    "packAlign": "center"
+  },
+  {
+    "slug": "qrkit",
+    "name": "Qrkit",
+    "job": "Drop a link. Get a branded QR you can actually print.",
+    "kicker": "Make a QR",
+    "pages": "https://asherweisberger.github.io/qrkit/",
+    "repo": "https://github.com/AsherWeisberger/qrkit",
+    "originalPaid": "QR Code Generator PRO",
+    "shipped": "2026-08-25",
+    "desktop": "./shots/qrkit/desktop.png",
+    "phone": "./shots/qrkit/phone.png",
+    "desktopAlt": "Qrkit on desktop: a print plate with a framed SCAN ME code, type chips, ink and paper, PNG SVG PDF.",
+    "phoneAlt": "Qrkit on a phone: the framed code fills the sheet, Look Save Read PNG in the dock.",
     "packAlign": "center"
   }
 ]

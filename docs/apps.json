@@ -138,5 +138,15 @@
     "repo": "https://github.com/AsherWeisberger/gifkit",
     "originalPaid": "Kapwing",
     "shipped": "2026-08-24"
+  },
+  {
+    "slug": "qrkit",
+    "name": "Qrkit",
+    "job": "Drop a link. Get a branded QR you can actually print.",
+    "kicker": "Make a QR",
+    "pages": "https://asherweisberger.github.io/qrkit/",
+    "repo": "https://github.com/AsherWeisberger/qrkit",
+    "originalPaid": "QR Code Generator PRO",
+    "shipped": "2026-08-25"
   }
 ]

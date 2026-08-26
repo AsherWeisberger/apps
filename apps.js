@@ -200,5 +200,20 @@ window.APPS = [
     "desktopAlt": "Gifkit on desktop: a film gate looping a clip, in and out on the strip, width fps speed, Make GIF.",
     "phoneAlt": "Gifkit on a phone: the loop fills the gate, the filmstrip, Open and Make GIF in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "qrkit",
+    "name": "Qrkit",
+    "job": "Drop a link. Get a branded QR you can actually print.",
+    "kicker": "Make a QR",
+    "pages": "https://asherweisberger.github.io/qrkit/",
+    "repo": "https://github.com/AsherWeisberger/qrkit",
+    "originalPaid": "QR Code Generator PRO",
+    "shipped": "2026-08-25",
+    "desktop": "./shots/qrkit/desktop.png",
+    "phone": "./shots/qrkit/phone.png",
+    "desktopAlt": "Qrkit on desktop: a print plate with a framed SCAN ME code, type chips, ink and paper, PNG SVG PDF.",
+    "phoneAlt": "Qrkit on a phone: the framed code fills the sheet, Look Save Read PNG in the dock.",
+    "packAlign": "center"
   }
 ];
