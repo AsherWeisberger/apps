@@ -215,5 +215,20 @@
     "desktopAlt": "Qrkit on desktop: a print plate with a framed SCAN ME code, type chips, ink and paper, PNG SVG PDF.",
     "phoneAlt": "Qrkit on a phone: the framed code fills the sheet, Look Save Read PNG in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "mockkit",
+    "name": "Mockkit",
+    "job": "Drop a screenshot. Pick a device. Get a print-ready mockup.",
+    "kicker": "Frame a device",
+    "pages": "https://asherweisberger.github.io/mockkit/",
+    "repo": "https://github.com/AsherWeisberger/mockkit",
+    "originalPaid": "Shots.so",
+    "shipped": "2026-08-26",
+    "desktop": "./shots/mockkit/desktop.png",
+    "phone": "./shots/mockkit/phone.png",
+    "desktopAlt": "Mockkit on desktop: a phone frame on a mesh backdrop, scene sliders, store-set and batch ZIP.",
+    "phoneAlt": "Mockkit on a phone: the framed shot fills the sheet, Open and Download PNG in the dock.",
+    "packAlign": "center"
   }
 ]

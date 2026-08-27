@@ -148,5 +148,15 @@
     "repo": "https://github.com/AsherWeisberger/qrkit",
     "originalPaid": "QR Code Generator PRO",
     "shipped": "2026-08-25"
+  },
+  {
+    "slug": "mockkit",
+    "name": "Mockkit",
+    "job": "Drop a screenshot. Pick a device. Get a print-ready mockup.",
+    "kicker": "Frame a device",
+    "pages": "https://asherweisberger.github.io/mockkit/",
+    "repo": "https://github.com/AsherWeisberger/mockkit",
+    "originalPaid": "Shots.so",
+    "shipped": "2026-08-26"
   }
 ]
