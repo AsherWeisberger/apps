@@ -230,5 +230,20 @@ window.APPS = [
     "desktopAlt": "Mockkit on desktop: a phone frame on a mesh backdrop, scene sliders, store-set and batch ZIP.",
     "phoneAlt": "Mockkit on a phone: the framed shot fills the sheet, Open and Download PNG in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "rulekit",
+    "name": "Rulekit",
+    "job": "Drop a UI shot. Measure every gap. Export the proof.",
+    "kicker": "Measure a shot",
+    "pages": "https://asherweisberger.github.io/rulekit/",
+    "repo": "https://github.com/AsherWeisberger/rulekit",
+    "originalPaid": "PixelSnap 2",
+    "shipped": "2026-08-27",
+    "desktop": "./shots/rulekit/desktop.png",
+    "phone": "./shots/rulekit/phone.png",
+    "desktopAlt": "Rulekit on desktop: a UI shot on the glass with pinned distances, a rect, and guides.",
+    "phoneAlt": "Rulekit on a phone: the measure stage fills the sheet, Open and Export in the dock.",
+    "packAlign": "center"
   }
 ];

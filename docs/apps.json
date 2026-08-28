@@ -158,5 +158,15 @@
     "repo": "https://github.com/AsherWeisberger/mockkit",
     "originalPaid": "Shots.so",
     "shipped": "2026-08-26"
+  },
+  {
+    "slug": "rulekit",
+    "name": "Rulekit",
+    "job": "Drop a UI shot. Measure every gap. Export the proof.",
+    "kicker": "Measure a shot",
+    "pages": "https://asherweisberger.github.io/rulekit/",
+    "repo": "https://github.com/AsherWeisberger/rulekit",
+    "originalPaid": "PixelSnap 2",
+    "shipped": "2026-08-27"
   }
 ]
