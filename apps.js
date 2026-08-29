@@ -245,5 +245,20 @@ window.APPS = [
     "desktopAlt": "Rulekit on desktop: a UI shot on the glass with pinned distances, a rect, and guides.",
     "phoneAlt": "Rulekit on a phone: the measure stage fills the sheet, Open and Export in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "grabkit",
+    "name": "Grabkit",
+    "job": "Drop a shot. Grab the words.",
+    "kicker": "Grab text",
+    "pages": "https://asherweisberger.github.io/grabkit/",
+    "repo": "https://github.com/AsherWeisberger/grabkit",
+    "originalPaid": "TextSniper",
+    "shipped": "2026-08-28",
+    "desktop": "./shots/grabkit/desktop.png",
+    "phone": "./shots/grabkit/phone.png",
+    "desktopAlt": "Grabkit on desktop: a receipt on the glass, Plain/Markdown/CSV/JSON modes, secrets spotted, Copy.",
+    "phoneAlt": "Grabkit on a phone: the OCR stage, mode pills, and Open Cam Grab OCR Copy Save in the dock.",
+    "packAlign": "center"
   }
 ];
