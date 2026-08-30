@@ -178,5 +178,15 @@
     "repo": "https://github.com/AsherWeisberger/grabkit",
     "originalPaid": "TextSniper",
     "shipped": "2026-08-28"
+  },
+  {
+    "slug": "scankit",
+    "name": "Scankit",
+    "job": "Photograph a page. Get a flat, clean PDF.",
+    "kicker": "Scan a page",
+    "pages": "https://asherweisberger.github.io/scankit/",
+    "repo": "https://github.com/AsherWeisberger/scankit",
+    "originalPaid": "CamScanner",
+    "shipped": "2026-08-29"
   }
 ]

@@ -260,5 +260,20 @@
     "desktopAlt": "Grabkit on desktop: a receipt on the glass, Plain/Markdown/CSV/JSON modes, secrets spotted, Copy.",
     "phoneAlt": "Grabkit on a phone: the OCR stage, mode pills, and Open Cam Grab OCR Copy Save in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "scankit",
+    "name": "Scankit",
+    "job": "Photograph a page. Get a flat, clean PDF.",
+    "kicker": "Scan a page",
+    "pages": "https://asherweisberger.github.io/scankit/",
+    "repo": "https://github.com/AsherWeisberger/scankit",
+    "originalPaid": "CamScanner",
+    "shipped": "2026-08-29",
+    "desktop": "./shots/scankit/desktop.png",
+    "phone": "./shots/scankit/phone.png",
+    "desktopAlt": "Scankit on desktop: a flattened invoice on the desk, Enhance selected, Export PDF.",
+    "phoneAlt": "Scankit on a phone: the flattened page fills the sheet, File Cam Flatten PDF Add in the dock.",
+    "packAlign": "center"
   }
 ]
