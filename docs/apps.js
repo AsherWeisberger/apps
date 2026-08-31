@@ -275,5 +275,20 @@ window.APPS = [
     "desktopAlt": "Scankit on desktop: a flattened invoice on the desk, Enhance selected, Export PDF.",
     "phoneAlt": "Scankit on a phone: the flattened page fills the sheet, File Cam Flatten PDF Add in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "erasekit",
+    "name": "Erasekit",
+    "job": "Brush it out. Keep every pixel.",
+    "kicker": "Erase an object",
+    "pages": "https://asherweisberger.github.io/erasekit/",
+    "repo": "https://github.com/AsherWeisberger/erasekit",
+    "originalPaid": "Cleanup.pictures",
+    "shipped": "2026-08-30",
+    "desktop": "./shots/erasekit/desktop.png",
+    "phone": "./shots/erasekit/phone.png",
+    "desktopAlt": "Erasekit on desktop: a lake polaroid on the desk, red SALE sticker masked, Telea, Erase.",
+    "phoneAlt": "Erasekit on a phone: the photo fills the sheet, File Cam Erase Save in the dock.",
+    "packAlign": "center"
   }
 ];

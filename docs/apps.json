@@ -188,5 +188,15 @@
     "repo": "https://github.com/AsherWeisberger/scankit",
     "originalPaid": "CamScanner",
     "shipped": "2026-08-29"
+  },
+  {
+    "slug": "erasekit",
+    "name": "Erasekit",
+    "job": "Brush it out. Keep every pixel.",
+    "kicker": "Erase an object",
+    "pages": "https://asherweisberger.github.io/erasekit/",
+    "repo": "https://github.com/AsherWeisberger/erasekit",
+    "originalPaid": "Cleanup.pictures",
+    "shipped": "2026-08-30"
   }
 ]
