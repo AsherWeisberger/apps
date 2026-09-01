@@ -198,5 +198,15 @@
     "repo": "https://github.com/AsherWeisberger/erasekit",
     "originalPaid": "Cleanup.pictures",
     "shipped": "2026-08-30"
+  },
+  {
+    "slug": "slimkit",
+    "name": "Slimkit",
+    "job": "Squeeze the PDF. Keep the words.",
+    "kicker": "Compress PDF",
+    "pages": "https://asherweisberger.github.io/slimkit/",
+    "repo": "https://github.com/AsherWeisberger/slimkit",
+    "originalPaid": "ILovePDF Compress",
+    "shipped": "2026-08-31"
   }
 ]

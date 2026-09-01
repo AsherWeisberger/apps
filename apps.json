@@ -290,5 +290,20 @@
     "desktopAlt": "Erasekit on desktop: a lake polaroid on the desk, red SALE sticker masked, Telea, Erase.",
     "phoneAlt": "Erasekit on a phone: the photo fills the sheet, File Cam Erase Save in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "slimkit",
+    "name": "Slimkit",
+    "job": "Squeeze the PDF. Keep the words.",
+    "kicker": "Compress PDF",
+    "pages": "https://asherweisberger.github.io/slimkit/",
+    "repo": "https://github.com/AsherWeisberger/slimkit",
+    "originalPaid": "ILovePDF Compress",
+    "shipped": "2026-08-31",
+    "desktop": "./shots/slimkit/desktop.png",
+    "phone": "./shots/slimkit/phone.png",
+    "desktopAlt": "Slimkit on desktop: sample invoice before and after, Soft mode, 1.7MB to 69.6KB, Download.",
+    "phoneAlt": "Slimkit on a phone: before and after pages, 1.7MB to 69.6KB, Compress Save ZIP in the dock.",
+    "packAlign": "center"
   }
 ]
