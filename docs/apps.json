@@ -208,5 +208,15 @@
     "repo": "https://github.com/AsherWeisberger/slimkit",
     "originalPaid": "ILovePDF Compress",
     "shipped": "2026-08-31"
+  },
+  {
+    "slug": "redactkit",
+    "name": "Redactkit",
+    "job": "Black it out for real. Nothing uploaded.",
+    "kicker": "Burn a secret",
+    "pages": "https://asherweisberger.github.io/redactkit/",
+    "repo": "https://github.com/AsherWeisberger/redactkit",
+    "originalPaid": "Smallpdf PDF Redactor / Acrobat Pro Redact",
+    "shipped": "2026-09-01"
   }
 ]
