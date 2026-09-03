@@ -218,5 +218,15 @@
     "repo": "https://github.com/AsherWeisberger/redactkit",
     "originalPaid": "Smallpdf PDF Redactor / Acrobat Pro Redact",
     "shipped": "2026-09-01"
+  },
+  {
+    "slug": "stampkit",
+    "name": "Stampkit",
+    "job": "Stamp your mark. Files stay here.",
+    "kicker": "Stamp a batch",
+    "pages": "https://asherweisberger.github.io/stampkit/",
+    "repo": "https://github.com/AsherWeisberger/stampkit",
+    "originalPaid": "ILovePDF Watermark / Watermarkly Pro",
+    "shipped": "2026-09-02"
   }
 ]

@@ -320,5 +320,20 @@ window.APPS = [
     "desktopAlt": "Redactkit on desktop: sample invoice with SSN marks burned black, Applied view, Export.",
     "phoneAlt": "Redactkit on a phone: the vault stage, Mark Apply Export in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "stampkit",
+    "name": "Stampkit",
+    "job": "Stamp your mark. Files stay here.",
+    "kicker": "Stamp a batch",
+    "pages": "https://asherweisberger.github.io/stampkit/",
+    "repo": "https://github.com/AsherWeisberger/stampkit",
+    "originalPaid": "ILovePDF Watermark / Watermarkly Pro",
+    "shipped": "2026-09-02",
+    "desktop": "./shots/stampkit/desktop.png",
+    "phone": "./shots/stampkit/phone.png",
+    "desktopAlt": "Stampkit on desktop: diagonal (c) Asher on a sample photo, Text/Logo rail, Adaptive contrast, Batch strip.",
+    "phoneAlt": "Stampkit on a phone: stamped preview, Design Stamp Save ZIP PDF in the dock.",
+    "packAlign": "center"
   }
 ];
