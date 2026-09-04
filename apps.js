@@ -335,5 +335,20 @@ window.APPS = [
     "desktopAlt": "Stampkit on desktop: diagonal (c) Asher on a sample photo, Text/Logo rail, Adaptive contrast, Batch strip.",
     "phoneAlt": "Stampkit on a phone: stamped preview, Design Stamp Save ZIP PDF in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "diffkit",
+    "name": "Diffkit",
+    "job": "Spot the change. Files stay here.",
+    "kicker": "Spot a change",
+    "pages": "https://asherweisberger.github.io/diffkit/",
+    "repo": "https://github.com/AsherWeisberger/diffkit",
+    "originalPaid": "Diffchecker Pro",
+    "shipped": "2026-09-03",
+    "desktop": "./shots/diffkit/desktop.png",
+    "phone": "./shots/diffkit/phone.png",
+    "desktopAlt": "Diffkit on desktop: side-by-side JS sample, line grain, merge pane, Text Image Pdf dock.",
+    "phoneAlt": "Diffkit on a phone: stacked editors, stats strip, Compare PNG PDF in the dock.",
+    "packAlign": "center"
   }
 ];

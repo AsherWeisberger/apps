@@ -228,5 +228,15 @@
     "repo": "https://github.com/AsherWeisberger/stampkit",
     "originalPaid": "ILovePDF Watermark / Watermarkly Pro",
     "shipped": "2026-09-02"
+  },
+  {
+    "slug": "diffkit",
+    "name": "Diffkit",
+    "job": "Spot the change. Files stay here.",
+    "kicker": "Spot a change",
+    "pages": "https://asherweisberger.github.io/diffkit/",
+    "repo": "https://github.com/AsherWeisberger/diffkit",
+    "originalPaid": "Diffchecker Pro",
+    "shipped": "2026-09-03"
   }
 ]
