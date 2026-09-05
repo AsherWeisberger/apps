@@ -350,5 +350,20 @@
     "desktopAlt": "Diffkit on desktop: side-by-side JS sample, line grain, merge pane, Text Image Pdf dock.",
     "phoneAlt": "Diffkit on a phone: stacked editors, stats strip, Compare PNG PDF in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "sortkit",
+    "name": "Sortkit",
+    "job": "Reorder the pages. Files stay here.",
+    "kicker": "Reorder pages",
+    "pages": "https://asherweisberger.github.io/sortkit/",
+    "repo": "https://github.com/AsherWeisberger/sortkit",
+    "originalPaid": "ILovePDF Organize + Rotate",
+    "shipped": "2026-09-04",
+    "desktop": "./shots/sortkit/desktop.png",
+    "phone": "./shots/sortkit/phone.png",
+    "desktopAlt": "Sortkit on desktop: thumbnail board mixing report and invoice pages, rotate and export rail.",
+    "phoneAlt": "Sortkit on a phone: page thumbnails, Add Rotate Delete Export in the dock.",
+    "packAlign": "center"
   }
 ]

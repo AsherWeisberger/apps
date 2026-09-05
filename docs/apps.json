@@ -238,5 +238,15 @@
     "repo": "https://github.com/AsherWeisberger/diffkit",
     "originalPaid": "Diffchecker Pro",
     "shipped": "2026-09-03"
+  },
+  {
+    "slug": "sortkit",
+    "name": "Sortkit",
+    "job": "Reorder the pages. Files stay here.",
+    "kicker": "Reorder pages",
+    "pages": "https://asherweisberger.github.io/sortkit/",
+    "repo": "https://github.com/AsherWeisberger/sortkit",
+    "originalPaid": "ILovePDF Organize + Rotate",
+    "shipped": "2026-09-04"
   }
 ]
