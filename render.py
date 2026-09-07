@@ -80,81 +80,52 @@ def make_stills(app: dict) -> None:
         make_webp(phone, folder / "phone.webp", PHONE_WIDTH, 78)
 
 
-def num(i: int) -> str:
-    return "%02d" % (i + 1)
+GROUPS = [("All tools", "grid"), ("PDF & documents", "file"), ("Images", "image"), ("Design", "palette"), ("Video & audio", "video"), ("Text & code", "code")]
+ICONS = json.loads((ROOT / "src" / "icons.json").read_text())
+
+
+def category_html(data: list[dict]) -> str:
+    groups = GROUPS + [(c, "grid") for c in dict.fromkeys(a.get("category", "Other tools") for a in data) if c not in dict(GROUPS)]
+    result = []
+    for category, symbol in groups:
+        count = len(data) if category == "All tools" else sum(a.get("category", "Other tools") == category for a in data)
+        if not count:
+            continue
+        name = html.escape(category)
+        selected = category == "All tools"
+        result.append(f'<button type="button" class="category{" selected" if selected else ""}" data-category="{name}" aria-pressed="{str(selected).lower()}">{ICONS[symbol]}<span>{name}</span><span class="category-count">{count}</span></button>')
+    return "".join(result)
 
 
 def card_html(app: dict, i: int) -> str:
-    lazy = "eager" if i < 2 else "lazy"
-    fetch = ' fetchpriority="high"' if i == 0 else ""
-    slug = html.escape(app["slug"])
-    name = html.escape(app["name"])
-    pages = html.escape(app["pages"])
-    repo = html.escape(app["repo"])
-    job = html.escape(app.get("job") or "")
-    kicker = html.escape(app.get("kicker") or ("Original alternative" if app.get("originalPaid") else "Browser utility"))
-    alt = html.escape(app.get("desktopAlt") or app["name"])
-    desk = html.escape(still_src(app))
-    phone = html.escape(phone_src(app))
-    featured = " featured" if i == 0 else ""
-    device = (
-        '<img class="device" src="%s" alt="" width="390" height="844" decoding="async">' % phone
-        if i == 0
-        else ""
-    )
-    return (
-        '<article class="card%s reveal" id="%s">\n'
-        '          <a class="still" href="%s" aria-label="Open %s">\n'
-        "            <picture>\n"
-        '              <source media="(max-width:700px)" srcset="%s">\n'
-        '              <img src="%s" alt="%s" width="1440" height="900" loading="%s"%s decoding="async">\n'
-        "            </picture>\n"
-        "            %s\n"
-        '            <span class="open-chip">Open</span>\n'
-        "          </a>\n"
-        '          <div class="meta">\n'
-        '            <div class="card-top"><span class="number">%s</span><span>%s</span></div>\n'
-        '            <h2 data-name="%s">%s</h2>\n'
-        '            <p class="card-copy">%s</p>\n'
-        '            <div class="links">\n'
-        '              <a class="btn primary" href="%s">Open<span class="fill" aria-hidden="true"></span></a>\n'
-        '              <a class="btn" href="%s" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>\n'
-        "            </div>\n"
-        "          </div>\n"
-        "        </article>"
-        % (featured, slug, pages, name, phone, desk, alt, lazy, fetch, device, num(i), kicker, name, name, job, pages, repo)
-    )
-
-
-def chip_html(app: dict, i: int) -> str:
-    return (
-        '<a href="#%s"><em>%s</em>%s</a>'
-        % (html.escape(app["slug"]), num(i), html.escape(app["name"]))
-    )
+    e = html.escape
+    slug, name, pages, repo = [e(app[k]) for k in ("slug", "name", "pages", "repo")]
+    category = app.get("category", "Other tools")
+    description = app.get("description") or app.get("job", "")
+    symbol = dict(GROUPS).get(category, "grid")
+    tone = next((i-1 for i, (c, _) in enumerate(GROUPS) if c == category), 4)
+    lazy = "eager" if i < 3 else "lazy"
+    search = e(" ".join([app["name"], category, description, app.get("job", ""), app.get("kicker", "")]).lower())
+    return f'''<article class="tool-card tone-{tone}" id="{slug}" data-category="{e(category)}" data-search="{search}">
+<a href="{pages}" class="preview-link" aria-label="Open {name}"><img src="{e(still_src(app))}" alt="{e(app.get('desktopAlt', app['name']))}" width="1440" height="900" loading="{lazy}" decoding="async"><span class="preview-action">Open tool {ICONS['arrow']}</span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon">{ICONS[symbol]}</span><div><h3><a href="{pages}">{name}</a></h3><span class="tool-category">{e(category)}</span></div><a class="launch-icon" href="{pages}" aria-label="Open {name}">{ICONS['arrow']}</a></div><p>{e(description)}</p><div class="card-bottom"><a href="{pages}">Open tool {ICONS['right']}</a><a class="source-link" href="{repo}" target="_blank" rel="noopener noreferrer" aria-label="{name} source code">{ICONS['code']}Source</a></div></div></article>'''
 
 
 def main() -> None:
     data = json.loads((ROOT / "apps.json").read_text())
     for app in data:
-        make_pack(app)
-        make_stills(app)
+        if not pack_path(app).exists():
+            make_pack(app)
+        if not (ROOT / "shots" / app["slug"] / "card.webp").exists():
+            make_stills(app)
 
     js = "window.APPS = " + json.dumps(data, indent=2, ensure_ascii=False) + ";\n"
     (ROOT / "apps.js").write_text(js)
 
     newest_first = list(reversed(data))
     cards = "\n\n        ".join(card_html(app, i) for i, app in enumerate(newest_first))
-    chips = "".join(chip_html(app, i) for i, app in enumerate(newest_first))
-
     src = (ROOT / "src" / "index.html").read_text()
-    src = src.replace(
-        '<div class="shop" id="shop"></div>',
-        '<div class="shop" id="shop">\n        ' + cards + "\n      </div>",
-    )
-    src = src.replace(
-        '<div class="chips" id="chips"></div>',
-        '<div class="chips" id="chips">' + chips + "</div>",
-    )
+    src = src.replace("{{CARDS}}", cards).replace("{{CATEGORIES}}", category_html(data)).replace("{{COUNT}}", str(len(data)))
 
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
@@ -163,7 +134,7 @@ def main() -> None:
     (docs / "script.js").write_text((ROOT / "src" / "script.js").read_text())
     (docs / "favicon.svg").write_text((ROOT / "src" / "favicon.svg").read_text())
     (docs / "apps.js").write_text(js)
-    slim_keys = ("slug", "name", "job", "kicker", "pages", "repo", "originalPaid", "shipped")
+    slim_keys = ("slug", "name", "job", "kicker", "pages", "repo", "originalPaid", "shipped", "category", "description")
     slim = [{k: a[k] for k in slim_keys if k in a} for a in data]
     (docs / "apps.json").write_text(json.dumps(slim, indent=2, ensure_ascii=False) + "\n")
 

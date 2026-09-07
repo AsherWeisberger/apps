@@ -1,590 +1,109 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0D0F14">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="Fourteen free browser tools by Asher Weisberger. Drop a sound. Open a PDF. Shrink a photo. Files stay in this tab.">
-  <meta name="author" content="Asher Weisberger">
-  <meta name="twitter:creator" content="@AsherWeisberger">
-  <meta property="og:title" content="Custom Apps — Asher Weisberger">
-  <meta property="og:description" content="Fourteen free tools. Open one. Files stay in this tab.">
-  <meta property="og:url" content="https://asherweisberger.github.io/apps/">
-  <meta property="og:type" content="website">
-  <title>Custom Apps — Asher Weisberger</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <!-- X PIXEL -->
-  <!-- X conversion tracking base code -->
-  <script>
-  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
-  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-  twq('config','relo7');
-  </script>
-  <!-- End X conversion tracking base code -->
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="island" id="island" role="status" aria-live="polite">
-    <span class="orb-dot" id="island-orb"></span>
-    <span class="island-label">Opening the shop</span>
-  </div>
-  <header class="nav shell">
-    <a class="wordmark" href="#top" aria-label="Custom Apps, home"><span class="mark">A</span><span>CUSTOM APPS</span></a>
-    <p class="nav-meta">26 free · in the tab</p>
-    <a class="credit" href="https://x.com/AsherWeisberger" rel="noopener noreferrer"><span class="credit-name">Asher Weisberger · </span><span class="at">@AsherWeisberger</span></a>
-  </header>
-  <main id="top">
-    <section class="mast shell">
-      <div class="dust" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="eyebrow"><span class="dot"></span> Independent software · August 2026</p>
-      <h1 class="kinetic" aria-label="Fourteen free tools.">
-        <span class="k-word" style="--d:.02s"><span>Fourteen</span></span>
-        <em class="k-word" style="--d:.12s"><span>free</span></em>
-        <span class="k-word" style="--d:.22s"><span>tools.</span></span>
-      </h1>
-      <p class="lede">Open one. Your files stay in this tab.</p>
-      <div class="chips" id="chips"><a href="#flipkit"><em>01</em>Flipkit</a><a href="#sortkit"><em>02</em>Sortkit</a><a href="#diffkit"><em>03</em>Diffkit</a><a href="#stampkit"><em>04</em>Stampkit</a><a href="#redactkit"><em>05</em>Redactkit</a><a href="#slimkit"><em>06</em>Slimkit</a><a href="#erasekit"><em>07</em>Erasekit</a><a href="#scankit"><em>08</em>Scankit</a><a href="#grabkit"><em>09</em>Grabkit</a><a href="#rulekit"><em>10</em>Rulekit</a><a href="#mockkit"><em>11</em>Mockkit</a><a href="#qrkit"><em>12</em>Qrkit</a><a href="#gifkit"><em>13</em>Gifkit</a><a href="#markkit"><em>14</em>Markkit</a><a href="#fitkit"><em>15</em>Fitkit</a><a href="#wavekit"><em>16</em>Wavekit</a><a href="#signkit"><em>17</em>Signkit</a><a href="#crushkit"><em>18</em>Crushkit</a><a href="#gleamkit"><em>19</em>Gleamkit</a><a href="#swatchkit"><em>20</em>Swatchkit</a><a href="#speakkit"><em>21</em>Speakkit</a><a href="#cinekit"><em>22</em>Cinekit</a><a href="#mattekit"><em>23</em>Mattekit</a><a href="#bestcut"><em>24</em>BestCut</a><a href="#stackpdf"><em>25</em>StackPDF</a><a href="#framekit"><em>26</em>Framekit</a></div>
-    </section>
-    <section class="ticker" aria-hidden="true">
-      <div class="ticker-track"><span>LOCAL FIRST</span><i></i><span>ALWAYS FREE</span><i></i><span>NO ACCOUNT</span><i></i><span>NO WATERMARK</span><i></i><span>PHONE READY</span><i></i><span>LOCAL FIRST</span><i></i><span>ALWAYS FREE</span><i></i><span>NO ACCOUNT</span><i></i><span>NO WATERMARK</span><i></i><span>PHONE READY</span></div>
-    </section>
-    <section class="work shell" id="work">
-      <div class="section-head"><p>The shop</p><p>26 apps · newest first</p></div>
-      <div class="shop" id="shop">
-        <article class="card featured reveal" id="flipkit">
-          <a class="still" href="https://asherweisberger.github.io/flipkit/" aria-label="Open Flipkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/flipkit/phone.webp">
-              <img src="./shots/flipkit/card.webp" alt="Flipkit on desktop: thumbnail board of PDF pages, rasterize rail with JPEG DPI and Export ZIP." width="1440" height="900" loading="eager" fetchpriority="high" decoding="async">
-            </picture>
-            <img class="device" src="./shots/flipkit/phone.webp" alt="" width="390" height="844" decoding="async">
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">01</span><span>Flip a PDF</span></div>
-            <h2 data-name="Flipkit">Flipkit</h2>
-            <p class="card-copy">PDF pages become images. Files stay here.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/flipkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/flipkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5145cd"><meta name="description" content="27 free browser tools by Asher Weisberger. Edit PDFs, work with images, create videos, and more."><title>Custom Apps — 27 free browser tools</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"></head><body><div class="app-shell"><a class="skip-link" href="#tools">Skip to tools</a>
+<aside class="library-sidebar"><div class="brand-area"><button type="button" class="brand" id="reset-home" aria-label="Show all tools"><span class="brand-symbol"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span>custom<span class="brand-light">apps</span><small>ASHER WEISBERGER</small></span></button></div><div class="sidebar-body"><p class="nav-label">YOUR TOOLBOX</p><nav class="category-nav" aria-label="Tool categories"><button type="button" class="category selected" data-category="All tools" aria-pressed="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>All tools</span><span class="category-count">27</span></button><button type="button" class="category" data-category="PDF &amp; documents" aria-pressed="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg><span>PDF &amp; documents</span><span class="category-count">8</span></button><button type="button" class="category" data-category="Images" aria-pressed="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Images</span><span class="category-count">5</span></button><button type="button" class="category" data-category="Design" aria-pressed="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg><span>Design</span><span class="category-count">6</span></button><button type="button" class="category" data-category="Video &amp; audio" aria-pressed="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M7 3l4 6m3-6 4 6m-8 4 5 3-5 3Z"/></svg><span>Video &amp; audio</span><span class="category-count">4</span></button><button type="button" class="category" data-category="Text &amp; code" aria-pressed="false"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg><span>Text &amp; code</span><span class="category-count">4</span></button></nav><div class="sidebar-note"><div class="note-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7v5c0 5 9 10 9 10s9-5 9-10V7ZM8 12l3 3 5-6"/></svg></div><h2>A little more private.</h2><p>Browser tools built to work with your files, right in the tab.</p><span>No account required <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div></div><div class="sidebar-footer"><a href="https://x.com/AsherWeisberger" target="_blank" rel="noopener noreferrer"><span class="avatar">AW</span><span><strong>Asher Weisberger</strong><small>Independent maker</small></span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div></aside>
+<div class="workspace"><header class="topbar"><span class="breadcrumb">The collection <span>/</span><strong id="breadcrumb-category">All tools</strong></span><a href="https://github.com/AsherWeisberger" target="_blank" rel="noopener noreferrer"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg><span>Made in the open</span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></header><main id="tools" class="main-content"><section class="intro"><div><p class="eyebrow"><span></span>SMALL TOOLS. REAL USES.</p><h1>Your everyday toolbox<span>.</span></h1><p>Edit a PDF. Fix a photo. Make something.<br class="mobile-break"> Find the right tool and get straight to it.</p></div><div class="collection-badge"><span>27</span><p>free browser<br>tools</p></div></section><div class="benefits"><span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-10 12h8l-1 8L22 9h-9Z"/></svg> Always free</span><span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7v5c0 5 9 10 9 10s9-5 9-10V7ZM8 12l3 3 5-6"/></svg> No account</span><span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg> Open source</span></div><section class="directory" aria-label="Browse tools"><div class="directory-toolbar"><div class="section-title"><h2 id="category-title">All tools</h2><span id="result-count">27</span></div><div class="search-field"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg><input id="search-tools" type="search" aria-label="Search tools" placeholder="Search tools or a task…" autocomplete="off"><button id="clear-search" aria-label="Clear search" hidden><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div></div><p class="result-summary" id="result-summary" aria-live="polite">Pick a tool. Everything opens in your browser.</p><div class="tool-grid"><article class="tool-card tone-0" id="flipkit" data-category="PDF &amp; documents" data-search="flipkit pdf &amp; documents convert pdf pages to images. pdf pages become images. files stay here. flip a pdf">
+<a href="https://asherweisberger.github.io/flipkit/" class="preview-link" aria-label="Open Flipkit"><img src="./shots/flipkit/card.webp" alt="Flipkit on desktop: thumbnail board of PDF pages, rasterize rail with JPEG DPI and Export ZIP." width="1440" height="900" loading="eager" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/flipkit/">Flipkit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/flipkit/" aria-label="Open Flipkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Convert PDF pages to images.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/flipkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/flipkit" target="_blank" rel="noopener noreferrer" aria-label="Flipkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="sortkit">
-          <a class="still" href="https://asherweisberger.github.io/sortkit/" aria-label="Open Sortkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/sortkit/phone.webp">
-              <img src="./shots/sortkit/card.webp" alt="Sortkit on desktop: thumbnail board mixing report and invoice pages, rotate and export rail." width="1440" height="900" loading="eager" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">02</span><span>Reorder pages</span></div>
-            <h2 data-name="Sortkit">Sortkit</h2>
-            <p class="card-copy">Reorder the pages. Files stay here.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/sortkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/sortkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-0" id="bindkit" data-category="PDF &amp; documents" data-search="bindkit pdf &amp; documents combine photos into a pdf. photos become a pdf. files stay here. bind photos">
+<a href="https://asherweisberger.github.io/bindkit/" class="preview-link" aria-label="Open Bindkit"><img src="./shots/bindkit/card.webp" alt="Bindkit on desktop: photo board, page size and margins rail, combined PDF or ZIP export." width="1440" height="900" loading="eager" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/bindkit/">Bindkit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/bindkit/" aria-label="Open Bindkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Combine photos into a PDF.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/bindkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/bindkit" target="_blank" rel="noopener noreferrer" aria-label="Bindkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="diffkit">
-          <a class="still" href="https://asherweisberger.github.io/diffkit/" aria-label="Open Diffkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/diffkit/phone.webp">
-              <img src="./shots/diffkit/card.webp" alt="Diffkit on desktop: side-by-side JS sample, line grain, merge pane, Text Image Pdf dock." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">03</span><span>Spot a change</span></div>
-            <h2 data-name="Diffkit">Diffkit</h2>
-            <p class="card-copy">Spot the change. Files stay here.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/diffkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/diffkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-0" id="sortkit" data-category="PDF &amp; documents" data-search="sortkit pdf &amp; documents reorder and rotate pdf pages. reorder the pages. files stay here. reorder pages">
+<a href="https://asherweisberger.github.io/sortkit/" class="preview-link" aria-label="Open Sortkit"><img src="./shots/sortkit/card.webp" alt="Sortkit on desktop: thumbnail board mixing report and invoice pages, rotate and export rail." width="1440" height="900" loading="eager" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/sortkit/">Sortkit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/sortkit/" aria-label="Open Sortkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Reorder and rotate PDF pages.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/sortkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/sortkit" target="_blank" rel="noopener noreferrer" aria-label="Sortkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="stampkit">
-          <a class="still" href="https://asherweisberger.github.io/stampkit/" aria-label="Open Stampkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/stampkit/phone.webp">
-              <img src="./shots/stampkit/card.webp" alt="Stampkit on desktop: diagonal (c) Asher on a sample photo, Text/Logo rail, Adaptive contrast, Batch strip." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">04</span><span>Stamp a batch</span></div>
-            <h2 data-name="Stampkit">Stampkit</h2>
-            <p class="card-copy">Stamp your mark. Files stay here.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/stampkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/stampkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-4" id="diffkit" data-category="Text &amp; code" data-search="diffkit text &amp; code compare text, images, and pdfs. spot the change. files stay here. spot a change">
+<a href="https://asherweisberger.github.io/diffkit/" class="preview-link" aria-label="Open Diffkit"><img src="./shots/diffkit/card.webp" alt="Diffkit on desktop: side-by-side JS sample, line grain, merge pane, Text Image Pdf dock." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg></span><div><h3><a href="https://asherweisberger.github.io/diffkit/">Diffkit</a></h3><span class="tool-category">Text &amp; code</span></div><a class="launch-icon" href="https://asherweisberger.github.io/diffkit/" aria-label="Open Diffkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Compare text, images, and PDFs.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/diffkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/diffkit" target="_blank" rel="noopener noreferrer" aria-label="Diffkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="redactkit">
-          <a class="still" href="https://asherweisberger.github.io/redactkit/" aria-label="Open Redactkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/redactkit/phone.webp">
-              <img src="./shots/redactkit/card.webp" alt="Redactkit on desktop: sample invoice with SSN marks burned black, Applied view, Export." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">05</span><span>Burn a secret</span></div>
-            <h2 data-name="Redactkit">Redactkit</h2>
-            <p class="card-copy">Black it out for real. Nothing uploaded.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/redactkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/redactkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-1" id="stampkit" data-category="Images" data-search="stampkit images add your watermark to a batch of images. stamp your mark. files stay here. stamp a batch">
+<a href="https://asherweisberger.github.io/stampkit/" class="preview-link" aria-label="Open Stampkit"><img src="./shots/stampkit/card.webp" alt="Stampkit on desktop: diagonal (c) Asher on a sample photo, Text/Logo rail, Adaptive contrast, Batch strip." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><div><h3><a href="https://asherweisberger.github.io/stampkit/">Stampkit</a></h3><span class="tool-category">Images</span></div><a class="launch-icon" href="https://asherweisberger.github.io/stampkit/" aria-label="Open Stampkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Add your watermark to a batch of images.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/stampkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/stampkit" target="_blank" rel="noopener noreferrer" aria-label="Stampkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="slimkit">
-          <a class="still" href="https://asherweisberger.github.io/slimkit/" aria-label="Open Slimkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/slimkit/phone.webp">
-              <img src="./shots/slimkit/card.webp" alt="Slimkit on desktop: sample invoice before and after, Soft mode, 1.7MB to 69.6KB, Download." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">06</span><span>Compress PDF</span></div>
-            <h2 data-name="Slimkit">Slimkit</h2>
-            <p class="card-copy">Squeeze the PDF. Keep the words.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/slimkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/slimkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-0" id="redactkit" data-category="PDF &amp; documents" data-search="redactkit pdf &amp; documents permanently hide sensitive information. black it out for real. nothing uploaded. burn a secret">
+<a href="https://asherweisberger.github.io/redactkit/" class="preview-link" aria-label="Open Redactkit"><img src="./shots/redactkit/card.webp" alt="Redactkit on desktop: sample invoice with SSN marks burned black, Applied view, Export." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/redactkit/">Redactkit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/redactkit/" aria-label="Open Redactkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Permanently hide sensitive information.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/redactkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/redactkit" target="_blank" rel="noopener noreferrer" aria-label="Redactkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="erasekit">
-          <a class="still" href="https://asherweisberger.github.io/erasekit/" aria-label="Open Erasekit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/erasekit/phone.webp">
-              <img src="./shots/erasekit/card.webp" alt="Erasekit on desktop: a lake polaroid on the desk, red SALE sticker masked, Telea, Erase." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">07</span><span>Erase an object</span></div>
-            <h2 data-name="Erasekit">Erasekit</h2>
-            <p class="card-copy">Brush it out. Keep every pixel.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/erasekit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/erasekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-0" id="slimkit" data-category="PDF &amp; documents" data-search="slimkit pdf &amp; documents reduce the size of a pdf. squeeze the pdf. keep the words. compress pdf">
+<a href="https://asherweisberger.github.io/slimkit/" class="preview-link" aria-label="Open Slimkit"><img src="./shots/slimkit/card.webp" alt="Slimkit on desktop: sample invoice before and after, Soft mode, 1.7MB to 69.6KB, Download." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/slimkit/">Slimkit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/slimkit/" aria-label="Open Slimkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Reduce the size of a PDF.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/slimkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/slimkit" target="_blank" rel="noopener noreferrer" aria-label="Slimkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="scankit">
-          <a class="still" href="https://asherweisberger.github.io/scankit/" aria-label="Open Scankit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/scankit/phone.webp">
-              <img src="./shots/scankit/card.webp" alt="Scankit on desktop: a flattened invoice on the desk, Enhance selected, Export PDF." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">08</span><span>Scan a page</span></div>
-            <h2 data-name="Scankit">Scankit</h2>
-            <p class="card-copy">Photograph a page. Get a flat, clean PDF.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/scankit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/scankit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-1" id="erasekit" data-category="Images" data-search="erasekit images brush unwanted objects out of photos. brush it out. keep every pixel. erase an object">
+<a href="https://asherweisberger.github.io/erasekit/" class="preview-link" aria-label="Open Erasekit"><img src="./shots/erasekit/card.webp" alt="Erasekit on desktop: a lake polaroid on the desk, red SALE sticker masked, Telea, Erase." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><div><h3><a href="https://asherweisberger.github.io/erasekit/">Erasekit</a></h3><span class="tool-category">Images</span></div><a class="launch-icon" href="https://asherweisberger.github.io/erasekit/" aria-label="Open Erasekit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Brush unwanted objects out of photos.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/erasekit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/erasekit" target="_blank" rel="noopener noreferrer" aria-label="Erasekit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="grabkit">
-          <a class="still" href="https://asherweisberger.github.io/grabkit/" aria-label="Open Grabkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/grabkit/phone.webp">
-              <img src="./shots/grabkit/card.webp" alt="Grabkit on desktop: a receipt on the glass, Plain/Markdown/CSV/JSON modes, secrets spotted, Copy." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">09</span><span>Grab text</span></div>
-            <h2 data-name="Grabkit">Grabkit</h2>
-            <p class="card-copy">Drop a shot. Grab the words.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/grabkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/grabkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-0" id="scankit" data-category="PDF &amp; documents" data-search="scankit pdf &amp; documents turn a photo of a page into a clean pdf. photograph a page. get a flat, clean pdf. scan a page">
+<a href="https://asherweisberger.github.io/scankit/" class="preview-link" aria-label="Open Scankit"><img src="./shots/scankit/card.webp" alt="Scankit on desktop: a flattened invoice on the desk, Enhance selected, Export PDF." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/scankit/">Scankit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/scankit/" aria-label="Open Scankit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Turn a photo of a page into a clean PDF.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/scankit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/scankit" target="_blank" rel="noopener noreferrer" aria-label="Scankit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="rulekit">
-          <a class="still" href="https://asherweisberger.github.io/rulekit/" aria-label="Open Rulekit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/rulekit/phone.webp">
-              <img src="./shots/rulekit/card.webp" alt="Rulekit on desktop: a UI shot on the glass with pinned distances, a rect, and guides." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">10</span><span>Measure a shot</span></div>
-            <h2 data-name="Rulekit">Rulekit</h2>
-            <p class="card-copy">Drop a UI shot. Measure every gap. Export the proof.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/rulekit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/rulekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-4" id="grabkit" data-category="Text &amp; code" data-search="grabkit text &amp; code extract text from screenshots and images. drop a shot. grab the words. grab text">
+<a href="https://asherweisberger.github.io/grabkit/" class="preview-link" aria-label="Open Grabkit"><img src="./shots/grabkit/card.webp" alt="Grabkit on desktop: a receipt on the glass, Plain/Markdown/CSV/JSON modes, secrets spotted, Copy." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg></span><div><h3><a href="https://asherweisberger.github.io/grabkit/">Grabkit</a></h3><span class="tool-category">Text &amp; code</span></div><a class="launch-icon" href="https://asherweisberger.github.io/grabkit/" aria-label="Open Grabkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Extract text from screenshots and images.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/grabkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/grabkit" target="_blank" rel="noopener noreferrer" aria-label="Grabkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="mockkit">
-          <a class="still" href="https://asherweisberger.github.io/mockkit/" aria-label="Open Mockkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/mockkit/phone.webp">
-              <img src="./shots/mockkit/card.webp" alt="Mockkit on desktop: a phone frame on a mesh backdrop, scene sliders, store-set and batch ZIP." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">11</span><span>Frame a device</span></div>
-            <h2 data-name="Mockkit">Mockkit</h2>
-            <p class="card-copy">Drop a screenshot. Pick a device. Get a print-ready mockup.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/mockkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/mockkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-2" id="rulekit" data-category="Design" data-search="rulekit design measure spacing in a ui screenshot. drop a ui shot. measure every gap. export the proof. measure a shot">
+<a href="https://asherweisberger.github.io/rulekit/" class="preview-link" aria-label="Open Rulekit"><img src="./shots/rulekit/card.webp" alt="Rulekit on desktop: a UI shot on the glass with pinned distances, a rect, and guides." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg></span><div><h3><a href="https://asherweisberger.github.io/rulekit/">Rulekit</a></h3><span class="tool-category">Design</span></div><a class="launch-icon" href="https://asherweisberger.github.io/rulekit/" aria-label="Open Rulekit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Measure spacing in a UI screenshot.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/rulekit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/rulekit" target="_blank" rel="noopener noreferrer" aria-label="Rulekit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="qrkit">
-          <a class="still" href="https://asherweisberger.github.io/qrkit/" aria-label="Open Qrkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/qrkit/phone.webp">
-              <img src="./shots/qrkit/card.webp" alt="Qrkit on desktop: a print plate with a framed SCAN ME code, type chips, ink and paper, PNG SVG PDF." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">12</span><span>Make a QR</span></div>
-            <h2 data-name="Qrkit">Qrkit</h2>
-            <p class="card-copy">Drop a link. Get a branded QR you can actually print.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/qrkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/qrkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-2" id="mockkit" data-category="Design" data-search="mockkit design turn screenshots into device mockups. drop a screenshot. pick a device. get a print-ready mockup. frame a device">
+<a href="https://asherweisberger.github.io/mockkit/" class="preview-link" aria-label="Open Mockkit"><img src="./shots/mockkit/card.webp" alt="Mockkit on desktop: a phone frame on a mesh backdrop, scene sliders, store-set and batch ZIP." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg></span><div><h3><a href="https://asherweisberger.github.io/mockkit/">Mockkit</a></h3><span class="tool-category">Design</span></div><a class="launch-icon" href="https://asherweisberger.github.io/mockkit/" aria-label="Open Mockkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Turn screenshots into device mockups.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/mockkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/mockkit" target="_blank" rel="noopener noreferrer" aria-label="Mockkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="gifkit">
-          <a class="still" href="https://asherweisberger.github.io/gifkit/" aria-label="Open Gifkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/gifkit/phone.webp">
-              <img src="./shots/gifkit/card.webp" alt="Gifkit on desktop: a film gate looping a clip, in and out on the strip, width fps speed, Make GIF." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">13</span><span>Make a GIF</span></div>
-            <h2 data-name="Gifkit">Gifkit</h2>
-            <p class="card-copy">Drop a video. Get a GIF.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/gifkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/gifkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-2" id="qrkit" data-category="Design" data-search="qrkit design create a branded, print-ready qr code. drop a link. get a branded qr you can actually print. make a qr">
+<a href="https://asherweisberger.github.io/qrkit/" class="preview-link" aria-label="Open Qrkit"><img src="./shots/qrkit/card.webp" alt="Qrkit on desktop: a print plate with a framed SCAN ME code, type chips, ink and paper, PNG SVG PDF." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg></span><div><h3><a href="https://asherweisberger.github.io/qrkit/">Qrkit</a></h3><span class="tool-category">Design</span></div><a class="launch-icon" href="https://asherweisberger.github.io/qrkit/" aria-label="Open Qrkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Create a branded, print-ready QR code.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/qrkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/qrkit" target="_blank" rel="noopener noreferrer" aria-label="Qrkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="markkit">
-          <a class="still" href="https://asherweisberger.github.io/markkit/" aria-label="Open Markkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/markkit/phone.webp">
-              <img src="./shots/markkit/card.webp" alt="Markkit on desktop: a screenshot on a night desk, an arrow, numbered steps, blur and pixel, Export." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">14</span><span>Mark a screenshot</span></div>
-            <h2 data-name="Markkit">Markkit</h2>
-            <p class="card-copy">Drop a screenshot. Arrow it. Blur the secrets.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/markkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/markkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-3" id="gifkit" data-category="Video &amp; audio" data-search="gifkit video &amp; audio turn a video clip into a gif. drop a video. get a gif. make a gif">
+<a href="https://asherweisberger.github.io/gifkit/" class="preview-link" aria-label="Open Gifkit"><img src="./shots/gifkit/card.webp" alt="Gifkit on desktop: a film gate looping a clip, in and out on the strip, width fps speed, Make GIF." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M7 3l4 6m3-6 4 6m-8 4 5 3-5 3Z"/></svg></span><div><h3><a href="https://asherweisberger.github.io/gifkit/">Gifkit</a></h3><span class="tool-category">Video &amp; audio</span></div><a class="launch-icon" href="https://asherweisberger.github.io/gifkit/" aria-label="Open Gifkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Turn a video clip into a GIF.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/gifkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/gifkit" target="_blank" rel="noopener noreferrer" aria-label="Gifkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="fitkit">
-          <a class="still" href="https://asherweisberger.github.io/fitkit/" aria-label="Open Fitkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/fitkit/phone.webp">
-              <img src="./shots/fitkit/card.webp" alt="Fitkit on desktop: a crop gate on a cream table, X post 1600×900, pan and Export." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">15</span><span>Crop a photo</span></div>
-            <h2 data-name="Fitkit">Fitkit</h2>
-            <p class="card-copy">Drop a photo. Crop it for X, Instagram, or TikTok.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/fitkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/fitkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-2" id="markkit" data-category="Design" data-search="markkit design annotate screenshots and blur details. drop a screenshot. arrow it. blur the secrets. mark a screenshot">
+<a href="https://asherweisberger.github.io/markkit/" class="preview-link" aria-label="Open Markkit"><img src="./shots/markkit/card.webp" alt="Markkit on desktop: a screenshot on a night desk, an arrow, numbered steps, blur and pixel, Export." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg></span><div><h3><a href="https://asherweisberger.github.io/markkit/">Markkit</a></h3><span class="tool-category">Design</span></div><a class="launch-icon" href="https://asherweisberger.github.io/markkit/" aria-label="Open Markkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Annotate screenshots and blur details.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/markkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/markkit" target="_blank" rel="noopener noreferrer" aria-label="Markkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="wavekit">
-          <a class="still" href="https://asherweisberger.github.io/wavekit/" aria-label="Open Wavekit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/wavekit/phone.webp">
-              <img src="./shots/wavekit/card.webp" alt="Wavekit on desktop: a square mirrored waveform, Friday night, Export." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">16</span><span>Make a waveform</span></div>
-            <h2 data-name="Wavekit">Wavekit</h2>
-            <p class="card-copy">Drop a sound. Get a waveform video.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/wavekit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/wavekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-1" id="fitkit" data-category="Images" data-search="fitkit images crop photos for your social posts. drop a photo. crop it for x, instagram, or tiktok. crop a photo">
+<a href="https://asherweisberger.github.io/fitkit/" class="preview-link" aria-label="Open Fitkit"><img src="./shots/fitkit/card.webp" alt="Fitkit on desktop: a crop gate on a cream table, X post 1600×900, pan and Export." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><div><h3><a href="https://asherweisberger.github.io/fitkit/">Fitkit</a></h3><span class="tool-category">Images</span></div><a class="launch-icon" href="https://asherweisberger.github.io/fitkit/" aria-label="Open Fitkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Crop photos for your social posts.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/fitkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/fitkit" target="_blank" rel="noopener noreferrer" aria-label="Fitkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="signkit">
-          <a class="still" href="https://asherweisberger.github.io/signkit/" aria-label="Open Signkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/signkit/phone.webp">
-              <img src="./shots/signkit/card.webp" alt="Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">17</span><span>Sign a PDF</span></div>
-            <h2 data-name="Signkit">Signkit</h2>
-            <p class="card-copy">Open a PDF. Sign it. Download it.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/signkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/signkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-3" id="wavekit" data-category="Video &amp; audio" data-search="wavekit video &amp; audio turn audio into a waveform video. drop a sound. get a waveform video. make a waveform">
+<a href="https://asherweisberger.github.io/wavekit/" class="preview-link" aria-label="Open Wavekit"><img src="./shots/wavekit/card.webp" alt="Wavekit on desktop: a square mirrored waveform, Friday night, Export." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M7 3l4 6m3-6 4 6m-8 4 5 3-5 3Z"/></svg></span><div><h3><a href="https://asherweisberger.github.io/wavekit/">Wavekit</a></h3><span class="tool-category">Video &amp; audio</span></div><a class="launch-icon" href="https://asherweisberger.github.io/wavekit/" aria-label="Open Wavekit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Turn audio into a waveform video.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/wavekit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/wavekit" target="_blank" rel="noopener noreferrer" aria-label="Wavekit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="crushkit">
-          <a class="still" href="https://asherweisberger.github.io/crushkit/" aria-label="Open Crushkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/crushkit/phone.webp">
-              <img src="./shots/crushkit/card.webp" alt="Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">18</span><span>Shrink a photo</span></div>
-            <h2 data-name="Crushkit">Crushkit</h2>
-            <p class="card-copy">Drop a photo. Get a smaller file.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/crushkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/crushkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-0" id="signkit" data-category="PDF &amp; documents" data-search="signkit pdf &amp; documents add your signature to a pdf. open a pdf. sign it. download it. sign a pdf">
+<a href="https://asherweisberger.github.io/signkit/" class="preview-link" aria-label="Open Signkit"><img src="./shots/signkit/card.webp" alt="Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/signkit/">Signkit</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/signkit/" aria-label="Open Signkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Add your signature to a PDF.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/signkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/signkit" target="_blank" rel="noopener noreferrer" aria-label="Signkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="gleamkit">
-          <a class="still" href="https://asherweisberger.github.io/gleamkit/" aria-label="Open Gleamkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/gleamkit/phone.webp">
-              <img src="./shots/gleamkit/card.webp" alt="Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">19</span><span>Picture of code</span></div>
-            <h2 data-name="Gleamkit">Gleamkit</h2>
-            <p class="card-copy">Paste code. Get a picture or video of it.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/gleamkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/gleamkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-1" id="crushkit" data-category="Images" data-search="crushkit images compress photos into smaller files. drop a photo. get a smaller file. shrink a photo">
+<a href="https://asherweisberger.github.io/crushkit/" class="preview-link" aria-label="Open Crushkit"><img src="./shots/crushkit/card.webp" alt="Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><div><h3><a href="https://asherweisberger.github.io/crushkit/">Crushkit</a></h3><span class="tool-category">Images</span></div><a class="launch-icon" href="https://asherweisberger.github.io/crushkit/" aria-label="Open Crushkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Compress photos into smaller files.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/crushkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/crushkit" target="_blank" rel="noopener noreferrer" aria-label="Crushkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="swatchkit">
-          <a class="still" href="https://asherweisberger.github.io/swatchkit/" aria-label="Open Swatchkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/swatchkit/phone.webp">
-              <img src="./shots/swatchkit/card.webp" alt="Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">20</span><span>Pick colors</span></div>
-            <h2 data-name="Swatchkit">Swatchkit</h2>
-            <p class="card-copy">Make a color palette. Copy the codes.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/swatchkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/swatchkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-4" id="gleamkit" data-category="Text &amp; code" data-search="gleamkit text &amp; code turn code into an image or video. paste code. get a picture or video of it. picture of code">
+<a href="https://asherweisberger.github.io/gleamkit/" class="preview-link" aria-label="Open Gleamkit"><img src="./shots/gleamkit/card.webp" alt="Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg></span><div><h3><a href="https://asherweisberger.github.io/gleamkit/">Gleamkit</a></h3><span class="tool-category">Text &amp; code</span></div><a class="launch-icon" href="https://asherweisberger.github.io/gleamkit/" aria-label="Open Gleamkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Turn code into an image or video.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/gleamkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/gleamkit" target="_blank" rel="noopener noreferrer" aria-label="Gleamkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="speakkit">
-          <a class="still" href="https://asherweisberger.github.io/speakkit/" aria-label="Open Speakkit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/speakkit/phone.webp">
-              <img src="./shots/speakkit/card.webp" alt="Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">21</span><span>Talk to type</span></div>
-            <h2 data-name="Speakkit">Speakkit</h2>
-            <p class="card-copy">Talk. The page writes it down.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/speakkit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/speakkit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-2" id="swatchkit" data-category="Design" data-search="swatchkit design build a palette and copy color codes. make a color palette. copy the codes. pick colors">
+<a href="https://asherweisberger.github.io/swatchkit/" class="preview-link" aria-label="Open Swatchkit"><img src="./shots/swatchkit/card.webp" alt="Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg></span><div><h3><a href="https://asherweisberger.github.io/swatchkit/">Swatchkit</a></h3><span class="tool-category">Design</span></div><a class="launch-icon" href="https://asherweisberger.github.io/swatchkit/" aria-label="Open Swatchkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Build a palette and copy color codes.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/swatchkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/swatchkit" target="_blank" rel="noopener noreferrer" aria-label="Swatchkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="cinekit">
-          <a class="still" href="https://asherweisberger.github.io/cinekit/" aria-label="Open Cinekit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/cinekit/phone.webp">
-              <img src="./shots/cinekit/card.webp" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">22</span><span>Record a screen</span></div>
-            <h2 data-name="Cinekit">Cinekit</h2>
-            <p class="card-copy">Record your screen. Get a movie of it.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/cinekit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/cinekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-4" id="speakkit" data-category="Text &amp; code" data-search="speakkit text &amp; code dictate text with your voice. talk. the page writes it down. talk to type">
+<a href="https://asherweisberger.github.io/speakkit/" class="preview-link" aria-label="Open Speakkit"><img src="./shots/speakkit/card.webp" alt="Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg></span><div><h3><a href="https://asherweisberger.github.io/speakkit/">Speakkit</a></h3><span class="tool-category">Text &amp; code</span></div><a class="launch-icon" href="https://asherweisberger.github.io/speakkit/" aria-label="Open Speakkit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Dictate text with your voice.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/speakkit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/speakkit" target="_blank" rel="noopener noreferrer" aria-label="Speakkit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="mattekit">
-          <a class="still" href="https://asherweisberger.github.io/mattekit/" aria-label="Open Mattekit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/mattekit/phone.webp">
-              <img src="./shots/mattekit/card.webp" alt="Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">23</span><span>Cut a photo</span></div>
-            <h2 data-name="Mattekit">Mattekit</h2>
-            <p class="card-copy">Cut a person out of a photo.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/mattekit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/mattekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-3" id="cinekit" data-category="Video &amp; audio" data-search="cinekit video &amp; audio record your screen as a video. record your screen. get a movie of it. record a screen">
+<a href="https://asherweisberger.github.io/cinekit/" class="preview-link" aria-label="Open Cinekit"><img src="./shots/cinekit/card.webp" alt="Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M7 3l4 6m3-6 4 6m-8 4 5 3-5 3Z"/></svg></span><div><h3><a href="https://asherweisberger.github.io/cinekit/">Cinekit</a></h3><span class="tool-category">Video &amp; audio</span></div><a class="launch-icon" href="https://asherweisberger.github.io/cinekit/" aria-label="Open Cinekit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Record your screen as a video.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/cinekit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/cinekit" target="_blank" rel="noopener noreferrer" aria-label="Cinekit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="bestcut">
-          <a class="still" href="https://asherweisberger.github.io/bestcut/" aria-label="Open BestCut">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/bestcut/phone.webp">
-              <img src="./shots/bestcut/card.webp" alt="BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">24</span><span>Cut a video</span></div>
-            <h2 data-name="BestCut">BestCut</h2>
-            <p class="card-copy">Cut a video on your phone.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/bestcut/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/bestcut" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-1" id="mattekit" data-category="Images" data-search="mattekit images cut a person out of a photo. cut a person out of a photo. cut a photo">
+<a href="https://asherweisberger.github.io/mattekit/" class="preview-link" aria-label="Open Mattekit"><img src="./shots/mattekit/card.webp" alt="Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><div><h3><a href="https://asherweisberger.github.io/mattekit/">Mattekit</a></h3><span class="tool-category">Images</span></div><a class="launch-icon" href="https://asherweisberger.github.io/mattekit/" aria-label="Open Mattekit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Cut a person out of a photo.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/mattekit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/mattekit" target="_blank" rel="noopener noreferrer" aria-label="Mattekit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="stackpdf">
-          <a class="still" href="https://asherweisberger.github.io/stackpdf/" aria-label="Open StackPDF">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/stackpdf/phone.webp">
-              <img src="./shots/stackpdf/card.webp" alt="StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">25</span><span>Stack PDFs</span></div>
-            <h2 data-name="StackPDF">StackPDF</h2>
-            <p class="card-copy">Stick PDFs together. Or pull pages out.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/stackpdf/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/stackpdf" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
+        <article class="tool-card tone-3" id="bestcut" data-category="Video &amp; audio" data-search="bestcut video &amp; audio edit videos on your phone. cut a video on your phone. cut a video">
+<a href="https://asherweisberger.github.io/bestcut/" class="preview-link" aria-label="Open BestCut"><img src="./shots/bestcut/card.webp" alt="BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M7 3l4 6m3-6 4 6m-8 4 5 3-5 3Z"/></svg></span><div><h3><a href="https://asherweisberger.github.io/bestcut/">BestCut</a></h3><span class="tool-category">Video &amp; audio</span></div><a class="launch-icon" href="https://asherweisberger.github.io/bestcut/" aria-label="Open BestCut"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Edit videos on your phone.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/bestcut/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/bestcut" target="_blank" rel="noopener noreferrer" aria-label="BestCut source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
 
-        <article class="card reveal" id="framekit">
-          <a class="still" href="https://asherweisberger.github.io/framekit/" aria-label="Open Framekit">
-            <picture>
-              <source media="(max-width:700px)" srcset="./shots/framekit/phone.webp">
-              <img src="./shots/framekit/card.webp" alt="Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download." width="1440" height="900" loading="lazy" decoding="async">
-            </picture>
-            
-            <span class="open-chip">Open</span>
-          </a>
-          <div class="meta">
-            <div class="card-top"><span class="number">26</span><span>Frame a shot</span></div>
-            <h2 data-name="Framekit">Framekit</h2>
-            <p class="card-copy">Put a pretty frame around a screenshot.</p>
-            <div class="links">
-              <a class="btn primary" href="https://asherweisberger.github.io/framekit/">Open<span class="fill" aria-hidden="true"></span></a>
-              <a class="btn" href="https://github.com/AsherWeisberger/framekit" rel="noopener noreferrer">Source<span class="fill" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer class="footer shell">
-    <div><span class="mark inverted">A</span><p>Small software,<br>made with care.</p></div>
-    <p class="footer-credit">Asher Weisberger · <a href="https://x.com/AsherWeisberger" rel="noopener noreferrer">@AsherWeisberger</a></p>
-    <a href="#top" class="back">Back to top ↑</a>
-  </footer>
-  <script src="./js/orb.js"></script>
-  <script src="./apps.js"></script>
-  <script src="./script.js"></script>
-  <script src="./js/pixel.js"></script>
-</body>
-</html>
+        <article class="tool-card tone-0" id="stackpdf" data-category="PDF &amp; documents" data-search="stackpdf pdf &amp; documents merge pdfs or extract individual pages. stick pdfs together. or pull pages out. stack pdfs">
+<a href="https://asherweisberger.github.io/stackpdf/" class="preview-link" aria-label="Open StackPDF"><img src="./shots/stackpdf/card.webp" alt="StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><div><h3><a href="https://asherweisberger.github.io/stackpdf/">StackPDF</a></h3><span class="tool-category">PDF &amp; documents</span></div><a class="launch-icon" href="https://asherweisberger.github.io/stackpdf/" aria-label="Open StackPDF"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Merge PDFs or extract individual pages.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/stackpdf/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/stackpdf" target="_blank" rel="noopener noreferrer" aria-label="StackPDF source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article>
+
+        <article class="tool-card tone-2" id="framekit" data-category="Design" data-search="framekit design give screenshots a polished frame. put a pretty frame around a screenshot. frame a shot">
+<a href="https://asherweisberger.github.io/framekit/" class="preview-link" aria-label="Open Framekit"><img src="./shots/framekit/card.webp" alt="Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download." width="1440" height="900" loading="lazy" decoding="async"><span class="preview-action">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></a>
+<div class="card-body"><div class="card-heading"><span class="tool-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1-4c-1-1 0-3 2-3h2c5 0 3-11-6-11Z"/><path d="M7 10h.01M10 6h.01M15 6h.01M18 10h.01"/></svg></span><div><h3><a href="https://asherweisberger.github.io/framekit/">Framekit</a></h3><span class="tool-category">Design</span></div><a class="launch-icon" href="https://asherweisberger.github.io/framekit/" aria-label="Open Framekit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><p>Give screenshots a polished frame.</p><div class="card-bottom"><a href="https://asherweisberger.github.io/framekit/">Open tool <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="source-link" href="https://github.com/AsherWeisberger/framekit" target="_blank" rel="noopener noreferrer" aria-label="Framekit source code"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-16-2 20"/></svg>Source</a></div></div></article></div><div class="empty-state" id="empty-state" hidden><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg><h3>No tools found</h3><p>Try a task like “compress,” “PDF,” or “photo.”</p><button id="show-all">Show all tools <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></section><footer class="main-footer"><span>Small software, made with care.</span><a href="#tools">Back to top ↑</a></footer></main></div></div><script src="./script.js"></script><script src="./js/pixel.js"></script></body></html>

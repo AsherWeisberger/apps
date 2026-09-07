@@ -1,14 +1,10 @@
 # Asher · apps
 
-A dark editorial shop of free, original in-tab apps. No account. No watermark. Files never leave the browser.
+A responsive library of free browser tools, with task search, category navigation, and compact app previews.
 
 Live: [asherweisberger.github.io/apps](https://asherweisberger.github.io/apps/)
 
-Made by [Asher Weisberger](https://x.com/AsherWeisberger) ([@AsherWeisberger](https://x.com/AsherWeisberger))
-
-The page is a tight dark storefront: Motion palette (`#0D0F14` ink, `#D9CCAC` sand), a short kinetic line, then the apps as photo-dominant cards. Newest first. Each card is a still of the live UI, one plain sentence, Open, and Source. JSON order is oldest → newest; the shop shows newest first.
-
-Pitches are one sentence a 10-year-old gets.
+Made by [Asher Weisberger](https://x.com/AsherWeisberger).
 
 ## Add the next daily app
 
@@ -23,6 +19,8 @@ Nightly builds should **append**, not rewrite the page by hand.
   "name": "NewApp",
   "job": "One line. What it does.",
   "kicker": "Short verb",
+  "category": "PDF & documents",
+  "description": "A clear description of the task.",
   "pages": "https://asherweisberger.github.io/newapp/",
   "repo": "https://github.com/AsherWeisberger/newapp",
   "originalPaid": "The paid job it replaces",
@@ -33,6 +31,8 @@ Nightly builds should **append**, not rewrite the page by hand.
   "phoneAlt": "NewApp on a phone."
 }
 ```
+
+Categories: `PDF & documents`, `Images`, `Design`, `Video & audio`, and `Text & code`. Apps without a category appear under `Other tools`. The displayed total updates automatically.
 
 `./build.sh` writes `card.webp` / `phone.webp` gallery stills and a square packshot at `shots/<slug>/pack.png`. Set `"still"` to skip pack generation and use your own frame. `"packAlign": "right"` (or `"left"`) shifts the square crop.
 
@@ -53,7 +53,7 @@ Then open http://127.0.0.1:8080/
 
 ## Stack
 
-Static HTML, CSS, JS. Motion palette on a dark field, self-hosted Geist Sans (SIL OFL). No framework, no bundler, no account.
+Static HTML, CSS, and JavaScript with self-hosted Geist Sans (SIL OFL). White and indigo UI, responsive category navigation, accessible search and empty states. All app links remain available without JavaScript. No framework or bundler.
 
 MIT. Copyright 2026 Asher Weisberger ([@AsherWeisberger](https://x.com/AsherWeisberger)). Original work — not affiliated with the paid apps these replace.
 

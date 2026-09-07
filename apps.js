@@ -12,7 +12,9 @@ window.APPS = [
     "phone": "./shots/framekit/phone.png",
     "desktopAlt": "Framekit on desktop: paste or drop a screenshot, pick a background, set padding, then download.",
     "phoneAlt": "Framekit on a phone: paste a screenshot, pick a background, set padding, download.",
-    "packAlign": "right"
+    "packAlign": "right",
+    "category": "Design",
+    "description": "Give screenshots a polished frame."
   },
   {
     "slug": "stackpdf",
@@ -26,7 +28,9 @@ window.APPS = [
     "desktop": "./shots/stackpdf/desktop.png",
     "phone": "./shots/stackpdf/phone.png",
     "desktopAlt": "StackPDF on desktop: a stack of PDFs, page picks, merge and extract in one tab.",
-    "phoneAlt": "StackPDF on a phone: three files in a stack, pages selected, merge and extract in the dock."
+    "phoneAlt": "StackPDF on a phone: three files in a stack, pages selected, merge and extract in the dock.",
+    "category": "PDF & documents",
+    "description": "Merge PDFs or extract individual pages."
   },
   {
     "slug": "bestcut",
@@ -40,7 +44,9 @@ window.APPS = [
     "desktop": "./shots/bestcut/desktop.png",
     "phone": "./shots/bestcut/phone.png",
     "desktopAlt": "BestCut on desktop: media bin, 9:16 preview, inspector, four-track timeline, and dock.",
-    "phoneAlt": "BestCut on a phone: 9:16 preview, four-track timeline, and the edit dock."
+    "phoneAlt": "BestCut on a phone: 9:16 preview, four-track timeline, and the edit dock.",
+    "category": "Video & audio",
+    "description": "Edit videos on your phone."
   },
   {
     "slug": "mattekit",
@@ -54,7 +60,9 @@ window.APPS = [
     "desktop": "./shots/mattekit/desktop.png",
     "phone": "./shots/mattekit/phone.png",
     "desktopAlt": "Mattekit on desktop: a before/after cutout, backdrop swatches, feather and threshold, PNG export.",
-    "phoneAlt": "Mattekit on a phone: before/after, backdrop swatches, matte sliders, and PNG in the dock."
+    "phoneAlt": "Mattekit on a phone: before/after, backdrop swatches, matte sliders, and PNG in the dock.",
+    "category": "Images",
+    "description": "Cut a person out of a photo."
   },
   {
     "slug": "cinekit",
@@ -68,7 +76,9 @@ window.APPS = [
     "desktop": "./shots/cinekit/desktop.png",
     "phone": "./shots/cinekit/phone.png",
     "desktopAlt": "Cinekit on desktop: a padded studio preview, grade rail, zoom marks on the timeline, and Record.",
-    "phoneAlt": "Cinekit on a phone: the studio booth, a trim strip, and Record in the dock."
+    "phoneAlt": "Cinekit on a phone: the studio booth, a trim strip, and Record in the dock.",
+    "category": "Video & audio",
+    "description": "Record your screen as a video."
   },
   {
     "slug": "speakkit",
@@ -82,7 +92,9 @@ window.APPS = [
     "desktop": "./shots/speakkit/desktop.png",
     "phone": "./shots/speakkit/phone.png",
     "desktopAlt": "Speakkit on desktop: a cream speaking page, hold pad, punctuation chips, and a rail of takes.",
-    "phoneAlt": "Speakkit on a phone: the page, punctuation chips, and a giant hold-to-talk dock."
+    "phoneAlt": "Speakkit on a phone: the page, punctuation chips, and a giant hold-to-talk dock.",
+    "category": "Text & code",
+    "description": "Dictate text with your voice."
   },
   {
     "slug": "swatchkit",
@@ -96,7 +108,9 @@ window.APPS = [
     "desktop": "./shots/swatchkit/desktop.png",
     "phone": "./shots/swatchkit/phone.png",
     "desktopAlt": "Swatchkit on desktop: a fan of paint chips on a dark table, OKLCH sliders, contrast, Shuffle.",
-    "phoneAlt": "Swatchkit on a phone: one chip fills the sheet, hex on a cream label, Shuffle in the dock."
+    "phoneAlt": "Swatchkit on a phone: one chip fills the sheet, hex on a cream label, Shuffle in the dock.",
+    "category": "Design",
+    "description": "Build a palette and copy color codes."
   },
   {
     "slug": "gleamkit",
@@ -110,7 +124,9 @@ window.APPS = [
     "desktop": "./shots/gleamkit/desktop.png",
     "phone": "./shots/gleamkit/phone.png",
     "desktopAlt": "Gleamkit on desktop: a Mac-chrome TypeScript shot on a sand wash, line focus, steps along the bottom.",
-    "phoneAlt": "Gleamkit on a phone: the code shot fills the sheet, Play in the dock."
+    "phoneAlt": "Gleamkit on a phone: the code shot fills the sheet, Play in the dock.",
+    "category": "Text & code",
+    "description": "Turn code into an image or video."
   },
   {
     "slug": "crushkit",
@@ -124,7 +140,9 @@ window.APPS = [
     "desktop": "./shots/crushkit/desktop.png",
     "phone": "./shots/crushkit/phone.png",
     "desktopAlt": "Crushkit on desktop: a before/after photo, 1.8 MB to 297 KB, Crush and Download.",
-    "phoneAlt": "Crushkit on a phone: the crushed photo fills the sheet, 1.8 MB to 297 KB, Crush in the dock."
+    "phoneAlt": "Crushkit on a phone: the crushed photo fills the sheet, 1.8 MB to 297 KB, Crush in the dock.",
+    "category": "Images",
+    "description": "Compress photos into smaller files."
   },
   {
     "slug": "signkit",
@@ -139,7 +157,9 @@ window.APPS = [
     "phone": "./shots/signkit/phone.png",
     "desktopAlt": "Signkit on desktop: a letter of agreement, a drawn signature, sand italic name, Download.",
     "phoneAlt": "Signkit on a phone: the signed page fills the sheet, Sign Type Date Save in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Add your signature to a PDF."
   },
   {
     "slug": "wavekit",
@@ -154,7 +174,9 @@ window.APPS = [
     "phone": "./shots/wavekit/phone.png",
     "desktopAlt": "Wavekit on desktop: a square mirrored waveform, Friday night, Export.",
     "phoneAlt": "Wavekit on a phone: the waveform fills the sheet, Open Record Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Video & audio",
+    "description": "Turn audio into a waveform video."
   },
   {
     "slug": "fitkit",
@@ -167,9 +189,11 @@ window.APPS = [
     "shipped": "2026-08-22",
     "desktop": "./shots/fitkit/desktop.png",
     "phone": "./shots/fitkit/phone.png",
-    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600\u00d7900, pan and Export.",
+    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600×900, pan and Export.",
     "phoneAlt": "Fitkit on a phone: the crop fills the sheet, Open and Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Images",
+    "description": "Crop photos for your social posts."
   },
   {
     "slug": "markkit",
@@ -184,7 +208,9 @@ window.APPS = [
     "phone": "./shots/markkit/phone.png",
     "desktopAlt": "Markkit on desktop: a screenshot on a night desk, an arrow, numbered steps, blur and pixel, Export.",
     "phoneAlt": "Markkit on a phone: the marked shot fills the sheet, Open and Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Design",
+    "description": "Annotate screenshots and blur details."
   },
   {
     "slug": "gifkit",
@@ -199,7 +225,9 @@ window.APPS = [
     "phone": "./shots/gifkit/phone.png",
     "desktopAlt": "Gifkit on desktop: a film gate looping a clip, in and out on the strip, width fps speed, Make GIF.",
     "phoneAlt": "Gifkit on a phone: the loop fills the gate, the filmstrip, Open and Make GIF in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Video & audio",
+    "description": "Turn a video clip into a GIF."
   },
   {
     "slug": "qrkit",
@@ -214,7 +242,9 @@ window.APPS = [
     "phone": "./shots/qrkit/phone.png",
     "desktopAlt": "Qrkit on desktop: a print plate with a framed SCAN ME code, type chips, ink and paper, PNG SVG PDF.",
     "phoneAlt": "Qrkit on a phone: the framed code fills the sheet, Look Save Read PNG in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Design",
+    "description": "Create a branded, print-ready QR code."
   },
   {
     "slug": "mockkit",
@@ -229,7 +259,9 @@ window.APPS = [
     "phone": "./shots/mockkit/phone.png",
     "desktopAlt": "Mockkit on desktop: a phone frame on a mesh backdrop, scene sliders, store-set and batch ZIP.",
     "phoneAlt": "Mockkit on a phone: the framed shot fills the sheet, Open and Download PNG in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Design",
+    "description": "Turn screenshots into device mockups."
   },
   {
     "slug": "rulekit",
@@ -244,7 +276,9 @@ window.APPS = [
     "phone": "./shots/rulekit/phone.png",
     "desktopAlt": "Rulekit on desktop: a UI shot on the glass with pinned distances, a rect, and guides.",
     "phoneAlt": "Rulekit on a phone: the measure stage fills the sheet, Open and Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Design",
+    "description": "Measure spacing in a UI screenshot."
   },
   {
     "slug": "grabkit",
@@ -259,7 +293,9 @@ window.APPS = [
     "phone": "./shots/grabkit/phone.png",
     "desktopAlt": "Grabkit on desktop: a receipt on the glass, Plain/Markdown/CSV/JSON modes, secrets spotted, Copy.",
     "phoneAlt": "Grabkit on a phone: the OCR stage, mode pills, and Open Cam Grab OCR Copy Save in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Text & code",
+    "description": "Extract text from screenshots and images."
   },
   {
     "slug": "scankit",
@@ -274,7 +310,9 @@ window.APPS = [
     "phone": "./shots/scankit/phone.png",
     "desktopAlt": "Scankit on desktop: a flattened invoice on the desk, Enhance selected, Export PDF.",
     "phoneAlt": "Scankit on a phone: the flattened page fills the sheet, File Cam Flatten PDF Add in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Turn a photo of a page into a clean PDF."
   },
   {
     "slug": "erasekit",
@@ -289,7 +327,9 @@ window.APPS = [
     "phone": "./shots/erasekit/phone.png",
     "desktopAlt": "Erasekit on desktop: a lake polaroid on the desk, red SALE sticker masked, Telea, Erase.",
     "phoneAlt": "Erasekit on a phone: the photo fills the sheet, File Cam Erase Save in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Images",
+    "description": "Brush unwanted objects out of photos."
   },
   {
     "slug": "slimkit",
@@ -304,7 +344,9 @@ window.APPS = [
     "phone": "./shots/slimkit/phone.png",
     "desktopAlt": "Slimkit on desktop: sample invoice before and after, Soft mode, 1.7MB to 69.6KB, Download.",
     "phoneAlt": "Slimkit on a phone: before and after pages, 1.7MB to 69.6KB, Compress Save ZIP in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Reduce the size of a PDF."
   },
   {
     "slug": "redactkit",
@@ -319,7 +361,9 @@ window.APPS = [
     "phone": "./shots/redactkit/phone.png",
     "desktopAlt": "Redactkit on desktop: sample invoice with SSN marks burned black, Applied view, Export.",
     "phoneAlt": "Redactkit on a phone: the vault stage, Mark Apply Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Permanently hide sensitive information."
   },
   {
     "slug": "stampkit",
@@ -334,7 +378,9 @@ window.APPS = [
     "phone": "./shots/stampkit/phone.png",
     "desktopAlt": "Stampkit on desktop: diagonal (c) Asher on a sample photo, Text/Logo rail, Adaptive contrast, Batch strip.",
     "phoneAlt": "Stampkit on a phone: stamped preview, Design Stamp Save ZIP PDF in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Images",
+    "description": "Add your watermark to a batch of images."
   },
   {
     "slug": "diffkit",
@@ -349,7 +395,9 @@ window.APPS = [
     "phone": "./shots/diffkit/phone.png",
     "desktopAlt": "Diffkit on desktop: side-by-side JS sample, line grain, merge pane, Text Image Pdf dock.",
     "phoneAlt": "Diffkit on a phone: stacked editors, stats strip, Compare PNG PDF in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "Text & code",
+    "description": "Compare text, images, and PDFs."
   },
   {
     "slug": "sortkit",
@@ -364,7 +412,9 @@ window.APPS = [
     "phone": "./shots/sortkit/phone.png",
     "desktopAlt": "Sortkit on desktop: thumbnail board mixing report and invoice pages, rotate and export rail.",
     "phoneAlt": "Sortkit on a phone: page thumbnails, Add Rotate Delete Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Reorder and rotate PDF pages."
   },
   {
     "slug": "bindkit",
@@ -379,7 +429,9 @@ window.APPS = [
     "phone": "./shots/bindkit/phone.png",
     "desktopAlt": "Bindkit on desktop: photo board, page size and margins rail, combined PDF or ZIP export.",
     "phoneAlt": "Bindkit on a phone: photo thumbnails, island status, dock with Add and Export.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Combine photos into a PDF."
   },
   {
     "slug": "flipkit",
@@ -394,6 +446,8 @@ window.APPS = [
     "phone": "./shots/flipkit/phone.png",
     "desktopAlt": "Flipkit on desktop: thumbnail board of PDF pages, rasterize rail with JPEG DPI and Export ZIP.",
     "phoneAlt": "Flipkit on a phone: page cards selected, Add Select Mode More Export in the dock.",
-    "packAlign": "center"
+    "packAlign": "center",
+    "category": "PDF & documents",
+    "description": "Convert PDF pages to images."
   }
 ];

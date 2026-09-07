@@ -7,7 +7,9 @@
     "pages": "https://asherweisberger.github.io/framekit/",
     "repo": "https://github.com/AsherWeisberger/framekit",
     "originalPaid": "Xnapper",
-    "shipped": "2026-08-13"
+    "shipped": "2026-08-13",
+    "category": "Design",
+    "description": "Give screenshots a polished frame."
   },
   {
     "slug": "stackpdf",
@@ -17,7 +19,9 @@
     "pages": "https://asherweisberger.github.io/stackpdf/",
     "repo": "https://github.com/AsherWeisberger/stackpdf",
     "originalPaid": "Smallpdf",
-    "shipped": "2026-08-14"
+    "shipped": "2026-08-14",
+    "category": "PDF & documents",
+    "description": "Merge PDFs or extract individual pages."
   },
   {
     "slug": "bestcut",
@@ -27,7 +31,9 @@
     "pages": "https://asherweisberger.github.io/bestcut/",
     "repo": "https://github.com/AsherWeisberger/bestcut",
     "originalPaid": "CapCut",
-    "shipped": "2026-08-14"
+    "shipped": "2026-08-14",
+    "category": "Video & audio",
+    "description": "Edit videos on your phone."
   },
   {
     "slug": "mattekit",
@@ -37,7 +43,9 @@
     "pages": "https://asherweisberger.github.io/mattekit/",
     "repo": "https://github.com/AsherWeisberger/mattekit",
     "originalPaid": "Photoroom",
-    "shipped": "2026-08-14"
+    "shipped": "2026-08-14",
+    "category": "Images",
+    "description": "Cut a person out of a photo."
   },
   {
     "slug": "cinekit",
@@ -47,7 +55,9 @@
     "pages": "https://asherweisberger.github.io/cinekit/",
     "repo": "https://github.com/AsherWeisberger/cinekit",
     "originalPaid": "Screen Studio",
-    "shipped": "2026-08-15"
+    "shipped": "2026-08-15",
+    "category": "Video & audio",
+    "description": "Record your screen as a video."
   },
   {
     "slug": "speakkit",
@@ -57,7 +67,9 @@
     "pages": "https://asherweisberger.github.io/speakkit/",
     "repo": "https://github.com/AsherWeisberger/speakkit",
     "originalPaid": "Wispr Flow",
-    "shipped": "2026-08-16"
+    "shipped": "2026-08-16",
+    "category": "Text & code",
+    "description": "Dictate text with your voice."
   },
   {
     "slug": "swatchkit",
@@ -67,7 +79,9 @@
     "pages": "https://asherweisberger.github.io/swatchkit/",
     "repo": "https://github.com/AsherWeisberger/swatchkit",
     "originalPaid": "Coolors Pro",
-    "shipped": "2026-08-17"
+    "shipped": "2026-08-17",
+    "category": "Design",
+    "description": "Build a palette and copy color codes."
   },
   {
     "slug": "gleamkit",
@@ -77,7 +91,9 @@
     "pages": "https://asherweisberger.github.io/gleamkit/",
     "repo": "https://github.com/AsherWeisberger/gleamkit",
     "originalPaid": "Snappify",
-    "shipped": "2026-08-18"
+    "shipped": "2026-08-18",
+    "category": "Text & code",
+    "description": "Turn code into an image or video."
   },
   {
     "slug": "crushkit",
@@ -87,7 +103,9 @@
     "pages": "https://asherweisberger.github.io/crushkit/",
     "repo": "https://github.com/AsherWeisberger/crushkit",
     "originalPaid": "TinyPNG",
-    "shipped": "2026-08-19"
+    "shipped": "2026-08-19",
+    "category": "Images",
+    "description": "Compress photos into smaller files."
   },
   {
     "slug": "signkit",
@@ -97,7 +115,9 @@
     "pages": "https://asherweisberger.github.io/signkit/",
     "repo": "https://github.com/AsherWeisberger/signkit",
     "originalPaid": "DocuSign",
-    "shipped": "2026-08-20"
+    "shipped": "2026-08-20",
+    "category": "PDF & documents",
+    "description": "Add your signature to a PDF."
   },
   {
     "slug": "wavekit",
@@ -107,7 +127,9 @@
     "pages": "https://asherweisberger.github.io/wavekit/",
     "repo": "https://github.com/AsherWeisberger/wavekit",
     "originalPaid": "Headliner",
-    "shipped": "2026-08-21"
+    "shipped": "2026-08-21",
+    "category": "Video & audio",
+    "description": "Turn audio into a waveform video."
   },
   {
     "slug": "fitkit",
@@ -117,7 +139,9 @@
     "pages": "https://asherweisberger.github.io/fitkit/",
     "repo": "https://github.com/AsherWeisberger/fitkit",
     "originalPaid": "Canva",
-    "shipped": "2026-08-22"
+    "shipped": "2026-08-22",
+    "category": "Images",
+    "description": "Crop photos for your social posts."
   },
   {
     "slug": "markkit",
@@ -127,7 +151,9 @@
     "pages": "https://asherweisberger.github.io/markkit/",
     "repo": "https://github.com/AsherWeisberger/markkit",
     "originalPaid": "CleanShot X",
-    "shipped": "2026-08-23"
+    "shipped": "2026-08-23",
+    "category": "Design",
+    "description": "Annotate screenshots and blur details."
   },
   {
     "slug": "gifkit",
@@ -137,7 +163,9 @@
     "pages": "https://asherweisberger.github.io/gifkit/",
     "repo": "https://github.com/AsherWeisberger/gifkit",
     "originalPaid": "Kapwing",
-    "shipped": "2026-08-24"
+    "shipped": "2026-08-24",
+    "category": "Video & audio",
+    "description": "Turn a video clip into a GIF."
   },
   {
     "slug": "qrkit",
@@ -147,7 +175,9 @@
     "pages": "https://asherweisberger.github.io/qrkit/",
     "repo": "https://github.com/AsherWeisberger/qrkit",
     "originalPaid": "QR Code Generator PRO",
-    "shipped": "2026-08-25"
+    "shipped": "2026-08-25",
+    "category": "Design",
+    "description": "Create a branded, print-ready QR code."
   },
   {
     "slug": "mockkit",
@@ -157,7 +187,9 @@
     "pages": "https://asherweisberger.github.io/mockkit/",
     "repo": "https://github.com/AsherWeisberger/mockkit",
     "originalPaid": "Shots.so",
-    "shipped": "2026-08-26"
+    "shipped": "2026-08-26",
+    "category": "Design",
+    "description": "Turn screenshots into device mockups."
   },
   {
     "slug": "rulekit",
@@ -167,7 +199,9 @@
     "pages": "https://asherweisberger.github.io/rulekit/",
     "repo": "https://github.com/AsherWeisberger/rulekit",
     "originalPaid": "PixelSnap 2",
-    "shipped": "2026-08-27"
+    "shipped": "2026-08-27",
+    "category": "Design",
+    "description": "Measure spacing in a UI screenshot."
   },
   {
     "slug": "grabkit",
@@ -177,7 +211,9 @@
     "pages": "https://asherweisberger.github.io/grabkit/",
     "repo": "https://github.com/AsherWeisberger/grabkit",
     "originalPaid": "TextSniper",
-    "shipped": "2026-08-28"
+    "shipped": "2026-08-28",
+    "category": "Text & code",
+    "description": "Extract text from screenshots and images."
   },
   {
     "slug": "scankit",
@@ -187,7 +223,9 @@
     "pages": "https://asherweisberger.github.io/scankit/",
     "repo": "https://github.com/AsherWeisberger/scankit",
     "originalPaid": "CamScanner",
-    "shipped": "2026-08-29"
+    "shipped": "2026-08-29",
+    "category": "PDF & documents",
+    "description": "Turn a photo of a page into a clean PDF."
   },
   {
     "slug": "erasekit",
@@ -197,7 +235,9 @@
     "pages": "https://asherweisberger.github.io/erasekit/",
     "repo": "https://github.com/AsherWeisberger/erasekit",
     "originalPaid": "Cleanup.pictures",
-    "shipped": "2026-08-30"
+    "shipped": "2026-08-30",
+    "category": "Images",
+    "description": "Brush unwanted objects out of photos."
   },
   {
     "slug": "slimkit",
@@ -207,7 +247,9 @@
     "pages": "https://asherweisberger.github.io/slimkit/",
     "repo": "https://github.com/AsherWeisberger/slimkit",
     "originalPaid": "ILovePDF Compress",
-    "shipped": "2026-08-31"
+    "shipped": "2026-08-31",
+    "category": "PDF & documents",
+    "description": "Reduce the size of a PDF."
   },
   {
     "slug": "redactkit",
@@ -217,7 +259,9 @@
     "pages": "https://asherweisberger.github.io/redactkit/",
     "repo": "https://github.com/AsherWeisberger/redactkit",
     "originalPaid": "Smallpdf PDF Redactor / Acrobat Pro Redact",
-    "shipped": "2026-09-01"
+    "shipped": "2026-09-01",
+    "category": "PDF & documents",
+    "description": "Permanently hide sensitive information."
   },
   {
     "slug": "stampkit",
@@ -227,7 +271,9 @@
     "pages": "https://asherweisberger.github.io/stampkit/",
     "repo": "https://github.com/AsherWeisberger/stampkit",
     "originalPaid": "ILovePDF Watermark / Watermarkly Pro",
-    "shipped": "2026-09-02"
+    "shipped": "2026-09-02",
+    "category": "Images",
+    "description": "Add your watermark to a batch of images."
   },
   {
     "slug": "diffkit",
@@ -237,7 +283,9 @@
     "pages": "https://asherweisberger.github.io/diffkit/",
     "repo": "https://github.com/AsherWeisberger/diffkit",
     "originalPaid": "Diffchecker Pro",
-    "shipped": "2026-09-03"
+    "shipped": "2026-09-03",
+    "category": "Text & code",
+    "description": "Compare text, images, and PDFs."
   },
   {
     "slug": "sortkit",
@@ -247,7 +295,21 @@
     "pages": "https://asherweisberger.github.io/sortkit/",
     "repo": "https://github.com/AsherWeisberger/sortkit",
     "originalPaid": "ILovePDF Organize + Rotate",
-    "shipped": "2026-09-04"
+    "shipped": "2026-09-04",
+    "category": "PDF & documents",
+    "description": "Reorder and rotate PDF pages."
+  },
+  {
+    "slug": "bindkit",
+    "name": "Bindkit",
+    "job": "Photos become a PDF. Files stay here.",
+    "kicker": "Bind photos",
+    "pages": "https://asherweisberger.github.io/bindkit/",
+    "repo": "https://github.com/AsherWeisberger/bindkit",
+    "originalPaid": "ILovePDF JPG to PDF",
+    "shipped": "2026-09-05",
+    "category": "PDF & documents",
+    "description": "Combine photos into a PDF."
   },
   {
     "slug": "flipkit",
@@ -257,6 +319,8 @@
     "pages": "https://asherweisberger.github.io/flipkit/",
     "repo": "https://github.com/AsherWeisberger/flipkit",
     "originalPaid": "ILovePDF PDF to JPG",
-    "shipped": "2026-09-06"
+    "shipped": "2026-09-06",
+    "category": "PDF & documents",
+    "description": "Convert PDF pages to images."
   }
 ]
