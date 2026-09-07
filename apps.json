@@ -167,7 +167,7 @@
     "shipped": "2026-08-22",
     "desktop": "./shots/fitkit/desktop.png",
     "phone": "./shots/fitkit/phone.png",
-    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600×900, pan and Export.",
+    "desktopAlt": "Fitkit on desktop: a crop gate on a cream table, X post 1600\u00d7900, pan and Export.",
     "phoneAlt": "Fitkit on a phone: the crop fills the sheet, Open and Export in the dock.",
     "packAlign": "center"
   },
@@ -364,6 +364,21 @@
     "phone": "./shots/sortkit/phone.png",
     "desktopAlt": "Sortkit on desktop: thumbnail board mixing report and invoice pages, rotate and export rail.",
     "phoneAlt": "Sortkit on a phone: page thumbnails, Add Rotate Delete Export in the dock.",
+    "packAlign": "center"
+  },
+  {
+    "slug": "bindkit",
+    "name": "Bindkit",
+    "job": "Photos become a PDF. Files stay here.",
+    "kicker": "Bind photos",
+    "pages": "https://asherweisberger.github.io/bindkit/",
+    "repo": "https://github.com/AsherWeisberger/bindkit",
+    "originalPaid": "ILovePDF JPG to PDF",
+    "shipped": "2026-09-05",
+    "desktop": "./shots/bindkit/desktop.png",
+    "phone": "./shots/bindkit/phone.png",
+    "desktopAlt": "Bindkit on desktop: photo board, page size and margins rail, combined PDF or ZIP export.",
+    "phoneAlt": "Bindkit on a phone: photo thumbnails, island status, dock with Add and Export.",
     "packAlign": "center"
   },
   {
