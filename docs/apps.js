@@ -365,5 +365,20 @@ window.APPS = [
     "desktopAlt": "Sortkit on desktop: thumbnail board mixing report and invoice pages, rotate and export rail.",
     "phoneAlt": "Sortkit on a phone: page thumbnails, Add Rotate Delete Export in the dock.",
     "packAlign": "center"
+  },
+  {
+    "slug": "flipkit",
+    "name": "Flipkit",
+    "job": "PDF pages become images. Files stay here.",
+    "kicker": "Flip a PDF",
+    "pages": "https://asherweisberger.github.io/flipkit/",
+    "repo": "https://github.com/AsherWeisberger/flipkit",
+    "originalPaid": "ILovePDF PDF to JPG",
+    "shipped": "2026-09-06",
+    "desktop": "./shots/flipkit/desktop.png",
+    "phone": "./shots/flipkit/phone.png",
+    "desktopAlt": "Flipkit on desktop: thumbnail board of PDF pages, rasterize rail with JPEG DPI and Export ZIP.",
+    "phoneAlt": "Flipkit on a phone: page cards selected, Add Select Mode More Export in the dock.",
+    "packAlign": "center"
   }
 ];

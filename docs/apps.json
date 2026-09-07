@@ -248,5 +248,15 @@
     "repo": "https://github.com/AsherWeisberger/sortkit",
     "originalPaid": "ILovePDF Organize + Rotate",
     "shipped": "2026-09-04"
+  },
+  {
+    "slug": "flipkit",
+    "name": "Flipkit",
+    "job": "PDF pages become images. Files stay here.",
+    "kicker": "Flip a PDF",
+    "pages": "https://asherweisberger.github.io/flipkit/",
+    "repo": "https://github.com/AsherWeisberger/flipkit",
+    "originalPaid": "ILovePDF PDF to JPG",
+    "shipped": "2026-09-06"
   }
 ]
