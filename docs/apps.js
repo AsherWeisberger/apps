@@ -449,5 +449,22 @@ window.APPS = [
     "packAlign": "center",
     "category": "PDF & documents",
     "description": "Convert PDF pages to images."
+  },
+  {
+    "slug": "sheetkit",
+    "name": "Sheetkit",
+    "job": "Sheets become pages. Files stay here.",
+    "kicker": "Sheet to PDF",
+    "pages": "https://asherweisberger.github.io/sheetkit/",
+    "repo": "https://github.com/AsherWeisberger/sheetkit",
+    "originalPaid": "ILovePDF Excel to PDF",
+    "shipped": "2026-09-07",
+    "desktop": "./shots/sheetkit/desktop.png",
+    "phone": "./shots/sheetkit/phone.png",
+    "desktopAlt": "Sheetkit on desktop: sheet picker for budget workbook, Letter portrait rail, live PDF preview, Export.",
+    "phoneAlt": "Sheetkit on a phone: sheet list selected, island status, dock with Add Sheets Options Export.",
+    "packAlign": "right",
+    "category": "PDF & documents",
+    "description": "Turn Excel and CSV into a PDF in the tab."
   }
 ];

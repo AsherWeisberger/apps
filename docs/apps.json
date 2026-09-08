@@ -322,5 +322,17 @@
     "shipped": "2026-09-06",
     "category": "PDF & documents",
     "description": "Convert PDF pages to images."
+  },
+  {
+    "slug": "sheetkit",
+    "name": "Sheetkit",
+    "job": "Sheets become pages. Files stay here.",
+    "kicker": "Sheet to PDF",
+    "pages": "https://asherweisberger.github.io/sheetkit/",
+    "repo": "https://github.com/AsherWeisberger/sheetkit",
+    "originalPaid": "ILovePDF Excel to PDF",
+    "shipped": "2026-09-07",
+    "category": "PDF & documents",
+    "description": "Turn Excel and CSV into a PDF in the tab."
   }
 ]
