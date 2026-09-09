@@ -466,5 +466,22 @@ window.APPS = [
     "packAlign": "right",
     "category": "PDF & documents",
     "description": "Turn Excel and CSV into a PDF in the tab."
+  },
+  {
+    "slug": "inkkit",
+    "name": "Inkkit",
+    "job": "Words become pages. Files stay here.",
+    "kicker": "Word to PDF",
+    "pages": "https://asherweisberger.github.io/inkkit/",
+    "repo": "https://github.com/AsherWeisberger/inkkit",
+    "originalPaid": "ILovePDF Word to PDF",
+    "shipped": "2026-09-08",
+    "desktop": "./shots/inkkit/desktop.png",
+    "phone": "./shots/inkkit/phone.png",
+    "desktopAlt": "Inkkit on desktop: file list with DOCX MD TXT, Clean mode rail, live PDF preview, Export.",
+    "phoneAlt": "Inkkit on a phone: document list selected, island status, dock with Add Files Options Export.",
+    "packAlign": "left",
+    "category": "PDF & documents",
+    "description": "Turn Word, Markdown, and text into a PDF in the tab."
   }
 ];
