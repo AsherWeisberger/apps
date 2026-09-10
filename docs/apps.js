@@ -483,5 +483,22 @@ window.APPS = [
     "packAlign": "left",
     "category": "PDF & documents",
     "description": "Turn Word, Markdown, and text into a PDF in the tab."
+  },
+  {
+    "slug": "deckkit",
+    "name": "Deckkit",
+    "job": "Slides become pages. Files stay here.",
+    "kicker": "PowerPoint to PDF",
+    "pages": "https://asherweisberger.github.io/deckkit/",
+    "repo": "https://github.com/AsherWeisberger/deckkit",
+    "originalPaid": "ILovePDF PowerPoint to PDF",
+    "shipped": "2026-09-09",
+    "desktop": "./shots/deckkit/desktop.png",
+    "phone": "./shots/deckkit/phone.png",
+    "desktopAlt": "Deckkit on desktop: deck list with PPTX, Faithful/Sharp rail, live PDF preview, Export.",
+    "phoneAlt": "Deckkit on a phone: deck list selected, island status, dock with Add Files Options Export.",
+    "packAlign": "left",
+    "category": "PDF & documents",
+    "description": "Turn PowerPoint into a PDF in the tab."
   }
 ];
