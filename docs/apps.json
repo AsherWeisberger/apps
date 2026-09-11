@@ -358,5 +358,17 @@
     "shipped": "2026-09-09",
     "category": "PDF & documents",
     "description": "Turn PowerPoint into a PDF in the tab."
+  },
+  {
+    "slug": "draftkit",
+    "name": "Draftkit",
+    "job": "Pages become drafts. Files stay here.",
+    "kicker": "PDF to Word",
+    "pages": "https://asherweisberger.github.io/draftkit/",
+    "repo": "https://github.com/AsherWeisberger/draftkit",
+    "originalPaid": "ILovePDF PDF to Word",
+    "shipped": "2026-09-10",
+    "category": "PDF & documents",
+    "description": "Turn PDF into editable Word in the tab — free OCR for scans."
   }
 ]

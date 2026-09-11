@@ -500,5 +500,22 @@
     "packAlign": "left",
     "category": "PDF & documents",
     "description": "Turn PowerPoint into a PDF in the tab."
+  },
+  {
+    "slug": "draftkit",
+    "name": "Draftkit",
+    "job": "Pages become drafts. Files stay here.",
+    "kicker": "PDF to Word",
+    "pages": "https://asherweisberger.github.io/draftkit/",
+    "repo": "https://github.com/AsherWeisberger/draftkit",
+    "originalPaid": "ILovePDF PDF to Word",
+    "shipped": "2026-09-10",
+    "desktop": "./shots/draftkit/desktop.png",
+    "phone": "./shots/draftkit/phone.png",
+    "desktopAlt": "Draftkit on desktop: PDF list with Flow/Layout/OCR rail, live page preview and draft text pane, Export Word.",
+    "phoneAlt": "Draftkit on a phone: PDF list selected, island status, dock with Add Files Options Export.",
+    "packAlign": "left",
+    "category": "PDF & documents",
+    "description": "Turn PDF into editable Word in the tab — free OCR for scans."
   }
 ]
