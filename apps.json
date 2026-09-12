@@ -517,5 +517,22 @@
     "packAlign": "left",
     "category": "PDF & documents",
     "description": "Turn PDF into editable Word in the tab — free OCR for scans."
+  },
+  {
+    "slug": "gridkit",
+    "name": "Gridkit",
+    "job": "Tables become sheets. Files stay here.",
+    "kicker": "PDF to Excel",
+    "pages": "https://asherweisberger.github.io/gridkit/",
+    "repo": "https://github.com/AsherWeisberger/gridkit",
+    "originalPaid": "ILovePDF PDF to Excel",
+    "shipped": "2026-09-11",
+    "desktop": "./shots/gridkit/desktop.png",
+    "phone": "./shots/gridkit/phone.png",
+    "desktopAlt": "Gridkit on desktop: PDF list with Grid/Lines/OCR rail, live page preview and spreadsheet grid pane, Export sheet.",
+    "phoneAlt": "Gridkit on a phone: PDF list selected, island status, dock with Add Files Options Export.",
+    "packAlign": "left",
+    "category": "PDF & documents",
+    "description": "Turn PDF tables into Excel in the tab — free OCR for scans."
   }
 ]

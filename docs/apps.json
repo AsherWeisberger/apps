@@ -370,5 +370,17 @@
     "shipped": "2026-09-10",
     "category": "PDF & documents",
     "description": "Turn PDF into editable Word in the tab — free OCR for scans."
+  },
+  {
+    "slug": "gridkit",
+    "name": "Gridkit",
+    "job": "Tables become sheets. Files stay here.",
+    "kicker": "PDF to Excel",
+    "pages": "https://asherweisberger.github.io/gridkit/",
+    "repo": "https://github.com/AsherWeisberger/gridkit",
+    "originalPaid": "ILovePDF PDF to Excel",
+    "shipped": "2026-09-11",
+    "category": "PDF & documents",
+    "description": "Turn PDF tables into Excel in the tab — free OCR for scans."
   }
 ]
